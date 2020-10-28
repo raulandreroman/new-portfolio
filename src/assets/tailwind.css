@@ -1,0 +1,31 @@
+/* Font family import */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+
+@tailwind base;
+html {
+  @apply font-body box-border;
+}
+*,
+*:before,
+*:after {
+  @apply box-border;
+}
+h1{
+  @apply font-semibold tracking-tight leading-tight text-5xl;
+}  
+h2{
+  @apply font-light leading-tight text-xl;
+}
+@tailwind components;
+
+@tailwind utilities;
+
+@layer base {
+  html{
+    @apply font-body;
+  },
+  h1{
+    @apply font-semibold;
+  }
+}
