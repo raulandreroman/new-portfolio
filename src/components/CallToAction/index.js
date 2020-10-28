@@ -1,21 +1,11 @@
 import React from 'react';
-import { MdLanguage, MdLightbulbOutline} from 'react-icons/md';
+import NavBarTools from '../NavBarTools';
 
 export default function CallToAction(props) {
+
   return (
     <header className={`mx-8 my-4`}>
-      <div className="flex flex-col items-end text-3xl">
-        <button onClick={props.callback}>
-          {props.theme === 'dark' ? (
-            <MdLightbulbOutline className={`my-1 text-${props.theme}-secondary fill-current`} />
-          ) :(
-            <MdLightbulbOutline className={`my-1 text-${props.theme}-secondary`} />
-          )}
-        </button>
-        <button>
-          <MdLanguage className={`my-1 text-${props.theme}-secondary`} />
-        </button>
-      </div>
+      <NavBarTools themeHandler={props}  />
       <div className="flex flex-col w-10/12">
         <h1 className={`text-${props.theme}-secondary`}>Front End Developer</h1>
         <div>
