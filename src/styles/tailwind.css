@@ -17,6 +17,15 @@ h1{
 h2{
   @apply font-light leading-tight text-xl;
 }
+h3{
+  @apply text-3xl;
+}
+h4{
+  @apply text-2xl;
+}
+.blend-difference{
+  mix-blend-mode: difference
+}
 @tailwind components;
 
 @tailwind utilities;
