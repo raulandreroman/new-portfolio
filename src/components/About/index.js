@@ -16,9 +16,9 @@ export default function About(props) {
       </div>
       <div>
         {paragraphs.map((paragraph, key) => {
-          const { title, content } = paragraph;
+          const { title, content, style } = paragraph;
 
-          return <Paragraph title={title} content={content} key={key} theme={theme} id={key} />;
+          return <Paragraph title={title} content={content} key={key} theme={theme} style={style} />;
         })}
       </div>
     </section>

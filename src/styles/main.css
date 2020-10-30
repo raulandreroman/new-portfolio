@@ -133,8 +133,7 @@ button { /* 1 */
  * Correct the inability to style clickable types in iOS and Safari.
  */
 
-button,
-[type="button"] {
+button {
   -webkit-appearance: button;
 }
 
@@ -142,8 +141,7 @@ button,
  * Remove the inner border and padding in Firefox.
  */
 
-button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner {
+button::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
@@ -152,8 +150,7 @@ button::-moz-focus-inner,
  * Restore the focus styles unset by the previous rule.
  */
 
-button:-moz-focusring,
-[type="button"]:-moz-focusring {
+button:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -477,6 +474,14 @@ h4{
   height: 0.25rem;
 }
 
+.h-2{
+  height: 0.5rem;
+}
+
+.h-8{
+  height: 2rem;
+}
+
 .h-10{
   height: 2.5rem;
 }
@@ -540,12 +545,24 @@ h4{
   position: relative;
 }
 
+.bottom-1{
+  bottom: 0.25rem;
+}
+
+.bottom-2{
+  bottom: 0.5rem;
+}
+
 .bottom-5{
   bottom: 1.25rem;
 }
 
 .right-8{
   right: 2.15rem;
+}
+
+.left-48{
+  left: 12rem;
 }
 
 .left-56{
@@ -590,12 +607,20 @@ h4{
   color: rgba(255, 255, 255, var(--text-opacity));
 }
 
+.w-8{
+  width: 2rem;
+}
+
 .w-10{
   width: 2.5rem;
 }
 
 .w-16{
   width: 4rem;
+}
+
+.w-24{
+  width: 6rem;
 }
 
 .w-32{
