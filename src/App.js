@@ -1,7 +1,7 @@
 //App.js
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import "./assets/main.css";
+import "./styles/main.css";
 import Home from "./pages/Home";
 import ThemeContext from './utilities/ThemeContext';
 
