@@ -4,6 +4,7 @@ import { ThemeContext } from '../../utilities/ThemeContext';
 
 import CallToAction from '../../components/CallToAction';
 import About from '../../components/About';
+import ProjectsSection from '../../components/ProjectsSection'
 
 export default function Home() {
   const { theme } = React.useContext(ThemeContext);
@@ -21,6 +22,7 @@ export default function Home() {
       ;
       <CallToAction theme={theme} />
       <About theme={theme} />
+      <ProjectsSection theme={theme} />
     </>
   );
 }
