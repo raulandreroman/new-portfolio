@@ -133,7 +133,8 @@ button { /* 1 */
  * Correct the inability to style clickable types in iOS and Safari.
  */
 
-button {
+button,
+[type="button"] {
   -webkit-appearance: button;
 }
 
@@ -141,7 +142,8 @@ button {
  * Remove the inner border and padding in Firefox.
  */
 
-button::-moz-focus-inner {
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
@@ -150,7 +152,8 @@ button::-moz-focus-inner {
  * Restore the focus styles unset by the previous rule.
  */
 
-button:-moz-focusring {
+button:-moz-focusring,
+[type="button"]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -430,6 +433,30 @@ h4{
   background-color: rgba(255, 255, 255, var(--bg-opacity));
 }
 
+.bg-light-bg{
+  --bg-opacity: 1;
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, var(--bg-opacity));
+}
+
+.bg-light-secondary{
+  --bg-opacity: 1;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, var(--bg-opacity));
+}
+
+.bg-dark-bg{
+  --bg-opacity: 1;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, var(--bg-opacity));
+}
+
+.bg-dark-secondary{
+  --bg-opacity: 1;
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, var(--bg-opacity));
+}
+
 .flex{
   display: flex;
 }
@@ -448,10 +475,6 @@ h4{
 
 .h-1{
   height: 0.25rem;
-}
-
-.h-8{
-  height: 2rem;
 }
 
 .h-10{
@@ -538,6 +561,30 @@ h4{
 }
 
 .text-white{
+  --text-opacity: 1;
+  color: #fff;
+  color: rgba(255, 255, 255, var(--text-opacity));
+}
+
+.text-light-primary{
+  --text-opacity: 1;
+  color: #464444;
+  color: rgba(70, 68, 68, var(--text-opacity));
+}
+
+.text-light-secondary{
+  --text-opacity: 1;
+  color: #000;
+  color: rgba(0, 0, 0, var(--text-opacity));
+}
+
+.text-dark-primary{
+  --text-opacity: 1;
+  color: #b2aeae;
+  color: rgba(178, 174, 174, var(--text-opacity));
+}
+
+.text-dark-secondary{
   --text-opacity: 1;
   color: #fff;
   color: rgba(255, 255, 255, var(--text-opacity));
