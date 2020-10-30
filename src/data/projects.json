@@ -4,29 +4,40 @@
         "summary": "The website you're currently seeing! Hope you like it, it's my first React.js AND TailwindCSS proper project ",
         "firstLink": "https://github.com/randrerd/new-portfolio",
         "secondLink": "https://rul.codes",
-        "techStack": [
-            "JavaScript",
-            "CSS",
-            "JSX",
-            "React.js",
-            "TailwindCSS",
-            "Git"
-        ],
-        "screenshotURL": "https"
+        "techStack": {
+            "markupAndComponents": [
+                "Javascript",
+                "React"
+            ],
+            "styling": [
+                "Css3",
+                "Tailwindcss"
+            ],
+            "utils": [
+                "Git"
+            ]
+        },
+        "previewUrl": "../assets/new-portfolio.png"
     },
     {
-        "title": "Personal website",
-        "summary": "The website you're currently seeing! Hope you like it, it's my first React.js AND TailwindCSS proper project ",
-        "firstLink": "https://github.com/randrerd/new-portfolio",
-        "secondLink": "https://rul.codes",
-        "techStack": [
-            "JavaScript",
-            "CSS",
-            "JSX",
-            "React.js",
-            "TailwindCSS",
-            "Git"
-        ],
-        "screenshotURL": ""
+        "title": "GifOS",
+        "summary": "Web app that allows the user to make their own GIFs, search for their favourite ones and get recommendations. The app uses the Giphy API",
+        "firstLink": "https://github.com/randrerd/gifos",
+        "secondLink": "https://gifos.vercel.app",
+        "techStack": {
+            "markupAndComponents": [
+                "Html5",
+                "Javascript"
+            ],
+            "styling": [
+                "Css3",
+                "Sass"
+            ],
+            "utils": [
+                "Git",
+                "MobileFirst"
+            ]
+        },
+        "previewUrl": "../assets/gifos.png"
     }
 ]

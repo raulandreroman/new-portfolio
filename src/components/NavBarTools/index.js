@@ -12,7 +12,7 @@ export default function NavBarTools() {
     <div className="flex flex-col items-end text-4xl">
       <button onClick={handleClick}>
         {theme === 'dark' ? (
-          <CgSun className={`my-1 text-${theme}-secondary fill-current`} />
+          <CgSun className={`my-1 text-${theme}-secondary`} />
         ) : (
           <CgMoon className={`my-1 text-${theme}-secondary`} />
         )}
