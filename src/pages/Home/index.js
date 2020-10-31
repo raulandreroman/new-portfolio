@@ -5,10 +5,19 @@ import { ThemeContext } from '../../utilities/ThemeContext';
 import CallToAction from '../../components/CallToAction';
 import About from '../../components/About';
 import ProjectsSection from '../../components/ProjectsSection'
+import Contact from '../../components/Contact'
 
 export default function Home() {
   const { theme } = React.useContext(ThemeContext);
+  function handleClick(url) {
+    if(url=== 'email') {
+      window.location = 'mailto:raulandrerd@gmail.com'
+    } else{
+      const newWindow = window.open(url, '_blank', 'noopener,noreferrer');
+      if (newWindow) newWindow.opener = null;
+    }
 
+  }
   return (
     <>
       <Helmet
@@ -22,7 +31,8 @@ export default function Home() {
       ;
       <CallToAction theme={theme} />
       <About theme={theme} />
-      <ProjectsSection theme={theme} />
+      <ProjectsSection theme={theme} handleClick={handleClick} />
+      <Contact theme={theme} handleClick={handleClick}/>
     </>
   );
 }

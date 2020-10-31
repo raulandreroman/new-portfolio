@@ -1,20 +1,23 @@
 import React from 'react';
 import TechStack from '../TechStack';
-import Preview from '../Preview'
+import Preview from '../Preview';
 
 export default function Project(props) {
-  const { title, summary, firstLink, secondLink, techStack, previewUrl } = props.details;
-
-  function handleClick(url) {
-    const newWindow = window.open(url, '_blank', 'noopener,noreferrer');
-    if (newWindow) newWindow.opener = null;
-  }
+  const {
+    title,
+    summary,
+    firstLink,
+    secondLink,
+    techStack,
+    previewUrl,
+  } = props.details;
+  const { handleClick } = props;
 
   return (
     <div className={`flex flex-col mb-12`}>
       <h4 className={'text-white my-3'}>{title}</h4>
-      <button onClick={()=> handleClick(secondLink)}>
-      <Preview previewUrl={previewUrl} />
+      <button onClick={() => handleClick(secondLink)}>
+        <Preview previewUrl={previewUrl} />
       </button>
       <p className={'text-whiteish'}>{summary}</p>
       <div className={'flex justify-end my-8'}>
@@ -32,7 +35,6 @@ export default function Project(props) {
         </button>
       </div>
       <TechStack content={techStack} />
- 
     </div>
   );
 }
