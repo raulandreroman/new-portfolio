@@ -51,7 +51,7 @@ export default function TechStack(props) {
               case 'Git':
                 return <SiGit className={`m-1 text-white`} key={key} />;
               case 'MobileFirst':
-                return <CgSmartphone className={'m-1 text-white'} />;
+                return <CgSmartphone className={'m-1 text-white'} key={key} />;
               default:
                 return <></>;
             }

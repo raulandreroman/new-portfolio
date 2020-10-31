@@ -11,9 +11,11 @@ export default function Project(props) {
   }
 
   return (
-    <div>
+    <div className={`flex flex-col mb-12`}>
       <h4 className={'text-white my-3'}>{title}</h4>
+      <button onClick={()=> handleClick(secondLink)}>
       <Preview previewUrl={previewUrl} />
+      </button>
       <p className={'text-whiteish'}>{summary}</p>
       <div className={'flex justify-end my-8'}>
         <button
