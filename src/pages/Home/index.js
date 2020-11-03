@@ -5,7 +5,8 @@ import { ThemeContext } from '../../utilities/ThemeContext';
 import CallToAction from '../../components/CallToAction';
 import About from '../../components/About';
 import ProjectsSection from '../../components/ProjectsSection'
-import Contact from '../../components/Contact'
+import Contact from '../../components/Contact';
+import Triangle from '../../components/Triangle'
 
 export default function Home() {
   const { theme } = React.useContext(ThemeContext);
@@ -28,11 +29,12 @@ export default function Home() {
               : `bg-dark-bg duration-300`,
         }}
       />
-      ;
-      <CallToAction theme={theme} />
-      <About theme={theme} />
-      <ProjectsSection theme={theme} handleClick={handleClick} />
-      <Contact theme={theme} handleClick={handleClick}/>
+      <CallToAction />
+      <About />
+      <ProjectsSection handleClick={handleClick} />
+      <Triangle />
+      <Contact handleClick={handleClick}/>
+      
     </>
-  );
+  )
 }

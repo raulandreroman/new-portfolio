@@ -1,10 +1,11 @@
 import React from 'react';
 import Paragraph from '../Paragraph';
 import paragraphs from '../../data/aboutContent.json'
+import { ThemeContext } from '../../utilities/ThemeContext';
 
 export default function About(props) {
  
-  const { theme } = props;
+const { theme } = React.useContext(ThemeContext);
 
   return (
     <section className="flex-col mx-8 my-4 mt-7">

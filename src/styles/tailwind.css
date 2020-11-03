@@ -26,6 +26,11 @@ h4{
 .blend-difference{
   mix-blend-mode: difference
 }
+.triangle{
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 90px solid white;
+}
 @tailwind components;
 
 @tailwind utilities;

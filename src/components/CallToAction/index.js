@@ -1,8 +1,11 @@
 import React from 'react';
 import NavBarTools from '../NavBarTools';
+import { ThemeContext } from '../../utilities/ThemeContext';
+
 
 export default function CallToAction(props) {
-  const { theme } = props;
+
+  const { theme } = React.useContext(ThemeContext);
   return (
     <header className={`mx-8 my-4 mb-8`}>
       <NavBarTools />

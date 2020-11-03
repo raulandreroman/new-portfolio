@@ -626,6 +626,12 @@ h4{
   mix-blend-mode: difference
 }
 
+.triangle{
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 90px solid white;
+}
+
 .container{
   width: 100%;
 }

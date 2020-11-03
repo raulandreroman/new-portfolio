@@ -1,11 +1,22 @@
 import React from 'react';
+import { ThemeContext } from '../../utilities/ThemeContext';
 
 export default function Contact(props) {
-  const { theme, handleClick } = props;
+  const { theme } = React.useContext(ThemeContext);
+  const { handleClick } = props;
   return (
     <div className="flex flex-col">
-      <button onClick={()=> handleClick('email')} className={`bg-${theme}-secondary my-20 mx-6 p-3`}>
-        <span className={`text-${theme}-bg text-5xl font-light`}>
+      <button
+        onClick={() => handleClick('email')}
+        className={`bg-${theme}-secondary my-8 mx-6 p-3`}
+      >
+        <span
+          className={
+            theme === 'light'
+              ? `text-light-bg text-5xl font-light`
+              : 'text-dark-bg text-5xl font-light'
+          }
+        >
           Contact Me!
         </span>
       </button>
