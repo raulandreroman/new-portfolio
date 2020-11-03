@@ -496,12 +496,24 @@ h4{
   display: flex;
 }
 
+.flex-row{
+  flex-direction: row;
+}
+
 .flex-col{
   flex-direction: column;
 }
 
 .items-end{
   align-items: flex-end;
+}
+
+.items-center{
+  align-items: center;
+}
+
+.self-start{
+  align-self: flex-start;
 }
 
 .self-end{
@@ -514,6 +526,10 @@ h4{
 
 .justify-end{
   justify-content: flex-end;
+}
+
+.justify-between{
+  justify-content: space-between;
 }
 
 .font-light{
@@ -546,6 +562,10 @@ h4{
 
 .h-56{
   height: 14rem;
+}
+
+.text-xs{
+  font-size: 0.75rem;
 }
 
 .text-xl{
@@ -617,6 +637,11 @@ h4{
   margin-right: 2rem;
 }
 
+.my-10{
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
 .mt-2{
   margin-top: 0.5rem;
 }
@@ -625,8 +650,20 @@ h4{
   margin-bottom: 0.75rem;
 }
 
+.mb-4{
+  margin-bottom: 1rem;
+}
+
+.mb-5{
+  margin-bottom: 1.25rem;
+}
+
 .mb-8{
   margin-bottom: 2rem;
+}
+
+.ml-8{
+  margin-left: 2rem;
 }
 
 .mb-10{
@@ -637,8 +674,16 @@ h4{
   margin-bottom: 3rem;
 }
 
+.mb-20{
+  margin-bottom: 5rem;
+}
+
 .p-3{
   padding: 0.75rem;
+}
+
+.p-5{
+  padding: 1.25rem;
 }
 
 .py-4{

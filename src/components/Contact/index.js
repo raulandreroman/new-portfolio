@@ -5,7 +5,7 @@ export default function Contact(props) {
   const { theme } = React.useContext(ThemeContext);
   const { handleClick } = props;
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col mb-20">
       <button
         onClick={() => handleClick('email')}
         className={`bg-${theme}-secondary my-8 mx-6 p-3`}
