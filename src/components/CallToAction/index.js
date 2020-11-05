@@ -7,12 +7,12 @@ export default function CallToAction(props) {
 
   const { theme } = React.useContext(ThemeContext);
   return (
-    <header className={`mx-8 my-4 mb-8`}>
+    <header className={`mx-8 lg:mx-48 mx lg:mt-8 my-4 lg:mb-0 lg:min-h-screen   `}>
       <NavBarTools />
-      <div className="flex flex-col w-10/12">
+      <div className="flex flex-col w-10/12 lg:w-7/12 lg:mt-5 ">
         <h1
           className={
-            theme === 'light' ? `text-light-secondary` : `text-dark-secondary `
+            theme === 'light' ? `text-light-secondary lg:text-7xl` : `text-dark-secondary lg:text-7xl`
           }
         >
           Front End Developer
@@ -21,17 +21,17 @@ export default function CallToAction(props) {
           <h2
             className={
               theme === 'light'
-                ? `text-light-primary my-2`
-                : ` text-dark-primary my-2 `
+                ? `text-light-primary my-2 lg:text-5xl`
+                : ` text-dark-primary my-2 lg:text-5xl`
             }
           >
-            ¡Hola! Me llamo Raúl, lorem ipsum at setir kalecs as
+            Hi! My name is Raul, I love to create sharp-looking websites.
           </h2>
           <div
             className={
               theme === 'light'
-                ? `bg-light-secondary w-32 my-1 h-1`
-                : `w-32 my-1 h-1 bg-dark-secondary `
+                ? `bg-light-secondary w-32 lg:w-1/2 my-1 h-1 lg:h-3`
+                : `w-32 lg:w-1/2 my-1 h-1 lg:h-2 bg-dark-secondary `
             }
           ></div>
         </div>

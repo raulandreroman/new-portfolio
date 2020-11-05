@@ -9,16 +9,16 @@ export default function NavBarTools() {
     theme === 'light' ? setTheme('dark') : setTheme('light');
   }
   return (
-    <div className="flex flex-col items-end text-4xl">
+    <div className="flex flex-col lg:flex-row lg:justify-end items-end text-4xl lg:text-5xl">
       <button onClick={handleClick}>
         {theme === 'dark' ? (
-          <CgSun className={`my-1 text-${theme}-secondary`} />
+          <CgSun className={`my-1 lg:mx-1 text-${theme}-secondary`} />
         ) : (
-          <CgMoon className={`my-1 text-${theme}-secondary`} />
+          <CgMoon className={`my-1 lg:mx-1 text-${theme}-secondary`} />
         )}
       </button>
       <button>
-        <CgGlobeAlt className={`my-1 text-${theme}-secondary`} />
+        <CgGlobeAlt className={`my-1 lg:mx-1 text-${theme}-secondary`} />
       </button>
     </div>
   );

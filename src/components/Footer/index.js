@@ -15,7 +15,7 @@ export default function Footer(props) {
     {
       name: 'Gmail',
       icon: SiGmail,
-      url: 'mailto:raulandrerd@gmail.com',
+      url: 'email',
     },
     {
       name: 'Github',
@@ -38,7 +38,7 @@ export default function Footer(props) {
       url: 'https://instagram.com/randrerd',
     },
   ];
-  console.log();
+
   return (
     <section className="flex flex-col bg-black items-center">
       <div className="p-5 text-white flex flex-row text-3xl justify-between w-64 my-10 mb-4">
