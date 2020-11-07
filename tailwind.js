@@ -16,7 +16,7 @@ module.exports = {
       colors: {
         light: {
           bg: '#fff',
-          primary: '#464444',
+          primary: '#000',
           secondary: '#000',
         },
         dark: {
@@ -162,7 +162,9 @@ module.exports = {
       10: '2.5rem',
       12: '3rem',
       16: '4rem',
+      19: '4.75rem',
       20: '5rem',
+      21: '5.5rem',
       24: '6rem',
       32: '8rem',
       40: '10rem',
@@ -345,7 +347,9 @@ module.exports = {
       12: '3rem',
       13: '3.5rem',
       16: '4rem',
+      19: '4.75rem',
       20: '5rem',
+      21: '5.5rem',
       24: '6rem',
       32: '8rem',
       40: '10rem',

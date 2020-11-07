@@ -1,14 +1,20 @@
-import React from 'react'
+import React from 'react';
 
-export default function Preview(props){
-    const {previewUrl} = props
- 
-    return (
-        <div className='flex flex-col my-8'>
-        <img className='self-center m-auto h-56' alt='Screenshot of current project' src={previewUrl} />
-        <div
-        className={`relative self-center w-64 h-2 mt-2 bg-white`}
+export default function Preview(props) {
+  const { previewUrl } = props;
+console.log(previewUrl)
+  return (
+    <div className="flex flex-col mt-4 mb-2">
+      <img
+        className="self-center m-auto h-56 lg:hidden"
+        alt="Screenshot of current project"
+        src={previewUrl.mobile}
       />
-        </div>
-    )
+      <img
+        className="self-start m-0 h-56 hidden lg:block"
+        alt="Screenshot of current project"
+        src={`${previewUrl.desktop}`}
+      />
+    </div>
+  );
 }

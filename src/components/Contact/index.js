@@ -5,16 +5,17 @@ export default function Contact(props) {
   const { theme } = React.useContext(ThemeContext);
   const { handleClick } = props;
   return (
-    <div className="flex flex-col mb-20">
+    <div className="flex flex-col mb-20 items-center  ">
+    <p className={`text-${theme}-secondary text-3xl`}>Want to get in touch?</p>
       <button
         onClick={() => handleClick('email')}
-        className={`bg-${theme}-secondary my-8 mx-6 p-3`}
+        className={theme === 'light' ? `bg-light-bg border border-light-secondary border-solid my-8 mx-6 p-3 mt-3` : 'bg-dark-bg border border-dark-secondary border-solid my-8 mx-6 p-3 mt-3'}
       >
         <span
           className={
             theme === 'light'
-              ? `text-light-bg text-5xl font-light`
-              : 'text-dark-bg text-5xl font-light'
+              ? `text-light-secondary text-2xl font-light`
+              : 'text-dark-secondary text-2xl font-light'
           }
         >
           Contact Me!

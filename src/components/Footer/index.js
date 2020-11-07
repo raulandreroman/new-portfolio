@@ -50,7 +50,7 @@ export default function Footer(props) {
           );
         })}
       </div>
-      <div className="flex flex-col text-xs font-light self-start ml-8 mb-5 ">
+      <div className="flex flex-col text-xs font-light mb-5 self-center items-center ">
         <p className="text-whiteish">
           Made with React.js, TailwindCSS and a lot of ❤
         </p>

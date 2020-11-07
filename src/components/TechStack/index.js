@@ -14,8 +14,8 @@ export default function TechStack(props) {
   const { content } = props;
 
   return (
-    <div>
-      <h4 className={'text-white my-3 text-xl'}>Tech Stack</h4>
+    <>
+      <h4 className={'text-white my-3 text-xl font-light'}>Tech Stack</h4>
       <div className={'text-3xl'}>
         <div className={'flex'}>
           {content.markupAndComponents.map((tech, key) => {
@@ -58,6 +58,6 @@ export default function TechStack(props) {
           })}
         </div>
       </div>
-    </div>
+    </>
   );
 }

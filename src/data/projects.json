@@ -17,7 +17,10 @@
                 "Git"
             ]
         },
-        "previewUrl": "../assets/new-portfolio.png"
+        "previewUrl": {
+            "mobile": "../assets/new-portfolio.png",
+            "desktop": "../assets/new-portfolio-lg.png"
+        }
     },
     {
         "title": "GifOS",
@@ -38,6 +41,9 @@
                 "MobileFirst"
             ]
         },
-        "previewUrl": "../assets/gifos.png"
+        "previewUrl": {
+            "mobile": "../assets/gifos.png",
+            "desktop": "../assets/gifos-lg.png"
+        }
     }
 ]
