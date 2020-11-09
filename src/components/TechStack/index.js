@@ -13,48 +13,78 @@ import { CgSmartphone } from 'react-icons/cg';
 export default function TechStack(props) {
   const { content } = props;
 
+  const icons = {
+    markupAndComponents: [
+      {
+        name: 'Html5',
+        icon: SiHtml5,
+      },
+      {
+        name: 'Javascript',
+        icon: SiJavascript,
+      },
+      {
+        name: 'React',
+        icon: SiReact,
+      },
+    ],
+    styling: [
+      {
+        name: 'Css3',
+        icon: SiCss3,
+      },
+      {
+        name: 'Sass',
+        icon: SiSass,
+      },
+      {
+        name: 'Tailwindcss',
+        icon: SiTailwindcss,
+      },
+    ],
+    utils: [
+      {
+        name: 'Git',
+        icon: SiGit,
+      },
+      {
+        name: 'MobileFirst',
+        icon: CgSmartphone,
+      },
+    ],
+  };
+
+  function renderIcons(origin, icons) {
+    let test3 = [];
+    origin.forEach((tech) => {
+      let foundIcon = icons.find((icon) => tech === icon.name);
+      test3.push(foundIcon);
+    });
+    return test3;
+  }
   return (
     <>
-      <h4 className={'text-white my-3 text-xl font-light'}>Tech Stack</h4>
+      <h4 className={'text-white my-3 text-xl font-medium'}>Tech Stack</h4>
       <div className={'text-3xl'}>
         <div className={'flex'}>
-          {content.markupAndComponents.map((tech, key) => {
-            switch (tech) {
-              case 'Html5':
-                return <SiHtml5 className={`m-1 text-white`} key={key} />;
-              case 'Javascript':
-                return <SiJavascript className={`m-1 text-white`} key={key} />;
-              case 'React':
-                return <SiReact className={`m-1 text-white`} key={key} />;
-              default:
-                return <></>;
-            }
+          {renderIcons(
+            content.markupAndComponents,
+            icons.markupAndComponents
+          ).map((icon, key) => {
+            return <icon.icon className="m-1 text-white" key={key} />;
           })}
         </div>
         <div className={'flex'}>
-          {content.styling.map((tech, key) => {
-            switch (tech) {
-              case 'Css3':
-                return <SiCss3 className={`m-1 text-white`} key={key} />;
-              case 'Sass':
-                return <SiSass className={'m-1 text-white'} key={key} />;
-              case 'Tailwindcss':
-                return <SiTailwindcss className={`m-1 text-white`} key={key} />;
-              default:
-                return <></>;
-            }
+          {renderIcons(content.styling, icons.styling).map((icon, key) => {
+            return <icon.icon className="m-1 text-white" key={key} />;
           })}
         </div>
         <div className={'flex'}>
-          {content.utils.map((tech, key) => {
-            switch (tech) {
-              case 'Git':
-                return <SiGit className={`m-1 text-white`} key={key} />;
-              case 'MobileFirst':
-                return <CgSmartphone className={'m-1 text-white'} key={key} />;
-              default:
-                return <></>;
-            }
+          {renderIcons(
+            content.utils,
+            icons.utils
+          ).map((icon, key) => {
+            return <icon.icon className="m-1 text-white" key={key} />;
           })}
         </div>
       </div>
