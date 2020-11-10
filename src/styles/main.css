@@ -580,6 +580,10 @@ h4{
   font-weight: 400;
 }
 
+.font-medium{
+  font-weight: 500;
+}
+
 .h-0{
   height: 0;
 }
@@ -610,6 +614,10 @@ h4{
 
 .text-xs{
   font-size: 0.75rem;
+}
+
+.text-lg{
+  font-size: 1.125rem;
 }
 
 .text-xl{
@@ -731,12 +739,12 @@ h4{
   margin-top: 2rem;
 }
 
-.ml-8{
-  margin-left: 2rem;
-}
-
 .mb-20{
   margin-bottom: 5rem;
+}
+
+.max-w-sm{
+  max-width: 24rem;
 }
 
 .max-w-1xl{
@@ -791,6 +799,10 @@ h4{
 
 .bottom-10{
   bottom: 2.75rem;
+}
+
+.right-32{
+  right: 8rem;
 }
 
 .text-white{
@@ -934,16 +946,8 @@ h4{
     flex-direction: row;
   }
 
-  .lg\:items-center{
-    align-items: center;
-  }
-
   .lg\:self-start{
     align-self: flex-start;
-  }
-
-  .lg\:self-center{
-    align-self: center;
   }
 
   .lg\:justify-end{
@@ -986,10 +990,6 @@ h4{
     font-size: 5rem;
   }
 
-  .lg\:m-0{
-    margin: 0;
-  }
-
   .lg\:mx-1{
     margin-left: 0.25rem;
     margin-right: 0.25rem;
@@ -1006,10 +1006,6 @@ h4{
 
   .lg\:mb-0{
     margin-bottom: 0;
-  }
-
-  .lg\:ml-0{
-    margin-left: 0;
   }
 
   .lg\:ml-2{
@@ -1044,6 +1040,10 @@ h4{
     margin-bottom: 8rem;
   }
 
+  .lg\:max-w-none{
+    max-width: none;
+  }
+
   .lg\:max-w-1xl{
     max-width: 40rem;
   }
@@ -1064,6 +1064,10 @@ h4{
 
   .lg\:right-13{
     right: 3.5rem;
+  }
+
+  .lg\:right-48{
+    right: 12rem;
   }
 
   .lg\:w-24{
