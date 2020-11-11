@@ -413,11 +413,13 @@ module.exports = {
     }),
     minHeight: {
       0: '0',
+      12: '12.5rem',
       full: '100%',
       screen: '100vh',
     },
     minWidth: {
       0: '0',
+      8: '8rem',
       full: '100%',
     },
     objectPosition: {

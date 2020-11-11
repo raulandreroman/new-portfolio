@@ -751,6 +751,14 @@ h4{
   max-width: 40rem;
 }
 
+.min-h-12{
+  min-height: 12.5rem;
+}
+
+.min-w-8{
+  min-width: 8rem;
+}
+
 .p-3{
   padding: 0.75rem;
 }
