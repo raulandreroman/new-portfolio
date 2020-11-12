@@ -11,7 +11,7 @@ console.log(previewUrl)
         src={previewUrl.mobile}
       />
       <img
-        className="self-start m-0 h-56 hidden lg:block"
+        className="self-start m-0 hidden lg:block"
         alt="Screenshot of current project"
         src={`${previewUrl.desktop}`}
       />
