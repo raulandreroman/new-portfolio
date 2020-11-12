@@ -1,5 +1,5 @@
 import React from 'react';
-import { ThemeContext } from '../../utilities/ThemeContext';
+import { ThemeContext } from '../../containers/ThemeContext';
 
 export default function Contact(props) {
   const { theme } = React.useContext(ThemeContext);

@@ -1,6 +1,6 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import { ThemeContext } from '../../utilities/ThemeContext';
+import { ThemeContext } from '../../containers/ThemeContext';
 
 import CallToAction from '../../components/CallToAction';
 import About from '../../components/About';

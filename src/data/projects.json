@@ -14,7 +14,8 @@
                 "Tailwindcss"
             ],
             "utils": [
-                "Git"
+                "Git",
+                "MobileFirst"
             ]
         },
         "previewUrl": {

@@ -1,7 +1,7 @@
 import React from 'react';
 import Paragraph from '../Paragraph';
 import paragraphs from '../../data/aboutContent.json'
-import { ThemeContext } from '../../utilities/ThemeContext';
+import { ThemeContext } from '../../containers/ThemeContext';
 
 export default function About(props) {
  
