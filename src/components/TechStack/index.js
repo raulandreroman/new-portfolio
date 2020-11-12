@@ -79,7 +79,7 @@ export default function TechStack(props) {
     setTechToDisplay(tech);
   }
   return (
-    <div className="flex flex-col w-32 min-w-8 min-h-12" onClick={()=> isShown? setIsShown(false) : null}>
+    <div className="flex flex-col w-32 min-w-8 min-h-12">
       <h4 className={'text-white my-3 text-xl font-medium'}>Tech Stack</h4>
       <div className={'text-3xl'}>
         <div className={'flex'}>
