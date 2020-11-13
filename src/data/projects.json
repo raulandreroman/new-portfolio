@@ -1,7 +1,6 @@
 [
     {
         "title": "Personal website",
-        "summary": "The website you're currently seeing! Hope you like it, it's my first React.js AND TailwindCSS proper project ",
         "firstLink": "https://github.com/randrerd/new-portfolio",
         "secondLink": "https://rul.codes",
         "techStack": {
@@ -14,7 +13,8 @@
                 "Tailwindcss"
             ],
             "utils": [
-                "Git"
+                "Git",
+                "MobileFirst"
             ]
         },
         "previewUrl": {
@@ -24,7 +24,6 @@
     },
     {
         "title": "GifOS",
-        "summary": "Web app that allows the user to make their own GIFs, search for their favourite ones and get recommendations. The app uses the Giphy API",
         "firstLink": "https://github.com/randrerd/gifos",
         "secondLink": "https://gifos.vercel.app",
         "techStack": {

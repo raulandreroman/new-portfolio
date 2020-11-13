@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Preview(props) {
   const { previewUrl } = props;
-console.log(previewUrl)
+
   return (
     <div className="flex flex-col mt-4 mb-2">
       <img
@@ -11,7 +11,7 @@ console.log(previewUrl)
         src={previewUrl.mobile}
       />
       <img
-        className="self-start m-0 h-56 hidden lg:block"
+        className="self-start m-0 hidden lg:block"
         alt="Screenshot of current project"
         src={`${previewUrl.desktop}`}
       />
