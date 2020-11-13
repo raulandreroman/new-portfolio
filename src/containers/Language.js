@@ -20,7 +20,7 @@ export function LanguageProvider({ children }) {
         ? 'es'
         : 'en';
       setUserLanguage(newLanguage);
-      window.localStorage.setItem('rcml-lang', newLanguage);
+      window.localStorage.setItem('pref-lang', newLanguage);
     },
   };
 
@@ -31,8 +31,15 @@ export function LanguageProvider({ children }) {
   );
 }
 
-export function Text({ tid }) {
+export function Text({ tid, section }) {
   const languageContext = useContext(LanguageContext);
+  const sectionContent = languageContext.dictionary[section]
 
-  return languageContext.dictionary[tid] || tid;
+  //Checks if needs to return an array to map it over or just a string
+  if(!Array.isArray(sectionContent)){
+    return !tid ? sectionContent : sectionContent[tid] || tid
+
+  } else {
+    return sectionContent
+  }
 }

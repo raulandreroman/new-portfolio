@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Preview(props) {
   const { previewUrl } = props;
-console.log(previewUrl)
+
   return (
     <div className="flex flex-col mt-4 mb-2">
       <img

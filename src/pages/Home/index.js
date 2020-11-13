@@ -25,8 +25,8 @@ export default function Home() {
         bodyAttributes={{
           class:
             theme === 'light'
-              ? 'bg-light-bg duration-300'
-              : `bg-dark-bg duration-300`,
+              ? 'bg-light-bg duration-700'
+              : `bg-dark-bg duration-700`,
         }}
       />
       <CallToAction />

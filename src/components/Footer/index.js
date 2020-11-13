@@ -6,6 +6,8 @@ import {
   SiTwitter,
   SiInstagram,
 } from 'react-icons/si';
+import { Text } from '../../containers/Language';
+
 
 export default function Footer(props) {
   const { handleClick } = props;
@@ -52,7 +54,7 @@ export default function Footer(props) {
       </div>
       <div className="flex flex-col text-xs font-light mb-5 self-center items-center ">
         <p className="text-whiteish">
-          Made with React.js, TailwindCSS and a lot of ❤
+         <Text section='footerSection' tid='content' />
         </p>
         <p className="text-whiteish">@randrerd</p>
       </div>

@@ -9,6 +9,7 @@ import {
   SiSass,
 } from 'react-icons/si';
 import { CgSmartphone } from 'react-icons/cg';
+import { Text } from '../../containers/Language';
 
 export default function TechStack(props) {
   const [isShown, setIsShown] = useState(false);
@@ -80,7 +81,7 @@ export default function TechStack(props) {
   }
   return (
     <div className="flex flex-col w-32 min-w-8 min-h-12">
-      <h4 className={'text-white my-3 text-xl font-medium'}>Tech Stack</h4>
+      <h4 className={'text-white my-3 text-xl font-medium'}><Text section='projectsSection' tid='techStackHeader' /></h4>
       <div className={'text-3xl'}>
         <div className={'flex'}>
           {renderIcons(

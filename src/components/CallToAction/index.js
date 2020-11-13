@@ -3,7 +3,7 @@ import NavBarTools from '../NavBarTools';
 import { ThemeContext } from '../../containers/ThemeContext';
 import { Text } from '../../containers/Language';
 
-export default function CallToAction(props) {
+export default function CallToAction() {
   const { theme } = useContext(ThemeContext);
 
   return (
@@ -19,7 +19,7 @@ export default function CallToAction(props) {
               : `text-dark-secondary lg:text-7xl`
           }
         >
-          <Text tid='CTAHeader' />
+          <Text section='CTASection' tid='header' />
         </h1>
         <div>
           <h2
@@ -29,7 +29,7 @@ export default function CallToAction(props) {
                 : ` text-dark-primary my-2 lg:text-5xl`
             }
           >
-            <Text tid="CTADescription" />
+            <Text section='CTASection' tid="content" />
           </h2>
           <div
             className={

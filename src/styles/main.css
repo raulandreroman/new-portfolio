@@ -484,6 +484,12 @@ h4{
   background-color: rgba(255, 255, 255, var(--bg-opacity));
 }
 
+.bg-light-primary{
+  --bg-opacity: 1;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, var(--bg-opacity));
+}
+
 .bg-light-secondary{
   --bg-opacity: 1;
   background-color: #000;
@@ -494,6 +500,12 @@ h4{
   --bg-opacity: 1;
   background-color: #000;
   background-color: rgba(0, 0, 0, var(--bg-opacity));
+}
+
+.bg-dark-primary{
+  --bg-opacity: 1;
+  background-color: #b2aeae;
+  background-color: rgba(178, 174, 174, var(--bg-opacity));
 }
 
 .bg-dark-secondary{
@@ -512,6 +524,10 @@ h4{
   --border-opacity: 1;
   border-color: #fff;
   border-color: rgba(255, 255, 255, var(--border-opacity));
+}
+
+.rounded-sm{
+  border-radius: 0.125rem;
 }
 
 .border-solid{
@@ -749,6 +765,10 @@ h4{
   margin-bottom: 5rem;
 }
 
+.mr-auto{
+  margin-right: auto;
+}
+
 .max-w-sm{
   max-width: 24rem;
 }
@@ -763,6 +783,10 @@ h4{
 
 .min-w-8{
   min-width: 8rem;
+}
+
+.p-1{
+  padding: 0.25rem;
 }
 
 .p-3{
@@ -787,8 +811,16 @@ h4{
   padding-bottom: 6rem;
 }
 
+.absolute{
+  position: absolute;
+}
+
 .relative{
   position: relative;
+}
+
+.right-0{
+  right: 0;
 }
 
 .bottom-1{
@@ -815,10 +847,6 @@ h4{
   bottom: 2.75rem;
 }
 
-.right-32{
-  right: 8rem;
-}
-
 .text-white{
   --text-opacity: 1;
   color: #fff;
@@ -831,6 +859,12 @@ h4{
   color: rgba(178, 174, 174, var(--text-opacity));
 }
 
+.text-light-bg{
+  --text-opacity: 1;
+  color: #fff;
+  color: rgba(255, 255, 255, var(--text-opacity));
+}
+
 .text-light-primary{
   --text-opacity: 1;
   color: #000;
@@ -838,6 +872,12 @@ h4{
 }
 
 .text-light-secondary{
+  --text-opacity: 1;
+  color: #000;
+  color: rgba(0, 0, 0, var(--text-opacity));
+}
+
+.text-dark-bg{
   --text-opacity: 1;
   color: #000;
   color: rgba(0, 0, 0, var(--text-opacity));
@@ -911,8 +951,8 @@ h4{
   z-index: 20;
 }
 
-.duration-300{
-  transition-duration: 300ms;
+.duration-700{
+  transition-duration: 700ms;
 }
 
 @keyframes spin{
@@ -1074,10 +1114,6 @@ h4{
 
   .lg\:right-13{
     right: 3.5rem;
-  }
-
-  .lg\:right-48{
-    right: 12rem;
   }
 
   .lg\:w-24{

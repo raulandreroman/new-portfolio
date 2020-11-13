@@ -2,6 +2,8 @@ import React from 'react';
 import TechStack from '../TechStack';
 import Preview from '../Preview';
 
+import { Text } from '../../containers/Language';
+
 export default function Project(props) {
   const {
     title,
@@ -27,13 +29,13 @@ export default function Project(props) {
             onClick={() => handleClick(firstLink)}
             className={'w-auto flex-grow h-8 bg-white mx-2 lg:w-24 lg:h-8 lg:flex-grow-0 max'}
           >
-            <span>Code</span>
+            <span><Text section='projectsSection' tid='btn1' /></span>
           </button>
           <button
             onClick={() => handleClick(secondLink)}
             className={'w-auto flex-grow h-8 bg-white mx-2 lg:w-24 lg:h-8 lg:flex-grow-0'}
           >
-            <span>Live</span>
+             <span><Text section='projectsSection' tid='btn2' /></span>
           </button>
      
         </div>

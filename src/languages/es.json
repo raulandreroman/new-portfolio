@@ -1,23 +1,65 @@
 {
-    "CTAHeader": "Desarrollador Front End",
-    "CTADescription": "Hola, soy Raúl. Me gusta crear páginas web con tla tla fek s",
-    "aboutHeader": "Journey",
-    "aboutContent1": "I started studying web development in 2019 on my own with the help of The Odin Project",
-    "aboutContent2": "Learning how to work with Git through GitHub, then HTML and CSS, then in early 2020...",
-    "aboutTitle1": "A formal education",
-    "aboutContent3": "I enrolled in Acámica’s Full Stack Web Development program in Buenos Aires, Argentina",
-    "aboutContent4": "Where I improved my HTML and CSS skills and learned JavaScript, Node.js, Express.js, and working with databases such as MySQL and MongoDB",
-    "aboutTitle2": "Afermath",
-    "aboutContent5": "After I completed the Acámica program in September 2020, I added features and made improvements to some of the projects I’d started and started learning React.js on my own",
-    "aboutContent6": "Currently I find myself looking for my first experience in the industry to work alongside a team and therefore be able to learn even more from them",
-    "projectsHeader": "Projects",
-    "projectsBtn1": "Code",
-    "projectsBtn2": "Live",
-
-    "projectTitle1": "Personal website",
-    "projectContent1": "The website you're currently seeing! Hope you like it, it's my first React.js AND TailwindCSS proper project",
-    "techStackHeader": "Tech Stack",
-    "contactContent": "Want to get in touch?",
-    "contactBtn": "Contact Me!",
-    "footerContent": "Made with React.js, TawilwindCSS and a lot of ❤"
+    "CTASection": {
+        "header": "Desarrollador Front End",
+        "content": "Hola, soy Raúl. Me gusta crear páginas web con tla tla fek s"
+    },
+    "aboutSection": {
+        "header": "Trayecto",
+        "content": [
+            {
+                "paragraph": "Empecé a estudiar desarrollo web en 2019 de manera autodidacta con la ayuda de The Odin Project"
+            },
+            {
+                "paragraph": "Learning how to work with Git through GitHub, then HTML and CSS, then in early 2020..."
+            },
+            {
+                "paragraph": {
+                    "subtitle": "A formal education",
+                    "text": "I enrolled in Acámica’s Full Stack Web Development program in Buenos Aires, Argentina"
+                }
+            },
+            {
+                "paragraph": {
+                    "text": "Where I improved my HTML and CSS skills and learned JavaScript, Node.js, Express.js, and working with databases such as MySQL and MongoDB",
+                    "style": "doubleSquare"
+                }
+            },
+            {
+                "paragraph": {
+                    "subtitle": "Aftermath",
+                    "text": "After I completed the Acámica program in September 2020, I added features and made improvements to some of the projects I’d started and started learning React.js on my own",
+                    "style": "thinRectangle"
+                }
+            },
+            {
+                "paragraph": {
+                    "text": "Currently I find myself looking for my first experience in the industry to work alongside a team and therefore be able to learn even more from them",
+                    "style": "singleSquare"
+                }
+            }
+        ]
+    },
+    "projectsSection": {
+        "header": "Proyectos",
+        "btn1": "Código",
+        "btn2": "En vivo",
+        "projects": [
+            {
+                "name": "Sitio web personal",
+                "summary": "The website you're currently seeing! Hope you like it, it's my first React.js AND TailwindCSS proper project"
+            },
+            {
+                "name": "GifOS",
+                "summary": "Web app that allows the user to make their own GIFs, search for their favourite ones and get recommendations. The app uses the Giphy APIF"
+            }
+        ],
+        "techStackHeader": "Tech Stack"
+    },
+    "contactSection": {
+        "content": "¿Quieres comunicarte?",
+        "btn": "¡Contáctame!"
+    },
+    "footerSection": {
+        "content": "Hecho con React.js, TawilwindCSS y bastante ❤"
+    }
 }
