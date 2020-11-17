@@ -3,8 +3,6 @@ import React, { useContext, useEffect } from 'react';
 import { LanguageContext } from '../../containers/Language';
 import { ThemeContext } from '../../containers/ThemeContext';
 
-import { CgGlobeAlt } from 'react-icons/cg';
-
 export default function LanguageSelector() {
   const { userLanguageChange, userLanguage } = useContext(LanguageContext);
   const { theme } = useContext(ThemeContext);
