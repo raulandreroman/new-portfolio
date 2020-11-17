@@ -28,9 +28,9 @@ export default function NavBarTools() {
           <CgMoon className={`my-1 lg:mx-1 text-${theme}-secondary`} />
         )}
       </button>
-      <button >
+      
         <LanguageSelector />
-      </button>
+    
     </div>
   );
 }

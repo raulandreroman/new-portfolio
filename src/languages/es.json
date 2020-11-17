@@ -60,6 +60,6 @@
         "btn": "¡Contáctame!"
     },
     "footerSection": {
-        "content": "Hecho con React.js, TawilwindCSS y bastante ❤"
+        "content": "Hecho con React.js, TailwindCSS y bastante ❤"
     }
 }
