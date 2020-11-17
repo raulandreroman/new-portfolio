@@ -7,7 +7,7 @@ import About from '../../components/About';
 import ProjectsSection from '../../components/ProjectsSection';
 import Contact from '../../components/Contact';
 import Triangle from '../../components/Triangle';
-import Footer from '../../components/Footer'
+import Footer from '../../components/Footer';
 
 export default function Home() {
   const { theme } = React.useContext(ThemeContext);

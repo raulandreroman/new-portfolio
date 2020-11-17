@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
-import NavBarTools from '../NavBarTools';
-import { ThemeContext } from '../../containers/ThemeContext';
-import { Text } from '../../containers/Language';
+import NavBarTools from './NavBarTools';
+import { ThemeContext } from '../containers/ThemeContext';
+import { Text } from '../containers/Language';
 
 export default function CallToAction() {
   const { theme } = useContext(ThemeContext);
@@ -19,7 +19,7 @@ export default function CallToAction() {
               : `text-dark-secondary lg:text-7xl`
           }
         >
-          <Text section='CTASection' tid='header' />
+          <Text section="CTASection" tid="header" />
         </h1>
         <div>
           <h2
@@ -29,7 +29,7 @@ export default function CallToAction() {
                 : ` text-dark-primary my-2 lg:text-5xl`
             }
           >
-            <Text section='CTASection' tid="content" />
+            <Text section="CTASection" tid="content" />
           </h2>
           <div
             className={
