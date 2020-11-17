@@ -3,8 +3,6 @@ import React, { useContext, useEffect } from 'react';
 import { LanguageContext } from '../../containers/Language';
 import { ThemeContext } from '../../containers/ThemeContext';
 
-import { CgGlobeAlt } from 'react-icons/cg';
-
 export default function LanguageSelector() {
   const { userLanguageChange, userLanguage } = useContext(LanguageContext);
   const { theme } = useContext(ThemeContext);
@@ -23,32 +21,33 @@ export default function LanguageSelector() {
   }, [userLanguageChange]);
 
   return (
-    <span className='flex relative' onClick={() => handleLanguageChange()}>
-      <CgGlobeAlt
-        
-        className={`my-1 lg:mx-1 text-${theme}-secondary `}
-      />
-      {userLanguage === 'es' ? (
-        <p
-          className={
-            theme === 'light'
-              ? `text-xs bg-light-primary absolute p-1 right-0 text-light-bg self-end rounded-sm`
-              : `text-xs bg-white absolute p-1 right-0 text-dark-bg self-end rounded-sm`
-          }
-        >
-          ES
-        </p>
-      ) : (
-        <p
-           className={
-            theme === 'light'
-              ? `text-xs bg-light-primary absolute p-1 right-0 text-light-bg self-end rounded-sm `
-              : `text-xs bg-white absolute p-1 right-0 text-dark-bg self-end rounded-sm `
-          }
-        >
-          EN
-        </p>
-      )}
-    </span>
+    <>
+      <button>
+        <span className="flex relative" onClick={() => handleLanguageChange()}>
+          {' '}
+          {userLanguage === 'es' ? (
+            <p
+              className={
+                theme === 'light'
+                  ? `text-2xl mb-3 lg:text-4xl lg:mb-0 lg:min-w-4 font-semibold lg:p-1  text-dark-bg  `
+                  : `text-2xl  mb-3 lg:text-4xl lg:mb-0  lg:min-w-4 font-semibold  lg:p-1 text-light-bg `
+              }
+            >
+              ES
+            </p>
+          ) : (
+            <p
+              className={
+                theme === 'light'
+                  ? `text-2xl mb-3 lg:text-4xl lg:mb-0  lg:min-w-4 font-semibold lg:p-1  text-dark-bg  `
+                  : `text-2xl mb-3 lg:text-4xl lg:mb-0  lg:min-w-4 font-semibold  lg:p-1 text-light-bg `
+              }
+            >
+              EN
+            </p>
+          )}
+        </span>
+      </button>
+    </>
   );
 }

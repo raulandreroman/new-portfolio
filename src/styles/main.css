@@ -484,12 +484,6 @@ h4{
   background-color: rgba(255, 255, 255, var(--bg-opacity));
 }
 
-.bg-light-primary{
-  --bg-opacity: 1;
-  background-color: #000;
-  background-color: rgba(0, 0, 0, var(--bg-opacity));
-}
-
 .bg-light-secondary{
   --bg-opacity: 1;
   background-color: #000;
@@ -500,12 +494,6 @@ h4{
   --bg-opacity: 1;
   background-color: #000;
   background-color: rgba(0, 0, 0, var(--bg-opacity));
-}
-
-.bg-dark-primary{
-  --bg-opacity: 1;
-  background-color: #b2aeae;
-  background-color: rgba(178, 174, 174, var(--bg-opacity));
 }
 
 .bg-dark-secondary{
@@ -524,10 +512,6 @@ h4{
   --border-opacity: 1;
   border-color: #fff;
   border-color: rgba(255, 255, 255, var(--border-opacity));
-}
-
-.rounded-sm{
-  border-radius: 0.125rem;
 }
 
 .border-solid{
@@ -604,6 +588,10 @@ h4{
 
 .font-medium{
   font-weight: 500;
+}
+
+.font-semibold{
+  font-weight: 600;
 }
 
 .h-0{
@@ -785,10 +773,6 @@ h4{
   min-width: 8rem;
 }
 
-.p-1{
-  padding: 0.25rem;
-}
-
 .p-3{
   padding: 0.75rem;
 }
@@ -817,10 +801,6 @@ h4{
 
 .relative{
   position: relative;
-}
-
-.right-0{
-  right: 0;
 }
 
 .bottom-1{
@@ -1036,6 +1016,10 @@ h4{
     font-size: 1.5rem;
   }
 
+  .lg\:text-4xl{
+    font-size: 2.25rem;
+  }
+
   .lg\:text-5xl{
     font-size: 3rem;
   }
@@ -1100,6 +1084,14 @@ h4{
 
   .lg\:min-h-screen{
     min-height: 100vh;
+  }
+
+  .lg\:min-w-4{
+    min-width: 3.85rem;
+  }
+
+  .lg\:p-1{
+    padding: 0.25rem;
   }
 
   .lg\:py-16{
