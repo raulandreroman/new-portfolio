@@ -25,7 +25,7 @@ export default function LanguageSelector() {
       <button>
         <span className="flex relative" onClick={() => handleLanguageChange()}>
           {' '}
-          {userLanguage === 'es' ? (
+          {userLanguage !== 'es' ? (
             <p
               className={
                 theme === 'light'

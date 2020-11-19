@@ -415,16 +415,17 @@ img {
   height: auto;
 }
 
-html{
+html {
   font-family: Montserrat, Roboto, Arial, sans-serif;
 }
 
 
-  h1{
+  h1 {
   font-weight: 600;
 }
 
 html {
+  scroll-behavior: smooth;
   font-family: Montserrat, Roboto, Arial, sans-serif;
   box-sizing: border-box;
 }
@@ -435,32 +436,32 @@ html {
   box-sizing: border-box;
 }
 
-h1{
+h1 {
   font-weight: 600;
   letter-spacing: -0.025em;
   line-height: 1.25;
   font-size: 3rem;
 }
 
-h2{
+h2 {
   font-weight: 300;
   line-height: 1.25;
   font-size: 1.25rem;
 }
 
-h3{
+h3 {
   font-size: 1.875rem;
 }
 
-h4{
+h4 {
   font-size: 1.5rem;
 }
 
-.blend-difference{
-  mix-blend-mode: difference
+.blend-difference {
+  mix-blend-mode: difference;
 }
 
-.triangle{
+.triangle {
   border-left: 50px solid transparent;
   border-right: 50px solid transparent;
   border-top: 90px solid white;
@@ -520,6 +521,10 @@ h4{
 
 .border{
   border-width: 1px;
+}
+
+.block{
+  display: block;
 }
 
 .flex{
@@ -608,14 +613,6 @@ h4{
 
 .h-8{
   height: 2rem;
-}
-
-.h-10{
-  height: 2.5rem;
-}
-
-.h-12{
-  height: 3rem;
 }
 
 .h-56{
@@ -741,10 +738,6 @@ h4{
   margin-bottom: 1.25rem;
 }
 
-.ml-6{
-  margin-left: 1.5rem;
-}
-
 .mt-8{
   margin-top: 2rem;
 }
@@ -771,6 +764,10 @@ h4{
 
 .min-w-8{
   min-width: 8rem;
+}
+
+.overflow-hidden{
+  overflow: hidden;
 }
 
 .p-3{
@@ -803,20 +800,12 @@ h4{
   position: relative;
 }
 
-.bottom-1{
-  bottom: 0.25rem;
-}
-
 .top-2{
   top: 0.5rem;
 }
 
 .top-4{
   top: 1rem;
-}
-
-.bottom-5{
-  bottom: 1.25rem;
 }
 
 .right-8{
@@ -879,28 +868,12 @@ h4{
   width: 0;
 }
 
-.w-8{
-  width: 2rem;
-}
-
-.w-10{
-  width: 2.5rem;
-}
-
 .w-16{
   width: 4rem;
 }
 
-.w-24{
-  width: 6rem;
-}
-
 .w-32{
   width: 8rem;
-}
-
-.w-40{
-  width: 10rem;
 }
 
 .w-48{
@@ -921,6 +894,10 @@ h4{
 
 .w-full{
   width: 100%;
+}
+
+.w-min{
+  width: min-content;
 }
 
 .z-10{
@@ -1036,6 +1013,11 @@ h4{
   .lg\:mx-48{
     margin-left: 13rem;
     margin-right: 13rem;
+  }
+
+  .lg\:mx-56{
+    margin-left: 14rem;
+    margin-right: 14rem;
   }
 
   .lg\:mt-0{

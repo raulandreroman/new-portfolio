@@ -1,43 +1,38 @@
 import React from 'react';
+import { motion, useViewportScroll, useTransform } from 'framer-motion';
+import { isBrowser } from 'react-device-detect';
 
 export default function Paragraph(props) {
   const { content, theme } = props;
+  const { scrollYProgress } = useViewportScroll();
 
-  const { text, subtitle, style } = content;
+  const y = useTransform(scrollYProgress, [0, 0.2, 0.35], [0, -30, -50]);
+  const yDesktop = useTransform(scrollYProgress, [0, 0.2, 0.35], [0, 0, -200]);
 
-  return !text ? (
-    <p className={`text-${theme}-primary lg:text-lg mb-2`}>{content}</p>
-  ) : style === 'doubleSquare' ? (
-    <>
-      <p className={`text-${theme}-primary lg:text-lg mb-2 lg:mb-0`}>{text}</p>
-      <div className="self-end h-12">
-        <div className={`relative ml-6 w-10 h-10 bg-${theme}-secondary`} />
-        <div
-          className={`relative w-10 h-10 bottom-5 blend-difference bg-white`}
-        />
-      </div>
-    </>
-  ) : style === 'thinRectangle' ? (
-    <div className="flex flex-col">
-      <h4 className={`text-${theme}-secondary lg:text-2xl`}>{subtitle}</h4>
-      <p className={`text-${theme}-primary mt-3 lg:text-lg  mb-2 lg:mb-0`}>
-        {text}
-      </p>
-      <div
-        className={`relative w-24 h-2 bg-${theme}-secondary w-40 mb-2 self-start lg:h-3`}
-      />
-    </div>
-  ) : style === 'singleSquare' ? (
-    <>
-      <p className={`text-${theme}-primary mb-2 lg:text-lg `}>{text}</p>
-      <div
-        className={`relative w-8 h-8 bottom-1 bg-${theme}-secondary self-end`}
-      />
-    </>
+  const { text, subtitle } = content;
+
+  //Checks if content has a subtitle and renders accordingly
+  return !subtitle ? (
+    <motion.p
+      style={isBrowser ? { y: yDesktop } : { y }}
+      className={`text-${theme}-primary lg:text-lg my-2`}
+    >
+      {text}
+    </motion.p>
   ) : (
-    <div className="mt-8">
-      <h4 className={`text-${theme}-secondary lg:text-2xl`}>{subtitle}</h4>
-      <p className={`text-${theme}-primary mt-3 lg:text-lg mb-2`}>{text}</p>
+    <div>
+      <motion.h4
+        style={isBrowser ? { y: yDesktop } : { y }}
+        className={`text-${theme}-secondary lg:text-2xl mt-8`}
+      >
+        {subtitle}
+      </motion.h4>
+      <motion.p
+        style={isBrowser ? { y: yDesktop } : { y }}
+        className={`text-${theme}-primary my-2 lg:text-lg`}
+      >
+        {text}
+      </motion.p>
     </div>
   );
 }

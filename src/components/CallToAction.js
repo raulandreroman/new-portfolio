@@ -2,6 +2,10 @@ import React, { useContext } from 'react';
 import NavBarTools from './NavBarTools';
 import { ThemeContext } from '../containers/ThemeContext';
 import { Text } from '../containers/Language';
+import { motion } from 'framer-motion';
+
+//Import animations
+import { textAnimations, containerVariants } from '../animation';
 
 export default function CallToAction() {
   const { theme } = useContext(ThemeContext);
@@ -11,26 +15,37 @@ export default function CallToAction() {
       className={`mx-8 lg:mx-48 mx lg:mt-8 my-4 lg:mb-0 lg:min-h-screen min-h-12   `}
     >
       <NavBarTools />
-      <div className="flex flex-col w-10/12 lg:w-7/12 lg:mt-5 ">
-        <h1
-          className={
-            theme === 'light'
-              ? `text-light-secondary lg:text-7xl`
-              : `text-dark-secondary lg:text-7xl`
-          }
-        >
-          <Text section="CTASection" tid="header" />
-        </h1>
-        <div>
-          <h2
+      <motion.div
+        variants={containerVariants.heading}
+        animate="show"
+        initial="hidden"
+        className="flex flex-col w-10/12 lg:w-7/12 lg:mt-5 "
+      >
+        <div className="overflow-hidden mb-3 lg:text-7xl w-min">
+          <motion.h1
+            variants={textAnimations.heading}
             className={
               theme === 'light'
-                ? `text-light-primary my-2 lg:text-5xl`
-                : ` text-dark-primary my-2 lg:text-5xl`
+                ? ` text-light-secondary lg:text-7xl block`
+                : `  text-dark-secondary lg:text-7xl block  `
             }
           >
-            <Text section="CTASection" tid="content" />
-          </h2>
+            <Text section="CTASection" tid="header" />
+          </motion.h1>
+        </div>
+        <div>
+          <div className="overflow-hidden my-2 lg:text-5xl">
+            <motion.h2
+              variants={textAnimations.heading}
+              className={
+                theme === 'light'
+                  ? `text-light-primary my-2 lg:text-5xl block `
+                  : ` text-dark-primary my-2 lg:text-5xl block`
+              }
+            >
+              <Text section="CTASection" tid="content" />
+            </motion.h2>
+          </div>
           <div
             className={
               theme === 'light'
@@ -39,7 +54,7 @@ export default function CallToAction() {
             }
           ></div>
         </div>
-      </div>
+      </motion.div>
     </header>
   );
 }

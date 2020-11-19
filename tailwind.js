@@ -510,6 +510,7 @@ module.exports = {
       '10/12': '83.333333%',
       '11/12': '91.666667%',
       full: '100%',
+      min: 'min-content',
       screen: '100vw',
     }),
     zIndex: {

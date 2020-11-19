@@ -4,6 +4,7 @@
 
 @tailwind base;
 html {
+  scroll-behavior: smooth;
   @apply font-body box-border;
 }
 *,
@@ -11,22 +12,36 @@ html {
 *:after {
   @apply box-border;
 }
-h1{
+h1 {
   @apply font-semibold tracking-tight leading-tight text-5xl;
-}  
-h2{
+}
+h2 {
   @apply font-light leading-tight text-xl;
 }
-h3{
+h3 {
   @apply text-3xl;
 }
-h4{
+h4 {
   @apply text-2xl;
 }
-.blend-difference{
-  mix-blend-mode: difference
+.blend-difference {
+  mix-blend-mode: difference;
 }
-.triangle{
+.bg-test {
+  background: linear-gradient(#fff, 51%, #000 50% 100%);
+}
+.blend-cter {
+  transform: translate3d(0, 0, 1px);
+  will-change: opacity;
+}
+.opacity-change {
+  will-change: opacity;
+}
+
+.transform-null {
+  transform: translate3d(100%, 0, 0);
+}
+.triangle {
   border-left: 50px solid transparent;
   border-right: 50px solid transparent;
   border-top: 90px solid white;
@@ -36,10 +51,11 @@ h4{
 @tailwind utilities;
 
 @layer base {
-  html{
+  html {
     @apply font-body;
-  },
-  h1{
+  }
+  ,
+  h1 {
     @apply font-semibold;
   }
 }
