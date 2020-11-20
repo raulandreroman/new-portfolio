@@ -1,5 +1,5 @@
 import React, { useContext, useEffect } from 'react';
-
+//Import contexts
 import { LanguageContext } from '../containers/Language';
 import { ThemeContext } from '../containers/ThemeContext';
 
@@ -12,6 +12,7 @@ export default function LanguageSelector() {
     userLanguageChange();
   };
 
+  //Sets language according to user preference
   useEffect(() => {
     let defaultLanguage = window.localStorage.getItem('pref-lang');
     if (!defaultLanguage) {

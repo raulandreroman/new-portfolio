@@ -5,28 +5,44 @@ import { motion } from 'framer-motion';
 import { Text } from '../containers/Language';
 import { ThemeContext } from '../containers/ThemeContext';
 
-//Import animations
+//Import animation variants
 import {
-  textAnimations,
+  textVariants,
   containerVariants,
-  subheadingAnimations,
+  subheadingVariants,
 } from '../animation';
 
 export default function AboutSubheading() {
   const { theme } = useContext(ThemeContext);
+
+  //Makes a deep copy of the text animations object
+  const themedTextAnimations = JSON.parse(JSON.stringify(textVariants));
+
+  //Changes the text color when hidden for dark mode
+  themedTextAnimations.hidden.color = 'white';
+
   return (
     <motion.div
-      variants={containerVariants.subheading}
-      className="flex my-5 mb-3 lg:mt-0 overflow-hidden"
+      variants={containerVariants}
+      className={`flex my-5 mb-3 lg:mt-0 overflow-hidden bg-${theme}-bg duration-700`}
     >
-      <motion.h3
-        variants={textAnimations.subheading}
-        className={`relative text-white z-20 blend-difference lg:text-5xl`}
-      >
-        <Text tid="header" section="aboutSection" />
-      </motion.h3>
+      {theme !== 'dark' ? (
+        <motion.h3
+          variants={textVariants}
+          className={`relative text-white z-20 blend-difference lg:text-5xl`}
+        >
+          <Text tid="header" section="aboutSection" />
+        </motion.h3>
+      ) : (
+        <motion.h3
+          variants={themedTextAnimations}
+          className={`relative text-white z-20 blend-difference lg:text-5xl`}
+        >
+          <Text tid="header" section="aboutSection" />
+        </motion.h3>
+      )}
       <motion.div
-        variants={subheadingAnimations.leftToRight}
+        variants={subheadingVariants.leftToRight}
         className={`relative self-end right-8 lg:right-13 w-16 h-8 lg:h-12 bg-${theme}-secondary `}
       />
     </motion.div>

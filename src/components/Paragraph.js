@@ -4,8 +4,9 @@ import { isBrowser } from 'react-device-detect';
 
 export default function Paragraph(props) {
   const { content, theme } = props;
-  const { scrollYProgress } = useViewportScroll();
 
+  //Scroll animations settings
+  const { scrollYProgress } = useViewportScroll();
   const y = useTransform(scrollYProgress, [0, 0.2, 0.35], [0, -30, -50]);
   const yDesktop = useTransform(scrollYProgress, [0, 0.2, 0.35], [0, 0, -200]);
 

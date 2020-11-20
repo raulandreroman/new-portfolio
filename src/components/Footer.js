@@ -1,4 +1,5 @@
 import React from 'react';
+//Import icons
 import {
   SiGmail,
   SiGithub,
@@ -6,11 +7,11 @@ import {
   SiTwitter,
   SiInstagram,
 } from 'react-icons/si';
+//Import text context
 import { Text } from '../containers/Language';
 
 export default function Footer(props) {
   const { handleClick } = props;
-  // const icons = [SiGmail, SiGithub, SiLinkedin, SiTwitter, SiInstagram]
 
   const icons = [
     {

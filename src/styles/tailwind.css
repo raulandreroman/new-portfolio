@@ -27,20 +27,6 @@ h4 {
 .blend-difference {
   mix-blend-mode: difference;
 }
-.bg-test {
-  background: linear-gradient(#fff, 51%, #000 50% 100%);
-}
-.blend-cter {
-  transform: translate3d(0, 0, 1px);
-  will-change: opacity;
-}
-.opacity-change {
-  will-change: opacity;
-}
-
-.transform-null {
-  transform: translate3d(100%, 0, 0);
-}
 .triangle {
   border-left: 50px solid transparent;
   border-right: 50px solid transparent;

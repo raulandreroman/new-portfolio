@@ -1,11 +1,14 @@
 import React, { useContext } from 'react';
-import NavBarTools from './NavBarTools';
-import { ThemeContext } from '../containers/ThemeContext';
-import { Text } from '../containers/Language';
 import { motion } from 'framer-motion';
 
+//Import contexts
+import { ThemeContext } from '../containers/ThemeContext';
+import { Text } from '../containers/Language';
+
+//Import components
+import NavBarTools from './NavBarTools';
 //Import animations
-import { textAnimations, containerVariants } from '../animation';
+import { textVariants, containerVariants } from '../animation';
 
 export default function CallToAction() {
   const { theme } = useContext(ThemeContext);
@@ -16,14 +19,14 @@ export default function CallToAction() {
     >
       <NavBarTools />
       <motion.div
-        variants={containerVariants.heading}
+        variants={containerVariants}
         animate="show"
         initial="hidden"
-        className="flex flex-col w-10/12 lg:w-7/12 lg:mt-5 "
+        className="flex flex-col w-10/12 lg:w-7/12 lg:mt-5"
       >
         <div className="overflow-hidden mb-3 lg:text-7xl w-min">
           <motion.h1
-            variants={textAnimations.heading}
+            variants={textVariants}
             className={
               theme === 'light'
                 ? ` text-light-secondary lg:text-7xl block`
@@ -36,7 +39,7 @@ export default function CallToAction() {
         <div>
           <div className="overflow-hidden my-2 lg:text-5xl">
             <motion.h2
-              variants={textAnimations.heading}
+              variants={textVariants}
               className={
                 theme === 'light'
                   ? `text-light-primary my-2 lg:text-5xl block `
