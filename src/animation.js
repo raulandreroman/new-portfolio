@@ -41,3 +41,20 @@ export const subheadingVariants = {
     },
   },
 };
+
+export const buttonHover = {
+  rest: {},
+  hover: {
+    opacity: 1,
+    background: 'black',
+  },
+};
+
+export const buttonTextHover = {
+  rest: {
+    color: 'black',
+  },
+  hover: {
+    color: 'white',
+  },
+};
