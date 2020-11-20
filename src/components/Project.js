@@ -35,7 +35,7 @@ export default function Project(props) {
       className={
         //Removes margin bottom on last rendered project
         i === projectData.length - 1
-          ? 'flex flex-col my-12 lg:flex-row lg:mb-0'
+          ? 'flex flex-col mt-12 lg:flex-row'
           : 'flex flex-col my-12 lg:flex-row lg:mb-32'
       }
     >
