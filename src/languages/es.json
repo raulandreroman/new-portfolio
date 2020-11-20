@@ -7,10 +7,14 @@
         "header": "Trayecto",
         "content": [
             {
-                "paragraph": "Empecé a estudiar desarrollo web en 2019 de manera autodidacta con la ayuda de The Odin Project"
+                "paragraph": {
+                    "text": "Empecé a estudiar desarrollo web en 2019 de manera autodidacta con la ayuda de The Odin Project"
+                }
             },
             {
-                "paragraph": "Learning how to work with Git through GitHub, then HTML and CSS, then in early 2020..."
+                "paragraph": {
+                    "text": "Learning how to work with Git through GitHub, then HTML and CSS, then in early 2020..."
+                }
             },
             {
                 "paragraph": {
@@ -20,21 +24,18 @@
             },
             {
                 "paragraph": {
-                    "text": "Where I improved my HTML and CSS skills and learned JavaScript, Node.js, Express.js, and working with databases such as MySQL and MongoDB",
-                    "style": "doubleSquare"
+                    "text": "Where I improved my HTML and CSS skills and learned JavaScript, Node.js, Express.js, and working with databases such as MySQL and MongoDB"
                 }
             },
             {
                 "paragraph": {
                     "subtitle": "Aftermath",
-                    "text": "After I completed the Acámica program in September 2020, I added features and made improvements to some of the projects I’d started and started learning React.js on my own",
-                    "style": "thinRectangle"
+                    "text": "After I completed the Acámica program in September 2020, I added features and made improvements to some of the projects I’d started and started learning React.js on my own"
                 }
             },
             {
                 "paragraph": {
-                    "text": "Currently I find myself looking for my first experience in the industry to work alongside a team and therefore be able to learn even more from them",
-                    "style": "singleSquare"
+                    "text": "Currently I find myself looking for my first experience in the industry to work alongside a team and therefore be able to learn even more from them"
                 }
             }
         ]

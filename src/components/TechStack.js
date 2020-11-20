@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+//Import icons
 import {
   SiJavascript,
   SiReact,
@@ -9,9 +10,11 @@ import {
   SiSass,
 } from 'react-icons/si';
 import { CgSmartphone } from 'react-icons/cg';
+//Import text context
 import { Text } from '../containers/Language';
 
 export default function TechStack(props) {
+  //Creates state for onhover feature
   const [isShown, setIsShown] = useState(false);
   const [techToDisplay, setTechToDisplay] = useState('');
 

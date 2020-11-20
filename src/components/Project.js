@@ -1,8 +1,12 @@
 import React from 'react';
+import { motion, useViewportScroll, useTransform } from 'framer-motion';
+import { isBrowser } from 'react-device-detect';
+//Import components
 import TechStack from './TechStack';
 import Preview from './Preview';
-
+//Import text context
 import { Text } from '../containers/Language';
+import projectData from '../data/projects.json';
 
 export default function Project(props) {
   const {
@@ -13,13 +17,29 @@ export default function Project(props) {
     techStack,
     previewUrl,
   } = props.details;
-  const { handleClick } = props;
+
+  const { handleClick, i } = props;
+
+  //Setup for scroll animation
+  const { scrollYProgress } = useViewportScroll();
+  const y = useTransform(scrollYProgress, [0, 0.47, 0.57], [0, -50, -90]);
+  const yDesktop = useTransform(
+    scrollYProgress,
+    [0, 0.47, 0.62, 0.85],
+    [0, -50, -125, -250]
+  );
 
   return (
-    <div className="flex flex-col my-12 lg:flex-row lg:mb-32">
-      <div
-        className={`flex flex-col mb-4 lg:mx-48 lg:max-w-1xl lg:mr-20 lg:mb-0`}
-      >
+    <motion.div
+      style={isBrowser ? { y: yDesktop } : { y }}
+      className={
+        //Removes margin bottom on last rendered project
+        i === projectData.length - 1
+          ? 'flex flex-col my-12 lg:flex-row lg:mb-0'
+          : 'flex flex-col my-12 lg:flex-row lg:mb-32'
+      }
+    >
+      <div className={`flex flex-col mb-4 lg:ml-64 lg:w-6/12 lg:mr-12 lg:mb-0`}>
         <button className="my-2" onClick={() => handleClick(secondLink)}>
           <Preview previewUrl={previewUrl} />
         </button>
@@ -65,6 +85,6 @@ export default function Project(props) {
         <p className={'text-white text-lg font-light'}>{summary}</p>
         <TechStack content={techStack} />
       </div>
-    </div>
+    </motion.div>
   );
 }

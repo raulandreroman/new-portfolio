@@ -398,7 +398,8 @@ button {
  * https://github.com/mozdevs/cssremedy/issues/14
  */
 
-img {
+img,
+object {
   display: block;
   vertical-align: middle;
 }
@@ -415,16 +416,17 @@ img {
   height: auto;
 }
 
-html{
+html {
   font-family: Montserrat, Roboto, Arial, sans-serif;
 }
 
 
-  h1{
+  h1 {
   font-weight: 600;
 }
 
 html {
+  scroll-behavior: smooth;
   font-family: Montserrat, Roboto, Arial, sans-serif;
   box-sizing: border-box;
 }
@@ -435,32 +437,32 @@ html {
   box-sizing: border-box;
 }
 
-h1{
+h1 {
   font-weight: 600;
   letter-spacing: -0.025em;
   line-height: 1.25;
   font-size: 3rem;
 }
 
-h2{
+h2 {
   font-weight: 300;
   line-height: 1.25;
   font-size: 1.25rem;
 }
 
-h3{
+h3 {
   font-size: 1.875rem;
 }
 
-h4{
+h4 {
   font-size: 1.5rem;
 }
 
-.blend-difference{
-  mix-blend-mode: difference
+.blend-difference {
+  mix-blend-mode: difference;
 }
 
-.triangle{
+.triangle {
   border-left: 50px solid transparent;
   border-right: 50px solid transparent;
   border-top: 90px solid white;
@@ -520,6 +522,10 @@ h4{
 
 .border{
   border-width: 1px;
+}
+
+.block{
+  display: block;
 }
 
 .flex{
@@ -608,14 +614,6 @@ h4{
 
 .h-8{
   height: 2rem;
-}
-
-.h-10{
-  height: 2.5rem;
-}
-
-.h-12{
-  height: 3rem;
 }
 
 .h-56{
@@ -741,10 +739,6 @@ h4{
   margin-bottom: 1.25rem;
 }
 
-.ml-6{
-  margin-left: 1.5rem;
-}
-
 .mt-8{
   margin-top: 2rem;
 }
@@ -771,6 +765,10 @@ h4{
 
 .min-w-8{
   min-width: 8rem;
+}
+
+.overflow-hidden{
+  overflow: hidden;
 }
 
 .p-3{
@@ -803,20 +801,12 @@ h4{
   position: relative;
 }
 
-.bottom-1{
-  bottom: 0.25rem;
-}
-
 .top-2{
   top: 0.5rem;
 }
 
 .top-4{
   top: 1rem;
-}
-
-.bottom-5{
-  bottom: 1.25rem;
 }
 
 .right-8{
@@ -879,28 +869,12 @@ h4{
   width: 0;
 }
 
-.w-8{
-  width: 2rem;
-}
-
-.w-10{
-  width: 2.5rem;
-}
-
 .w-16{
   width: 4rem;
 }
 
-.w-24{
-  width: 6rem;
-}
-
 .w-32{
   width: 8rem;
-}
-
-.w-40{
-  width: 10rem;
 }
 
 .w-48{
@@ -921,6 +895,10 @@ h4{
 
 .w-full{
   width: 100%;
+}
+
+.w-min{
+  width: min-content;
 }
 
 .z-10{
@@ -1028,6 +1006,11 @@ h4{
     font-size: 5rem;
   }
 
+  .lg\:my-0{
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
   .lg\:mx-1{
     margin-left: 0.25rem;
     margin-right: 0.25rem;
@@ -1036,6 +1019,11 @@ h4{
   .lg\:mx-48{
     margin-left: 13rem;
     margin-right: 13rem;
+  }
+
+  .lg\:mx-56{
+    margin-left: 14rem;
+    margin-right: 14rem;
   }
 
   .lg\:mt-0{
@@ -1062,24 +1050,20 @@ h4{
     margin-top: 2rem;
   }
 
-  .lg\:mb-16{
-    margin-bottom: 4rem;
-  }
-
-  .lg\:mr-20{
-    margin-right: 5rem;
+  .lg\:mr-12{
+    margin-right: 3rem;
   }
 
   .lg\:mb-32{
     margin-bottom: 8rem;
   }
 
-  .lg\:max-w-none{
-    max-width: none;
+  .lg\:ml-64{
+    margin-left: 16rem;
   }
 
-  .lg\:max-w-1xl{
-    max-width: 40rem;
+  .lg\:max-w-none{
+    max-width: none;
   }
 
   .lg\:min-h-screen{
@@ -1094,14 +1078,17 @@ h4{
     padding: 0.25rem;
   }
 
-  .lg\:py-16{
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-  }
-
   .lg\:px-48{
     padding-left: 13rem;
     padding-right: 13rem;
+  }
+
+  .lg\:pb-0{
+    padding-bottom: 0;
+  }
+
+  .lg\:pt-16{
+    padding-top: 4rem;
   }
 
   .lg\:right-13{
@@ -1122,6 +1109,10 @@ h4{
 
   .lg\:w-1\/4{
     width: 25%;
+  }
+
+  .lg\:w-6\/12{
+    width: 50%;
   }
 
   .lg\:w-7\/12{

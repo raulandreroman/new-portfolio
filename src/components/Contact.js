@@ -1,12 +1,27 @@
 import React from 'react';
+import { motion } from 'framer-motion';
+import useScroll from './useScroll';
+
+//Import contexts
 import { Text } from '../containers/Language';
 import { ThemeContext } from '../containers/ThemeContext';
 
+//Import animation variants
+import { containerVariants } from '../animation';
+
 export default function Contact(props) {
+  const [element, controls] = useScroll(0.85);
+
   const { theme } = React.useContext(ThemeContext);
   const { handleClick } = props;
   return (
-    <div className="flex flex-col mb-20 items-center  ">
+    <motion.section
+      ref={element}
+      initial="hidden"
+      animate={controls}
+      variants={containerVariants}
+      className="flex flex-col mb-20 items-center  "
+    >
       <p className={`text-${theme}-secondary text-3xl align-text-center`}>
         <Text section="contactSection" tid="content" />
       </p>
@@ -28,6 +43,6 @@ export default function Contact(props) {
           <Text section="contactSection" tid="btn" />
         </span>
       </button>
-    </div>
+    </motion.section>
   );
 }

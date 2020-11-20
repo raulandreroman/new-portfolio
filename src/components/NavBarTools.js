@@ -1,6 +1,9 @@
 import React, { useContext, useEffect } from 'react';
+//Import icons
 import { CgMoon, CgSun } from 'react-icons/cg';
+//Import theme context
 import { ThemeContext } from '../containers/ThemeContext';
+//Import component
 import LanguageSelector from './LanguageSelector';
 
 export default function NavBarTools() {
@@ -9,7 +12,7 @@ export default function NavBarTools() {
   function handleClick() {
     userThemeChange();
   }
-
+  //Sets theme according to user preference
   useEffect(() => {
     let defaultTheme = window.localStorage.getItem('pref-theme');
     if (!defaultTheme) {

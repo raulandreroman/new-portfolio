@@ -20,7 +20,13 @@ export default function Home() {
     }
   }
   return (
-    <>
+    <div
+      className={
+        theme === 'light'
+          ? 'bg-light-bg duration-700'
+          : `bg-dark-bg duration-700`
+      }
+    >
       <Helmet
         bodyAttributes={{
           class:
@@ -35,6 +41,6 @@ export default function Home() {
       <Triangle />
       <Contact handleClick={handleClick} />
       <Footer handleClick={handleClick} />
-    </>
+    </div>
   );
 }
