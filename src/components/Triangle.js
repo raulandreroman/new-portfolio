@@ -35,7 +35,7 @@ export default function Triangle() {
         ref={element}
         style={isBrowser ? { y: yDesktop } : { y }}
         variants={containerVariants}
-        className="w-0 h-0 triangle m-auto relative bottom-10 blend-difference"
+        className="w-0 h-0 triangle m-auto relative bottom-10 blend-difference duration-700"
       ></motion.div>
     </>
   );
