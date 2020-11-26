@@ -32,6 +32,15 @@ h4 {
   border-right: 50px solid transparent;
   border-top: 90px solid white;
 }
+.cursor {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+  background-color: black;
+}
 @tailwind components;
 
 @tailwind utilities;
