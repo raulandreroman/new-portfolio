@@ -2,4 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/gbtv11479rw0/public_html/
-    - /bin/cp -R build $DEPLOYPATH
+    - /bin/cp -R build/. $DEPLOYPATH
