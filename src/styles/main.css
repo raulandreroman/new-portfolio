@@ -431,9 +431,14 @@ html {
   box-sizing: border-box;
 }
 
+#root {
+  display: flex;
+}
+
 *,
 *:before,
 *:after {
+  cursor: none;
   box-sizing: border-box;
 }
 
@@ -466,6 +471,19 @@ h4 {
   border-left: 50px solid transparent;
   border-right: 50px solid transparent;
   border-top: 90px solid white;
+}
+
+.cursor {
+  pointer-events: none;
+  position: fixed;
+  /* transform: translateX(-50%) translateY(-50%); */
+  left: 0;
+  top: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 16px;
+  mix-blend-mode: difference;
+  background-color: white;
 }
 
 .bg-black{
@@ -911,6 +929,14 @@ h4 {
 
 .z-20{
   z-index: 20;
+}
+
+.z-30{
+  z-index: 30;
+}
+
+.z-50{
+  z-index: 50;
 }
 
 .duration-300{
