@@ -9,6 +9,7 @@ html {
 }
 #root {
   display: flex;
+  flex-direction: column;
 }
 
 *,
