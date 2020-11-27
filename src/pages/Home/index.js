@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Helmet from 'react-helmet';
 import { ThemeContext } from '../../containers/ThemeContext';
 
@@ -10,7 +10,8 @@ import Triangle from '../../components/Triangle';
 import Footer from '../../components/Footer';
 
 export default function Home() {
-  const { theme } = React.useContext(ThemeContext);
+  const { theme } = useContext(ThemeContext);
+
   function handleClick(url) {
     if (url === 'email') {
       window.location = 'mailto:raulandrerd@gmail.com';
@@ -19,6 +20,7 @@ export default function Home() {
       if (newWindow) newWindow.opener = null;
     }
   }
+
   return (
     <div
       className={
@@ -31,8 +33,8 @@ export default function Home() {
         bodyAttributes={{
           class:
             theme === 'light'
-              ? 'bg-light-bg duration-700'
-              : `bg-dark-bg duration-700`,
+              ? 'bg-light-bg duration-700 z-30'
+              : `bg-dark-bg duration-700 z-30`,
         }}
       />
       <CallToAction />

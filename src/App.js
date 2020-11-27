@@ -5,11 +5,15 @@ import './styles/main.css';
 // import Home from './pages/Home';
 import { ThemeProvider } from './containers/ThemeContext';
 import { LanguageProvider } from './containers/Language';
+
+import Cursor from './components/Cursor';
 import ComingSoon from './pages/ComingSoon';
+
 
 function App() {
   return (
-    <div>
+    <>
+      <Cursor />
       <LanguageProvider>
         <ThemeProvider>
           <BrowserRouter>
@@ -19,7 +23,7 @@ function App() {
           </BrowserRouter>
         </ThemeProvider>
       </LanguageProvider>
-    </div>
+    </>
   );
 }
 export default App;
