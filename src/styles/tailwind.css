@@ -7,11 +7,17 @@ html {
   scroll-behavior: smooth;
   @apply font-body box-border;
 }
+#root {
+  display: flex;
+}
+
 *,
 *:before,
 *:after {
+  cursor: none;
   @apply box-border;
 }
+
 h1 {
   @apply font-semibold tracking-tight leading-tight text-5xl;
 }
@@ -33,13 +39,16 @@ h4 {
   border-top: 90px solid white;
 }
 .cursor {
+  pointer-events: none;
   position: fixed;
+  /* transform: translateX(-50%) translateY(-50%); */
   left: 0;
   top: 0;
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
   border-radius: 16px;
-  background-color: black;
+  mix-blend-mode: difference;
+  background-color: white;
 }
 @tailwind components;
 
