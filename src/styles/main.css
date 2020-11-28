@@ -477,12 +477,13 @@ h4 {
 .cursor {
   pointer-events: none;
   position: fixed;
-  /* transform: translateX(-50%) translateY(-50%); */
+  transform: translateX(-50%) translateY(-50%);
   left: 0;
   top: 0;
   width: 24px;
   height: 24px;
   border-radius: 16px;
+  color: white;
   mix-blend-mode: difference;
   background-color: white;
 }
@@ -780,8 +781,16 @@ h4 {
   margin-bottom: 1rem;
 }
 
+.mt-5{
+  margin-top: 1.25rem;
+}
+
 .mb-5{
   margin-bottom: 1.25rem;
+}
+
+.mb-6{
+  margin-bottom: 1.5rem;
 }
 
 .mt-8{
@@ -1197,6 +1206,6 @@ h4 {
   }
 
   .lg\:w-7\/12{
-    width: 58.333333%;
+    width: 56.333333%;
   }
 }
