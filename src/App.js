@@ -36,7 +36,7 @@ function App() {
 
   useEffect(() => {
     if (counter === 7) {
-      setIsSecret(true);
+      window.location.href = '/home';
     }
   }, [counter]);
   return (
@@ -46,11 +46,9 @@ function App() {
         <ThemeProvider>
           <BrowserRouter>
             <Switch>
-              {!isSecret ? (
-                <Route path="/" exact component={ComingSoon} />
-              ) : (
-                <Route path="/" exact component={Home} />
-              )}
+              <Route path="/" exact component={ComingSoon} />
+
+              <Route path="/home" exact component={Home} />
             </Switch>
           </BrowserRouter>
         </ThemeProvider>
