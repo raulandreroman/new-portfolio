@@ -22,9 +22,9 @@ export default function CallToAction() {
         variants={containerVariants}
         animate="show"
         initial="hidden"
-        className="flex flex-col w-10/12 lg:w-7/12 lg:mt-5"
+        className="flex flex-col w-10/12 lg:w-7/12 lg:mt-5 relative"
       >
-        <div className="overflow-hidden mb-3 lg:text-7xl w-min">
+        <div className="overflow-hidden mb-6 lg:text-7xl w-min">
           <motion.h1
             variants={textVariants}
             className={
@@ -52,8 +52,8 @@ export default function CallToAction() {
           <div
             className={
               theme === 'light'
-                ? `bg-light-secondary w-32 lg:w-1/2 my-1 h-1 lg:h-3`
-                : `w-32 lg:w-1/2 my-1 h-1 lg:h-2 bg-dark-secondary `
+                ? `bg-light-secondary w-32 lg:w-1/2 my-1 h-1 lg:h-3 mt-5`
+                : `w-32 lg:w-1/2 my-1 h-1 lg:h-2 bg-dark-secondary mt-5 `
             }
           ></div>
         </div>

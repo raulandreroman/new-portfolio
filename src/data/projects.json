@@ -44,5 +44,28 @@
             "mobile": "../assets/gifos.png",
             "desktop": "../assets/gifos-lg.png"
         }
+    },
+    {
+        "title": "eLearning Platform",
+        "firstLink": "https://github.com/randrerd/elearningProject",
+        "secondLink": "https://randrerd.github.io/elearningProject/",
+        "techStack": {
+            "markupAndComponents": [
+                "Html5",
+                "Javascript"
+            ],
+            "styling": [
+                "Css3",
+                "Sass"
+            ],
+            "utils": [
+                "Git",
+                "MobileFirst"
+            ]
+        },
+        "previewUrl": {
+            "mobile": "../assets/elearning.png",
+            "desktop": "../assets/elearning-lg.png"
+        }
     }
 ]

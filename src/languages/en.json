@@ -1,14 +1,14 @@
 {
     "CTASection": {
         "header": "Front End Developer",
-        "content": "Hi, I'm Raul and I like to create sharp-looking websites"
+        "content": "Hi, I'm Raúl! I focus on building creative and functional user interfaces."
     },
     "aboutSection": {
         "header": "Journey",
         "content": [
             {
                 "paragraph": {
-                    "text": "I started studying web development in 2019 on my own with the help of The Odin Project"
+                    "text": "I started studying web development in 2019 on my own with the help of The Odin Project."
                 }
             },
             {
@@ -19,23 +19,23 @@
             {
                 "paragraph": {
                     "subtitle": "A formal education",
-                    "text": "I enrolled in Acámica’s Full Stack Web Development program in Buenos Aires, Argentina"
+                    "text": "I enrolled in Acámica’s Full Stack Web Development program in Buenos Aires, Argentina."
                 }
             },
             {
                 "paragraph": {
-                    "text": "Where I improved my HTML and CSS skills and learned JavaScript, Node.js, Express.js, and working with databases such as MySQL and MongoDB"
+                    "text": "Where I improved my HTML and CSS skills and learned JavaScript, Node.js, Express.js, and working with relational and non-relational databases such as MySQL and MongoDB."
                 }
             },
             {
                 "paragraph": {
-                    "subtitle": "Aftermath",
-                    "text": "After I completed the Acámica program in September 2020, I added features and made improvements to some of the projects I’d started and started learning React.js on my own"
+                    "subtitle": "Thereafter",
+                    "text": "In September 2020 I completed the Acámica program, I added features and made improvements to projects I’d started and also started learning React.js on my own."
                 }
             },
             {
                 "paragraph": {
-                    "text": "Currently I find myself looking for my first experience in the industry to work alongside a team and therefore be able to learn even more from them"
+                    "text": "Currently I find myself looking for my first experience in the industry to work alongside a team and therefore be able to learn even more from them."
                 }
             }
         ]
@@ -51,6 +51,10 @@
             },
             {
                 "name": "GifOS",
+                "summary": "Web app that allows the user to make their own GIFs, search for their favourite ones and get recommendations. The app uses the Giphy API"
+            },
+            {
+                "name": "eLearning Platform",
                 "summary": "Web app that allows the user to make their own GIFs, search for their favourite ones and get recommendations. The app uses the Giphy API"
             }
         ],

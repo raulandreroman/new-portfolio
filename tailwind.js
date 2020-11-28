@@ -171,6 +171,7 @@ module.exports = {
       48: '13rem',
       56: '14rem',
       64: '16rem',
+      80: '30rem',
     },
     backgroundColor: (theme) => theme('colors'),
     backgroundImage: {
@@ -356,6 +357,7 @@ module.exports = {
       48: '12rem',
       56: '14.5rem',
       64: '16rem',
+      80: '30rem',
     },
     letterSpacing: {
       tighter: '-0.05em',
@@ -504,7 +506,7 @@ module.exports = {
       '4/12': '33.333333%',
       '5/12': '41.666667%',
       '6/12': '50%',
-      '7/12': '58.333333%',
+      '7/12': '56.333333%',
       '8/12': '66.666667%',
       '9/12': '75%',
       '10/12': '83.333333%',
