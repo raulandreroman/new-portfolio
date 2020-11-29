@@ -6,6 +6,7 @@ import {
   SiLinkedin,
   SiTwitter,
   SiInstagram,
+  SiCodepen,
 } from 'react-icons/si';
 //Import text context
 import { Text } from '../containers/Language';
@@ -30,14 +31,9 @@ export default function Footer(props) {
       url: 'https://linkedin.com/in/randrerd',
     },
     {
-      name: 'Twitter',
-      icon: SiTwitter,
-      url: 'https://twitter.com/randrerd',
-    },
-    {
-      name: 'Instagram',
-      icon: SiInstagram,
-      url: 'https://instagram.com/randrerd',
+      name: 'CodePen',
+      icon: SiCodepen,
+      url: 'http://codepen.io/randrerd/',
     },
   ];
 

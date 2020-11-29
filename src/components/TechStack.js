@@ -29,7 +29,7 @@ export default function TechStack(props) {
       },
       {
         name: 'Javascript',
-        display: 'JavaScript',
+        display: 'JavaScript ES6',
         icon: SiJavascript,
       },
       {
@@ -63,7 +63,7 @@ export default function TechStack(props) {
       },
       {
         name: 'MobileFirst',
-        display: 'Mobile First',
+        display: 'Responsive Design',
         icon: CgSmartphone,
       },
     ],

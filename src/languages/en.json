@@ -1,7 +1,7 @@
 {
     "CTASection": {
         "header": "Front End Developer",
-        "content": "Hi, I'm Raúl! I focus on building creative and functional user interfaces."
+        "content": "Hi, I'm Raúl! I like to focus on building clean, creative and functional user interfaces."
     },
     "aboutSection": {
         "header": "Journey",
@@ -54,8 +54,12 @@
                 "summary": "Web app that allows the user to make their own GIFs, search for their favourite ones and get recommendations. The app uses the Giphy API"
             },
             {
-                "name": "eLearning Platform",
-                "summary": "Web app that allows the user to make their own GIFs, search for their favourite ones and get recommendations. The app uses the Giphy API"
+                "name": "E-learning Platform",
+                "summary": "Markup for a learning platform offering several courses, coded using HTML, CSS and JavaScript."
+            },
+            {
+                "name": "Podcast Channel",
+                "summary": "Markup for a podcasts website, coded using HTML and CSS."
             }
         ],
         "techStackHeader": "Tech Stack"
@@ -65,6 +69,6 @@
         "btn": "Contact Me!"
     },
     "footerSection": {
-        "content": "Made with React.js, TawilwindCSS and a lot of ❤"
+        "content": "Made with React.js, TailwindCSS and a lot of ❤"
     }
 }

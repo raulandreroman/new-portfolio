@@ -1,7 +1,7 @@
 {
     "CTASection": {
         "header": "Desarrollador Front End",
-        "content": "¡Hola, soy Raúl! Mi foco es construir interfaces de usuario creativas y funcionales."
+        "content": "¡Hola, soy Raúl! Me gusta enfocarme en la prolijidad, en los detalles y en la funcionalidad."
     },
     "aboutSection": {
         "header": "Trayecto",
@@ -18,7 +18,7 @@
             },
             {
                 "paragraph": {
-                    "subtitle": "Una educación académica",
+                    "subtitle": "Educación académica",
                     "text": "Me inscribí en el programa de Desarrollo Web Full Stack en Acámica en Buenos Aires, Argentina."
                 }
             },
@@ -43,19 +43,23 @@
     "projectsSection": {
         "header": "Proyectos",
         "btn1": "Código",
-        "btn2": "En vivo",
+        "btn2": "Visítalo",
         "projects": [
             {
                 "name": "Sitio web personal",
-                "summary": "The website you're currently seeing! Hope you like it, it's my first React.js AND TailwindCSS proper project"
+                "summary": "¡El sitio web que estás viendo ahora mismo! Espero sea de tu agrado, en este proyecto hice uso de componentes funcionales con Hooks, Context API, Framer Motion y TailwindCSS."
             },
             {
                 "name": "GifOS",
-                "summary": "Web app that allows the user to make their own GIFs, search for their favourite ones and get recommendations. The app uses the Giphy APIF"
+                "summary": "Aplicación web que permite al usuario crear sus propios GIFs, buscar sus favoritos y recibir recomendaciones. La aplicación integra la API de GIPHY y utiliza la librería RecordRTC."
             },
             {
-                "name": "eLearning Platform",
-                "summary": "Web app that allows the user to make their own GIFs, search for their favourite ones and get recommendations. The app uses the Giphy API"
+                "name": "E-learning Platform",
+                "summary": "Proyecto de maquetado de una página web para cursos institucionales, para el maquetado se usó HTML, CSS y JavaScript."
+            },
+            {
+                "name": "Podcast Channel",
+                "summary": "Proyecto de maquetado de una página web de podcasts, para el maquetado se usó HTML y CSS."
             }
         ],
         "techStackHeader": "Tech Stack"

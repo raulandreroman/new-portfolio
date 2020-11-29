@@ -14,7 +14,7 @@ export default function Home() {
 
   function handleClick(url) {
     if (url === 'email') {
-      window.location = 'mailto:raulandrerd@gmail.com';
+      window.location = 'mailto:hola@raulandre.com';
     } else {
       const newWindow = window.open(url, '_blank', 'noopener,noreferrer');
       if (newWindow) newWindow.opener = null;
