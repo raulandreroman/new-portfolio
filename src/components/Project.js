@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion, useViewportScroll, useTransform } from 'framer-motion';
-import { isBrowser } from 'react-device-detect';
+import { isBrowser, isMobile } from 'react-device-detect';
 //Import components
 import TechStack from './TechStack';
 import Preview from './Preview';
@@ -40,6 +40,7 @@ export default function Project(props) {
       }
     >
       <div className={`flex flex-col mb-4 lg:ml-64 lg:w-6/12 lg:mr-12 lg:mb-0`}>
+        {isMobile && <h4 className={'text-white ml-2 font-normal'}>{title}</h4>}
         <button className="my-2" onClick={() => handleClick(secondLink)}>
           <Preview previewUrl={previewUrl} />
         </button>
@@ -75,13 +76,15 @@ export default function Project(props) {
         />
       </div>
       <div className="flex flex-col items-start flex-shrink-0 lg:w-1/4">
-        <h4
-          className={
-            'text-white mb-3 font-normal lg:self-start lg:mt-3 lg:mb-0'
-          }
-        >
-          {title}
-        </h4>
+        {!isMobile && (
+          <h4
+            className={
+              'text-white mb-3 font-normal lg:self-start lg:mt-3 lg:mb-0'
+            }
+          >
+            {title}
+          </h4>
+        )}
         <p className={'text-white text-lg font-light'}>{summary}</p>
         <TechStack content={techStack} />
       </div>

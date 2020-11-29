@@ -8,10 +8,10 @@ import { LanguageProvider } from './containers/Language';
 
 import Cursor from './components/Cursor';
 import ComingSoon from './pages/ComingSoon';
+import { isMobile } from 'react-device-detect';
 
 function App() {
   const [counter, setCounter] = useState(0);
-  const [isSecret, setIsSecret] = useState(false);
 
   function handleClick(e) {
     const isH2 =
@@ -22,7 +22,6 @@ function App() {
     const isEnd = e.y > 419 && e.y < 440;
     if (isH2 && isEnd) {
       setCounter((c) => c + 1);
-      // counter === 6 ? setIsSecret(true) : null;
     }
   }
 
@@ -41,7 +40,7 @@ function App() {
   }, [counter]);
   return (
     <>
-      <Cursor />
+      {!isMobile && <Cursor />}
       <LanguageProvider>
         <ThemeProvider>
           <BrowserRouter>
