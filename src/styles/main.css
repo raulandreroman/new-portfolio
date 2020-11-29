@@ -451,7 +451,7 @@ h1 {
   font-weight: 600;
   letter-spacing: -0.025em;
   line-height: 1.25;
-  font-size: 3rem;
+  font-size: 2.85rem;
 }
 
 h2 {
@@ -1093,7 +1093,7 @@ h4 {
   }
 
   .lg\:text-5xl{
-    font-size: 3rem;
+    font-size: 2.85rem;
   }
 
   .lg\:text-7xl{

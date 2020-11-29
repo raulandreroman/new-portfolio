@@ -1,13 +1,6 @@
 import React from 'react';
 //Import icons
-import {
-  SiGmail,
-  SiGithub,
-  SiLinkedin,
-  SiTwitter,
-  SiInstagram,
-  SiCodepen,
-} from 'react-icons/si';
+import { SiGmail, SiGithub, SiLinkedin, SiCodepen } from 'react-icons/si';
 //Import text context
 import { Text } from '../containers/Language';
 
