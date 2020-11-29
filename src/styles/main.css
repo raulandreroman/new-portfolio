@@ -443,6 +443,10 @@ html {
   box-sizing: border-box;
 }
 
+button {
+  cursor: none;
+}
+
 h1 {
   font-weight: 600;
   letter-spacing: -0.025em;

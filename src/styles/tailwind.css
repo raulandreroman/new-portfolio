@@ -18,6 +18,9 @@ html {
   cursor: none;
   @apply box-border;
 }
+button {
+  cursor: none;
+}
 
 h1 {
   @apply font-semibold tracking-tight leading-tight text-5xl;
