@@ -35,12 +35,12 @@
             {
                 "paragraph": {
                     "subtitle": "Actualidad",
-                    "text": "Continúo estudiando y creando proyectos que me permitan aprender nuevas tecnologías y a afilar mis habilidades como programador."
+                    "text": "Continúo estudiando y creando proyectos que me permitan aprender nuevas tecnologías y a mejorar mis habilidades como programador."
                 }
             },
             {
                 "paragraph": {
-                    "text": "De igual forma me encuentro en la búsqueda de mi primera experiencia en la industria de sistemas para así poder trabajar junto a un equipo que me permita crecer y aprender más."
+                    "text": "Estoy en la búsqueda de mi primera experiencia en la industria de sistemas para así poder trabajar junto a un equipo que me permita crecer y aprender aún más."
                 }
             }
         ]
@@ -60,7 +60,7 @@
             },
             {
                 "name": "E-Learning Platform",
-                "summary": "Proyecto de maquetado de una página web para cursos institucionales, para el maquetado utilicé HTML, CSS (SASS como preprocesador) y Vanilla JavaScript."
+                "summary": "Proyecto de maquetado de una página web para cursos institucionale. Para el maquetado utilicé HTML, CSS (SASS como preprocesador) y Vanilla JavaScript."
             },
             {
                 "name": "Podcast Channel",
