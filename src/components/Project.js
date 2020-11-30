@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion, useViewportScroll, useTransform } from 'framer-motion';
-import LazyLoad from 'react-lazyload';
 import { isBrowser, isMobile } from 'react-device-detect';
 //Import components
 import TechStack from './TechStack';
@@ -43,9 +42,7 @@ export default function Project(props) {
       <div className={`flex flex-col mb-4 lg:ml-64 lg:w-6/12 lg:mr-12 lg:mb-0`}>
         {isMobile && <h4 className={'text-white ml-2 font-normal'}>{title}</h4>}
         <button className="my-2" onClick={() => handleClick(secondLink)}>
-          <LazyLoad height={250} offset={150}>
-            <Preview previewUrl={previewUrl} />
-          </LazyLoad>
+          <Preview previewUrl={previewUrl} />
         </button>
 
         <div
