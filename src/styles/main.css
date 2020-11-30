@@ -1043,14 +1043,6 @@ h4 {
 
 @media (min-width: 1024px){
 
-  .lg\:block{
-    display: block;
-  }
-
-  .lg\:hidden{
-    display: none;
-  }
-
   .lg\:flex-row{
     flex-direction: row;
   }

@@ -10,13 +10,13 @@ export default function Preview(props) {
       <LazyLoad height={250} offset={320}>
         {isMobile ? (
           <img
-            className="self-center m-auto h-56 lg:hidden"
+            className="self-center m-auto h-56"
             alt="Screenshot of current project"
             src={previewUrl.mobile}
           />
         ) : (
           <img
-            className="self-start m-0 hidden lg:block"
+            className="self-start m-0 hidden"
             alt="Screenshot of current project"
             src={previewUrl.desktop}
           />
