@@ -1,7 +1,7 @@
 {
     "CTASection": {
         "header": "Front End Developer",
-        "content": "Hi, I'm Raúl! I like to focus on building clean, creative and functional user interfaces."
+        "content": "Hi, I'm Raúl! I focus on creating clean, responsive and functional web apps."
     },
     "aboutSection": {
         "header": "Journey",
@@ -13,7 +13,7 @@
             },
             {
                 "paragraph": {
-                    "text": "Learning how to work with Git through GitHub, then HTML and CSS, then in early 2020..."
+                    "text": "Learning how to set up a development environment using Ubuntu, how to work with Git with GitHub, then HTML and CSS."
                 }
             },
             {
@@ -29,8 +29,13 @@
             },
             {
                 "paragraph": {
-                    "subtitle": "Thereafter",
                     "text": "In September 2020 I completed the Acámica program, I added features and made improvements to projects I’d started and also started learning React.js on my own."
+                }
+            },
+            {
+                "paragraph": {
+                    "subtitle": "Thereafter",
+                    "text": "I continue to study and to build projects that allow me to learn new technologies or to sharpen my development skills."
                 }
             },
             {
@@ -47,15 +52,15 @@
         "projects": [
             {
                 "name": "Personal website",
-                "summary": "The website you're currently seeing! Hope you like it, it's my first React.js AND TailwindCSS proper project"
+                "summary": "The website you're currently seeing! Hope you like it. In this project I used React, functional components, Hooks, Context API, Framer Motion and Tailwind CSS."
             },
             {
                 "name": "GifOS",
-                "summary": "Web app that allows the user to make their own GIFs, search for their favourite ones and get recommendations. The app uses the Giphy API"
+                "summary": "It's a web app that allows the user to make their own GIFs, search for their favourite ones and get recommendations. I used the GIPHY API and the RecordRTC library."
             },
             {
-                "name": "E-learning Platform",
-                "summary": "Markup for a learning platform offering several courses, coded using HTML, CSS and JavaScript."
+                "name": "E-Learning Platform",
+                "summary": "A markup project for an E-learning platform offering several courses, I used HTML, CSS (with SASS as preprocessor) and Vanilla JavaScript."
             },
             {
                 "name": "Podcast Channel",

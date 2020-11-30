@@ -1,7 +1,7 @@
 {
     "CTASection": {
         "header": "Desarrollador Front End",
-        "content": "¡Hola, soy Raúl! Me gusta enfocarme en la prolijidad, en los detalles y en la funcionalidad."
+        "content": "¡Hola, soy Raúl! Me enfoco en la creación de web apps responsivas, prolijas y funcionales. "
     },
     "aboutSection": {
         "header": "Trayecto",
@@ -13,7 +13,7 @@
             },
             {
                 "paragraph": {
-                    "text": "Aprendí a utlizar Git a través de GitHub, HTML y CSS, luego a principios del 2020..."
+                    "text": "Aprendí a hacer el setup de un entorno de desarrollo usando Ubuntu, a usar Git con GitHub, y luego HTML y CSS."
                 }
             },
             {
@@ -24,18 +24,23 @@
             },
             {
                 "paragraph": {
-                    "text": "Mejoré mis habilidades con HTML y CSS y además aprendí JavaScript, Node.js, Express.js, a trabajar con base de datos relacionales y no-relacionales (MySQL y MongoDB) e igualmente me familiaricé con las metodologías ágiles."
+                    "text": "Mejoré mis habilidades con HTML y CSS. Además aprendí JavaScript, Node.js, Express.js, a trabajar con base de datos relacionales y no-relacionales (MySQL y MongoDB) e igualmente me familiaricé con las metodologías ágiles."
                 }
             },
             {
                 "paragraph": {
-                    "subtitle": "Posteriormente",
                     "text": "En Septiembre de 2020 completé el programa de Acámica, continué agregandole más funcionalidades a los proyectos que ya había realizado y empecé a estudiar React.js de manera autodidacta."
                 }
             },
             {
                 "paragraph": {
-                    "text": "Actualmente me encuentro en la búsqueda de mi primera experiencia en la industria de sistemas para así poder trabajar junto a un equipo que me permita continuar aprendiendo y creciendo."
+                    "subtitle": "Actualidad",
+                    "text": "Continúo estudiando y creando proyectos que me permitan aprender nuevas tecnologías o a afilar mis habilidades como programador."
+                }
+            },
+            {
+                "paragraph": {
+                    "text": "De igual forma me encuentro en la búsqueda de mi primera experiencia en la industria de sistemas para así poder trabajar junto a un equipo que me permita crecer y aprender más."
                 }
             }
         ]
@@ -47,19 +52,19 @@
         "projects": [
             {
                 "name": "Sitio web personal",
-                "summary": "¡El sitio web que estás viendo ahora mismo! Espero sea de tu agrado, en este proyecto hice uso de componentes funcionales con Hooks, Context API, Framer Motion y TailwindCSS."
+                "summary": "¡El sitio web que estás viendo ahora mismo! Espero sea de tu agrado. En este proyecto utilicé React, componentes funcionales con Hooks, Context API, Framer Motion y Tailwind CSS."
             },
             {
                 "name": "GifOS",
-                "summary": "Aplicación web que permite al usuario crear sus propios GIFs, buscar sus favoritos y recibir recomendaciones. La aplicación integra la API de GIPHY y utiliza la librería RecordRTC."
+                "summary": "Es una aplicación web que permite al usuario crear sus propios GIFs, buscar sus favoritos y recibir recomendaciones. Utilicé la API de GIPHY y la librería RecordRTC de JS."
             },
             {
-                "name": "E-learning Platform",
-                "summary": "Proyecto de maquetado de una página web para cursos institucionales, para el maquetado se usó HTML, CSS y JavaScript."
+                "name": "E-Learning Platform",
+                "summary": "Proyecto de maquetado de una página web para cursos institucionales, para el maquetado utilicé HTML, CSS (SASS como preprocesador) y Vanilla JavaScript."
             },
             {
                 "name": "Podcast Channel",
-                "summary": "Proyecto de maquetado de una página web de podcasts, para el maquetado se usó HTML y CSS."
+                "summary": "Proyecto de maquetado para una página web de podcasts ficticia. Utilicé HTML y CSS."
             }
         ],
         "techStackHeader": "Tech Stack"
