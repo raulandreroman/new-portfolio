@@ -75,5 +75,8 @@
     },
     "footerSection": {
         "content": "Made with React.js, TailwindCSS and a lot of ❤"
+    },
+    "notFound": {
+        "content": "I'm sorry, we were not able to find that page for you."
     }
 }
