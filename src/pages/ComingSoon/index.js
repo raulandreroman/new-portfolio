@@ -1,5 +1,35 @@
 import React from 'react';
 
+//CODE FOR POSSIBLE FUTURE EASTER EGG
+
+/*  const [counter, setCounter] = useState(0);
+ 
+  function handleClick(e) {
+    const isH2 =
+      e.target ===
+      document.querySelector(
+        '.text-4xl.text-white.font-medium.text-center.z-20'
+      );
+    const isEnd = e.y > 419 && e.y < 440;
+    if (isH2 && isEnd) {
+      setCounter((c) => c + 1);
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener('click', (e) => handleClick(e));
+
+    return () => {
+      window.removeEventListener('click', (e) => handleClick(e));
+    };
+  }, []);
+
+  useEffect(() => {
+    if (counter === 7) {
+      window.location.href = '/home';
+    }
+  }, [counter]); */
+
 export default function ComingSoon() {
   return (
     <div className="bg-black flex flex-col items-center justify-center h-screen">

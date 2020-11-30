@@ -5,8 +5,6 @@ import { SiGmail, SiGithub, SiLinkedin, SiCodepen } from 'react-icons/si';
 import { Text } from '../containers/Language';
 
 export default function Footer(props) {
-  const { handleClick } = props;
-
   const icons = [
     {
       name: 'Gmail',
@@ -35,9 +33,16 @@ export default function Footer(props) {
       <div className="p-5 text-white flex flex-row text-3xl justify-between w-64 my-10 mb-4">
         {icons.map((icon, key) => {
           return (
-            <button key={key} onClick={() => handleClick(icon.url)}>
+            <a
+              href={
+                icon.url === 'email' ? 'mailto:hola@raulandre.com' : icon.url
+              }
+              target="_blank"
+              rel="noreferrer"
+              key={key}
+            >
               <icon.icon />
-            </button>
+            </a>
           );
         })}
       </div>

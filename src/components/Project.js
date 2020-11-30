@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion, useViewportScroll, useTransform } from 'framer-motion';
+import LazyLoad from 'react-lazyload';
 import { isBrowser, isMobile } from 'react-device-detect';
 //Import components
 import TechStack from './TechStack';
@@ -26,7 +27,7 @@ export default function Project(props) {
   const yDesktop = useTransform(
     scrollYProgress,
     [0, 0.47, 0.62, 0.85],
-    [0, -50, -125, -250]
+    [0, -130, -175, -280]
   );
 
   return (
@@ -42,7 +43,9 @@ export default function Project(props) {
       <div className={`flex flex-col mb-4 lg:ml-64 lg:w-6/12 lg:mr-12 lg:mb-0`}>
         {isMobile && <h4 className={'text-white ml-2 font-normal'}>{title}</h4>}
         <button className="my-2" onClick={() => handleClick(secondLink)}>
-          <Preview previewUrl={previewUrl} />
+          <LazyLoad height={250} offset={75}>
+            <Preview previewUrl={previewUrl} />
+          </LazyLoad>
         </button>
 
         <div
@@ -50,26 +53,26 @@ export default function Project(props) {
             'flex justify-center w-full max-w-sm self-center lg:max-w-none'
           }
         >
-          <button
-            onClick={() => handleClick(firstLink)}
+          <a
+            href={firstLink}
+            target="_blank"
+            rel="noreferrer"
             className={
-              'w-auto flex-grow h-8 bg-white mx-2 lg:w-24 lg:h-8 lg:flex-grow-0 max'
+              'w-auto flex-grow h-8 bg-white mx-2 lg:w-24 lg:h-8 lg:flex-grow-0 max flex flex-col justify-center items-center'
             }
           >
-            <span>
-              <Text section="projectsSection" tid="btn1" />
-            </span>
-          </button>
-          <button
-            onClick={() => handleClick(secondLink)}
+            <Text section="projectsSection" tid="btn1" />
+          </a>
+          <a
+            href={secondLink}
+            target="_blank"
+            rel="noreferrer"
             className={
-              'w-auto flex-grow h-8 bg-white mx-2 lg:w-24 lg:h-8 lg:flex-grow-0'
+              'w-auto flex-grow h-8 bg-white mx-2 lg:w-24 lg:h-8 lg:flex-grow-0 max flex flex-col justify-center items-center'
             }
           >
-            <span>
-              <Text section="projectsSection" tid="btn2" />
-            </span>
-          </button>
+            <Text section="projectsSection" tid="btn2" />
+          </a>
         </div>
         <div
           className={`relative self-center w-48 h-2 mt-2 bg-white lg:ml-2 lg:w-40`}

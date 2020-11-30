@@ -10,8 +10,8 @@ export default function Paragraph(props) {
   const y = useTransform(scrollYProgress, [0, 0.2, 0.35], [0, -30, -50]);
   const yDesktop = useTransform(
     scrollYProgress,
-    [0, 0.35, 0.5],
-    [0, -100, -180]
+    [0, 0.35, 0.45],
+    [0, -145, -200]
   );
 
   const { text, subtitle } = content;
