@@ -25,8 +25,8 @@ export default function Project(props) {
   const y = useTransform(scrollYProgress, [0, 0.47, 0.57], [0, -50, -90]);
   const yDesktop = useTransform(
     scrollYProgress,
-    [0, 0.47, 0.62, 0.85],
-    [0, -130, -175, -280]
+    [0, 0.47, 0.62, 0.85, 1],
+    [0, -130, -175, -280, -330]
   );
 
   return (
