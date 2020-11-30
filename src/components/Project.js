@@ -43,7 +43,7 @@ export default function Project(props) {
       <div className={`flex flex-col mb-4 lg:ml-64 lg:w-6/12 lg:mr-12 lg:mb-0`}>
         {isMobile && <h4 className={'text-white ml-2 font-normal'}>{title}</h4>}
         <button className="my-2" onClick={() => handleClick(secondLink)}>
-          <LazyLoad height={250} offset={75}>
+          <LazyLoad height={250} offset={150}>
             <Preview previewUrl={previewUrl} />
           </LazyLoad>
         </button>
