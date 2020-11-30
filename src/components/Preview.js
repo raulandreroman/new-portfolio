@@ -16,7 +16,7 @@ export default function Preview(props) {
           />
         ) : (
           <img
-            className="self-start m-0 hidden"
+            className="self-start m-0"
             alt="Screenshot of current project"
             src={previewUrl.desktop}
           />
