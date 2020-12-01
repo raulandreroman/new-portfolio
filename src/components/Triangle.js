@@ -30,6 +30,7 @@ export default function Triangle() {
         className={` w-48 h-1 relative z-10 m-auto top-4 bg-${theme}-bg`}
       ></div>
       <motion.div
+        aria-label="Triangle that gets lower as the user scrolls down"
         initial="hidden"
         animate={controls}
         ref={element}

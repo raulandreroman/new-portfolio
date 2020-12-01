@@ -25,9 +25,15 @@ export default function NavBarTools() {
     <div className="flex flex-col lg:flex-row lg:justify-end items-end text-4xl lg:text-5xl">
       <button className="flex" onClick={handleClick}>
         {theme === 'dark' ? (
-          <CgSun className={`my-1 lg:mx-1 text-${theme}-secondary`} />
+          <CgSun
+            aria-label="Change to light theme"
+            className={`my-1 lg:mx-1 text-${theme}-secondary`}
+          />
         ) : (
-          <CgMoon className={`my-1 lg:mx-1 text-${theme}-secondary`} />
+          <CgMoon
+            aria-label="Change to dark theme"
+            className={`my-1 lg:mx-1 text-${theme}-secondary`}
+          />
         )}
       </button>
 

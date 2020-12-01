@@ -28,6 +28,7 @@ export default function LanguageSelector() {
           {' '}
           {userLanguage !== 'es' ? (
             <p
+              aria-label="Cambiar idioma a español"
               className={
                 theme === 'light'
                   ? `text-2xl mb-3 lg:text-4xl lg:mb-0 lg:min-w-4 font-semibold lg:p-1  text-dark-bg  `
@@ -38,6 +39,7 @@ export default function LanguageSelector() {
             </p>
           ) : (
             <p
+              aria-label="Change language to english"
               className={
                 theme === 'light'
                   ? `text-2xl mb-3 lg:text-4xl lg:mb-0  lg:min-w-4 font-semibold lg:p-1  text-dark-bg  `

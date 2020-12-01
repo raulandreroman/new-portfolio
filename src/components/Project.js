@@ -41,7 +41,11 @@ export default function Project(props) {
     >
       <div className={`flex flex-col mb-4 lg:ml-64 lg:w-6/12 lg:mr-12 lg:mb-0`}>
         {isMobile && <h4 className={'text-white ml-2 font-normal'}>{title}</h4>}
-        <button className="my-2" onClick={() => handleClick(secondLink)}>
+        <button
+          aria-label="Visit project's website"
+          className="my-2"
+          onClick={() => handleClick(secondLink)}
+        >
           <Preview previewUrl={previewUrl} />
         </button>
 
@@ -51,6 +55,7 @@ export default function Project(props) {
           }
         >
           <a
+            aria-label="Visit repository on GitHub"
             href={firstLink}
             target="_blank"
             rel="noreferrer"
@@ -61,6 +66,7 @@ export default function Project(props) {
             <Text section="projectsSection" tid="btn1" />
           </a>
           <a
+            aria-label="Visit project's website"
             href={secondLink}
             target="_blank"
             rel="noreferrer"
