@@ -22,7 +22,7 @@ export default function NavBarTools() {
   }, [userThemeChange]);
 
   return (
-    <div className="flex flex-col lg:flex-row lg:justify-end items-end text-4xl lg:text-5xl">
+    <div className="flex flex-col lg:flex-row lg:justify-end items-end text-4xl md:text-5xl lg:text-5xl">
       <button className="flex" onClick={handleClick}>
         {theme === 'dark' ? (
           <CgSun

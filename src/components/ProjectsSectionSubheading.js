@@ -19,7 +19,7 @@ export default function ProjectsSectionSubheading() {
     >
       <motion.h3
         variants={textVariants}
-        className={`relative text-white z-20 blend-difference lg:text-5xl`}
+        className={`relative text-white z-20 blend-difference md:text-4xl lg:text-5xl`}
       >
         <Text section="projectsSection" tid="header" />
       </motion.h3>

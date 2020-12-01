@@ -28,10 +28,10 @@ export default function About() {
         animate={controls}
         ref={element}
         variants={containerVariants}
-        className={`flex flex-col mx-8 my-4 mt-7 lg:mx-48 lg:my-0 bg-${theme}-bg duration-700 lg:mb-0`}
+        className={`flex flex-col mx-8 my-4 mt-7 bg-${theme}-bg duration-700 md:w-9/12 md:m-auto`}
       >
         <AboutSubheading />
-        <div className="lg:mx-56 lg:ml-64  max-w-1xl flex flex-col my-4 lg:mb-0">
+        <div className="flex flex-col my-4 md:m-auto md:mt-12 lg:mb-0 lg:w-7/12">
           {sectionContent.content.map((item, key) => {
             const { paragraph } = item;
             return <Paragraph theme={theme} content={paragraph} key={key} />;

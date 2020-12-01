@@ -35,11 +35,13 @@ export default function Project(props) {
       className={
         //Removes margin bottom on last rendered project
         i === projectData.length - 1
-          ? 'flex flex-col mt-12 lg:flex-row duration-700'
-          : 'flex flex-col my-12 lg:flex-row lg:mb-32 duration-700'
+          ? 'flex flex-col mt-12 duration-700 md:flex-col md:m-0 lg:mt-16 lg:w-7/12 lg:m-auto lg:flex-row'
+          : 'flex flex-col my-12 duration-700 md:flex-col md:m-0 lg:mt-16 lg:w-7/12 lg:m-auto lg:flex-row lg:mb-32 '
       }
     >
-      <div className={`flex flex-col mb-4 lg:ml-64 lg:w-6/12 lg:mr-12 lg:mb-0`}>
+      <div
+        className={`flex flex-col mb-4 md:w-3/5 md:m-auto md:mt-20 lg:w-10/12 lg:flex-shrink-0 lg:mt-0 lg:mr-12 lg:mb-0`}
+      >
         {isMobile && <h4 className={'text-white ml-2 font-normal'}>{title}</h4>}
         <button
           aria-label="Visit project's website"
@@ -60,7 +62,7 @@ export default function Project(props) {
             target="_blank"
             rel="noreferrer"
             className={
-              'w-auto flex-grow h-8 bg-white mx-2 lg:w-24 lg:h-8 lg:flex-grow-0 max flex flex-col justify-center items-center'
+              'w-auto flex-grow h-8 bg-white mx-2 max flex flex-col justify-center items-center lg:w-24 lg:h-8 lg:flex-grow-0'
             }
           >
             <Text section="projectsSection" tid="btn1" />
@@ -71,7 +73,7 @@ export default function Project(props) {
             target="_blank"
             rel="noreferrer"
             className={
-              'w-auto flex-grow h-8 bg-white mx-2 lg:w-24 lg:h-8 lg:flex-grow-0 max flex flex-col justify-center items-center'
+              'w-auto flex-grow h-8 bg-white mx-2 max flex flex-col justify-center items-center lg:w-24 lg:h-8 lg:flex-grow-0 '
             }
           >
             <Text section="projectsSection" tid="btn2" />
@@ -81,7 +83,7 @@ export default function Project(props) {
           className={`relative self-center w-48 h-2 mt-2 bg-white lg:ml-2 lg:w-40`}
         />
       </div>
-      <div className="flex flex-col items-start flex-shrink-0 lg:w-1/4">
+      <div className="flex flex-col items-start flex-shrink-0 md:w-4/6 md:m-auto md:mt-8 lg:mt-0 lg:w-7/12">
         {!isMobile && (
           <h4
             className={

@@ -31,8 +31,8 @@ export default function LanguageSelector() {
               aria-label="Cambiar idioma a español"
               className={
                 theme === 'light'
-                  ? `text-2xl mb-3 lg:text-4xl lg:mb-0 lg:min-w-4 font-semibold lg:p-1  text-dark-bg  `
-                  : `text-2xl  mb-3 lg:text-4xl lg:mb-0  lg:min-w-4 font-semibold  lg:p-1 text-light-bg `
+                  ? `text-2xl mb-3 md:text-4xl lg:text-4xl lg:mb-0 lg:min-w-4 font-semibold lg:p-1  text-dark-bg  `
+                  : `text-2xl  mb-3 md:text-4xl lg:text-4xl lg:mb-0  lg:min-w-4 font-semibold  lg:p-1 text-light-bg `
               }
             >
               ES

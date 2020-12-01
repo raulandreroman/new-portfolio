@@ -689,10 +689,6 @@ h4 {
   font-size: 2.25rem;
 }
 
-.m-0{
-  margin: 0;
-}
-
 .m-1{
   margin: 0.25rem;
 }
@@ -818,10 +814,6 @@ h4 {
 
 .max-w-sm{
   max-width: 24rem;
-}
-
-.max-w-1xl{
-  max-width: 40rem;
 }
 
 .min-h-12{
@@ -1032,8 +1024,68 @@ h4 {
 
 @media (min-width: 696px){
 
+  .md\:flex-col{
+    flex-direction: column;
+  }
+
+  .md\:h-3{
+    height: 0.75rem;
+  }
+
+  .md\:text-4xl{
+    font-size: 2.25rem;
+  }
+
+  .md\:text-5xl{
+    font-size: 2.85rem;
+  }
+
+  .md\:text-6xl{
+    font-size: 4rem;
+  }
+
+  .md\:m-0{
+    margin: 0;
+  }
+
+  .md\:m-auto{
+    margin: auto;
+  }
+
+  .md\:mt-8{
+    margin-top: 2rem;
+  }
+
+  .md\:mt-12{
+    margin-top: 3rem;
+  }
+
+  .md\:mt-20{
+    margin-top: 5rem;
+  }
+
+  .md\:w-auto{
+    width: auto;
+  }
+
+  .md\:w-1\/2{
+    width: 50%;
+  }
+
   .md\:w-2\/4{
     width: 50%;
+  }
+
+  .md\:w-3\/5{
+    width: 60%;
+  }
+
+  .md\:w-4\/6{
+    width: 66.666667%;
+  }
+
+  .md\:w-9\/12{
+    width: 71%;
   }
 }
 
@@ -1055,12 +1107,12 @@ h4 {
     flex-grow: 0;
   }
 
-  .lg\:h-2{
-    height: 0.5rem;
+  .lg\:flex-shrink-0{
+    flex-shrink: 0;
   }
 
-  .lg\:h-3{
-    height: 0.75rem;
+  .lg\:h-2{
+    height: 0.5rem;
   }
 
   .lg\:h-8{
@@ -1091,24 +1143,13 @@ h4 {
     font-size: 5rem;
   }
 
-  .lg\:my-0{
-    margin-top: 0;
-    margin-bottom: 0;
+  .lg\:m-auto{
+    margin: auto;
   }
 
   .lg\:mx-1{
     margin-left: 0.25rem;
     margin-right: 0.25rem;
-  }
-
-  .lg\:mx-48{
-    margin-left: 13rem;
-    margin-right: 13rem;
-  }
-
-  .lg\:mx-56{
-    margin-left: 14rem;
-    margin-right: 14rem;
   }
 
   .lg\:mt-0{
@@ -1139,12 +1180,12 @@ h4 {
     margin-right: 3rem;
   }
 
-  .lg\:mb-32{
-    margin-bottom: 8rem;
+  .lg\:mt-16{
+    margin-top: 4rem;
   }
 
-  .lg\:ml-64{
-    margin-left: 16rem;
+  .lg\:mb-32{
+    margin-bottom: 8rem;
   }
 
   .lg\:max-w-none{
@@ -1163,19 +1204,6 @@ h4 {
     padding: 0.25rem;
   }
 
-  .lg\:px-48{
-    padding-left: 13rem;
-    padding-right: 13rem;
-  }
-
-  .lg\:pb-0{
-    padding-bottom: 0;
-  }
-
-  .lg\:pt-16{
-    padding-top: 4rem;
-  }
-
   .lg\:right-13{
     right: 3.5rem;
   }
@@ -1192,19 +1220,19 @@ h4 {
     width: 50%;
   }
 
-  .lg\:w-1\/4{
-    width: 25%;
+  .lg\:w-3\/4{
+    width: 75%;
   }
 
   .lg\:w-3\/12{
     width: 25%;
   }
 
-  .lg\:w-6\/12{
-    width: 50%;
-  }
-
   .lg\:w-7\/12{
     width: 56.333333%;
+  }
+
+  .lg\:w-10\/12{
+    width: 83.333333%;
   }
 }

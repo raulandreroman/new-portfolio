@@ -30,19 +30,21 @@ export default function ProjectsSection(props) {
       animate={controls}
       ref={element}
       variants={containerVariants}
-      className={`bg-black px-8 py-4 pb-24 mt-7 flex flex-col lg:px-48 lg:pt-16 lg:pb-0`}
+      className={`bg-black px-8 py-4 pb-24 mt-7 flex flex-col`}
     >
-      <ProjectsSecionSubheading />
-      {projects.map((project, key) => {
-        return (
-          <Project
-            details={project}
-            i={key}
-            key={key}
-            handleClick={props.handleClick}
-          />
-        );
-      })}
+      <div className="md:w-auto md:m-0 lg:w-3/4 lg:m-auto">
+        <ProjectsSecionSubheading />
+        {projects.map((project, key) => {
+          return (
+            <Project
+              details={project}
+              i={key}
+              key={key}
+              handleClick={props.handleClick}
+            />
+          );
+        })}
+      </div>
     </motion.section>
   );
 }

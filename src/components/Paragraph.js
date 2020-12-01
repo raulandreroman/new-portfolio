@@ -20,7 +20,7 @@ export default function Paragraph(props) {
   return !subtitle ? (
     <motion.p
       style={isBrowser ? { y: yDesktop } : { y }}
-      className={`text-${theme}-primary lg:text-lg my-2 duration-700`}
+      className={`text-${theme}-primary my-2 duration-700 lg:text-lg`}
     >
       {text}
     </motion.p>
@@ -28,13 +28,13 @@ export default function Paragraph(props) {
     <div>
       <motion.h4
         style={isBrowser ? { y: yDesktop } : { y }}
-        className={`text-${theme}-secondary lg:text-2xl mt-8 duration-700`}
+        className={`text-${theme}-secondary mt-8 duration-700 lg:text-2xl `}
       >
         {subtitle}
       </motion.h4>
       <motion.p
         style={isBrowser ? { y: yDesktop } : { y }}
-        className={`text-${theme}-primary my-2 lg:text-lg duration-700`}
+        className={`text-${theme}-primary my-2 duration-700 lg:text-lg`}
       >
         {text}
       </motion.p>

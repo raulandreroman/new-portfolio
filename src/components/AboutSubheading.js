@@ -29,7 +29,7 @@ export default function AboutSubheading() {
       {theme !== 'dark' ? (
         <motion.h3
           variants={textVariants}
-          className={`relative text-white z-20 blend-difference lg:text-5xl`}
+          className={`relative text-white z-20 blend-difference md:text-4xl lg:text-5xl`}
         >
           <Text tid="header" section="aboutSection" />
         </motion.h3>
