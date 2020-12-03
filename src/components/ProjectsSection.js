@@ -13,7 +13,8 @@ import { containerVariants } from '../animation';
 
 export default function ProjectsSection(props) {
   const projectsContent = Text({ section: 'projectsSection' });
-  const [element, controls] = useScroll();
+  const threshold = [0.07, 0];
+  const [element, controls] = useScroll(threshold);
 
   const textContent = projectsContent.projects;
 

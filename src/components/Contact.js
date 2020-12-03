@@ -30,7 +30,7 @@ export default function Contact(props) {
       variants={containerVariants}
       className="flex flex-col mb-20 items-center  "
     >
-      <p className={`text-${theme}-secondary text-3xl align-text-center`}>
+      <p className={`text-${theme}-secondary text-3xl text-center`}>
         <Text section="contactSection" tid="content" />
       </p>
       {theme !== 'dark' ? (
