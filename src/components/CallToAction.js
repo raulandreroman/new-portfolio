@@ -15,7 +15,7 @@ export default function CallToAction() {
 
   return (
     <header
-      className={`mx-8 min-h-12 md:w-9/12 md:m-auto lg:mt-8 my-4 lg:mb-0 lg:min-h-screen`}
+      className={`mx-8 min-h-12 md:w-9/12 md:m-auto lg:mt-8 my-4 lg:mb-0 lg:min-h-screen xxl:min-h-0 xxl:mb-12`}
     >
       <NavBarTools />
       <motion.div

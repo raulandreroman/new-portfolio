@@ -3,68 +3,62 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
 
 @tailwind base;
-html {
-  scroll-behavior: smooth;
-  @apply font-body box-border;
-}
-#root {
-  display: flex;
-  flex-direction: column;
-}
 
-*,
-*:before,
-*:after {
-  cursor: none;
-  @apply box-border;
-}
-button {
-  cursor: none;
-}
-
-h1 {
-  @apply font-semibold tracking-tight leading-tight text-5xl;
-}
-h2 {
-  @apply font-light leading-tight text-xl;
-}
-h3 {
-  @apply text-3xl;
-}
-h4 {
-  @apply text-2xl;
-}
-.blend-difference {
-  mix-blend-mode: difference;
-}
-.triangle {
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-top: 90px solid white;
-}
-.cursor {
-  pointer-events: none;
-  position: fixed;
-  transform: translateX(-50%) translateY(-50%);
-  left: 0;
-  top: 0;
-  width: 24px;
-  height: 24px;
-  border-radius: 16px;
-  color: white;
-  mix-blend-mode: difference;
-  background-color: white;
-}
 @tailwind components;
 
 @tailwind utilities;
 
-@layer base {
+@layer utilities {
   html {
-    @apply font-body;
+    scroll-behavior: smooth;
+    @apply font-body box-border;
   }
-  ,
+  #root {
+    display: flex;
+    flex-direction: column;
+  }
+
+  *,
+  *:before,
+  *:after {
+    cursor: none;
+    @apply box-border;
+  }
+  button {
+    cursor: none;
+  }
+
   h1 {
-    @apply font-semibold;
+    @apply font-semibold tracking-tight leading-tight text-5xl;
+  }
+  h2 {
+    @apply font-light leading-tight text-xl;
+  }
+  h3 {
+    @apply text-3xl;
+  }
+  h4 {
+    @apply text-2xl;
+  }
+  .blend-difference {
+    mix-blend-mode: difference;
+  }
+  .triangle {
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 90px solid white;
+  }
+  .cursor {
+    pointer-events: none;
+    position: fixed;
+    transform: translateX(-50%) translateY(-50%);
+    left: 0;
+    top: 0;
+    width: 24px;
+    height: 24px;
+    border-radius: 16px;
+    color: white;
+    mix-blend-mode: difference;
+    background-color: white;
   }
 }

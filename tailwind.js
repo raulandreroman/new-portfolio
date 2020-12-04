@@ -31,6 +31,7 @@ module.exports = {
       md: '696px',
       lg: '1024px',
       xl: '1280px',
+      xxl: '2304px',
     },
     colors: {
       transparent: 'transparent',
@@ -417,6 +418,7 @@ module.exports = {
       0: '0',
       12: '12.5rem',
       full: '100%',
+      half: '50vh',
       screen: '100vh',
     },
     minWidth: {

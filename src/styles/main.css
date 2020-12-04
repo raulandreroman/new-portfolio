@@ -419,82 +419,6 @@ img {
   height: auto;
 }
 
-html {
-  font-family: Montserrat, Roboto, Arial, sans-serif;
-}
-
-
-  h1 {
-  font-weight: 600;
-}
-
-html {
-  scroll-behavior: smooth;
-  font-family: Montserrat, Roboto, Arial, sans-serif;
-  box-sizing: border-box;
-}
-
-#root {
-  display: flex;
-  flex-direction: column;
-}
-
-*,
-*:before,
-*:after {
-  cursor: none;
-  box-sizing: border-box;
-}
-
-button {
-  cursor: none;
-}
-
-h1 {
-  font-weight: 600;
-  letter-spacing: -0.025em;
-  line-height: 1.25;
-  font-size: 2.85rem;
-}
-
-h2 {
-  font-weight: 300;
-  line-height: 1.25;
-  font-size: 1.25rem;
-}
-
-h3 {
-  font-size: 1.875rem;
-}
-
-h4 {
-  font-size: 1.5rem;
-}
-
-.blend-difference {
-  mix-blend-mode: difference;
-}
-
-.triangle {
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-top: 90px solid white;
-}
-
-.cursor {
-  pointer-events: none;
-  position: fixed;
-  transform: translateX(-50%) translateY(-50%);
-  left: 0;
-  top: 0;
-  width: 24px;
-  height: 24px;
-  border-radius: 16px;
-  color: white;
-  mix-blend-mode: difference;
-  background-color: white;
-}
-
 .bg-black{
   --bg-opacity: 1;
   background-color: #000;
@@ -1022,6 +946,73 @@ h4 {
   }
 }
 
+html {
+  scroll-behavior: smooth;
+  font-family: Montserrat, Roboto, Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+*,
+  *:before,
+  *:after {
+  cursor: none;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: none;
+}
+
+h1 {
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  line-height: 1.25;
+  font-size: 2.85rem;
+}
+
+h2 {
+  font-weight: 300;
+  line-height: 1.25;
+  font-size: 1.25rem;
+}
+
+h3 {
+  font-size: 1.875rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+.blend-difference {
+  mix-blend-mode: difference;
+}
+
+.triangle {
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 90px solid white;
+}
+
+.cursor {
+  pointer-events: none;
+  position: fixed;
+  transform: translateX(-50%) translateY(-50%);
+  left: 0;
+  top: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 16px;
+  color: white;
+  mix-blend-mode: difference;
+  background-color: white;
+}
+
 @media (min-width: 696px){
 
   .md\:flex-col{
@@ -1234,5 +1225,16 @@ h4 {
 
   .lg\:w-10\/12{
     width: 83.333333%;
+  }
+}
+
+@media (min-width: 2304px){
+
+  .xxl\:mb-12{
+    margin-bottom: 3rem;
+  }
+
+  .xxl\:min-h-0{
+    min-height: 0;
   }
 }
