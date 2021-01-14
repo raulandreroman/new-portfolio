@@ -23,15 +23,9 @@ export default function Paragraph(props) {
     "The Odin Project.",
     "Buenos Aires, Argentina.",
     "on my own.",
-    "autodidacta.",
-    "aprender",
-    "learn",
-    "mejorar",
-    "polish",
-    "freelance.",
-    "freelance",
-    "equipo",
-    "team",
+    "de manera autodidacta.",
+    "formar parte de un equipo",
+    "join a proactive, innovative team",
   ];
 
   const Highlight = ({ children, highlightIndex }) => (
@@ -64,6 +58,7 @@ export default function Paragraph(props) {
           autoEscape={true}
           textToHighlight={text}
           highlightTag={Highlight}
+          caseSensitive={true}
         />
       }
     </motion.p>
