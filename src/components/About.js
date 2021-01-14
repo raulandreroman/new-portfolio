@@ -1,24 +1,24 @@
-import React, { useContext } from 'react';
-import { AnimatePresence, motion } from 'framer-motion';
-import useScroll from './useScroll';
+import React, { useContext } from "react";
+import { AnimatePresence, motion } from "framer-motion";
+import useScroll from "./useScroll";
 
 //Import context containers
-import { Text } from '../containers/Language';
-import { ThemeContext } from '../containers/ThemeContext';
+import { Text } from "../containers/Language";
+import { ThemeContext } from "../containers/ThemeContext";
 
 //Import components
-import AboutSubheading from './AboutSubheading';
-import Paragraph from './Paragraph';
+import AboutSubheading from "./AboutSubheading";
+import Paragraph from "./Paragraph";
 
 //Import animation variants
-import { containerVariants } from '../animation';
+import { containerVariants } from "../animation";
 
 export default function About() {
   const { theme } = useContext(ThemeContext);
   const [element, controls] = useScroll();
 
   //Gets text content
-  const sectionContent = Text({ section: 'aboutSection' });
+  const sectionContent = Text({ section: "aboutSection" });
 
   return (
     <AnimatePresence>

@@ -1,6 +1,8 @@
-import React from 'react';
-import { motion, useViewportScroll, useTransform } from 'framer-motion';
-import { isBrowser } from 'react-device-detect';
+import React from "react";
+import { motion, useViewportScroll, useTransform } from "framer-motion";
+import Highlighter from "react-highlight-words";
+import { isBrowser } from "react-device-detect";
+import { paragraphContainer, strongWordsVariants } from "../animation";
 
 export default function Paragraph(props) {
   const { content, theme } = props;
@@ -16,13 +18,54 @@ export default function Paragraph(props) {
 
   const { text, subtitle } = content;
 
+  //Words to highlight
+  const strongWords = [
+    "The Odin Project.",
+    "Buenos Aires, Argentina.",
+    "on my own.",
+    "autodidacta.",
+    "aprender",
+    "learn",
+    "mejorar",
+    "polish",
+    "freelance.",
+    "freelance",
+    "equipo",
+    "team",
+  ];
+
+  const Highlight = ({ children, highlightIndex }) => (
+    //Element to be rendered for highlighted words
+    <motion.strong
+      variants={strongWordsVariants}
+      className={
+        theme !== "dark"
+          ? "bg-black text-white font-normal px-1 relative inline-block"
+          : "bg-white text-black font-normal px-1 relative inline-block"
+      }
+    >
+      {children}
+    </motion.strong>
+  );
+
   //Checks if content has a subtitle and renders accordingly
   return !subtitle ? (
     <motion.p
+      initial="hidden"
+      animate="show"
       style={isBrowser ? { y: yDesktop } : { y }}
-      className={`text-${theme}-primary my-2 duration-700 lg:text-lg`}
+      variants={paragraphContainer}
+      className={`text-${theme}-primary my-2 duration-700 lg:text-lg relative overflow-hidden`}
     >
-      {text}
+      {
+        <Highlighter
+          highlightClassName="highlight"
+          searchWords={strongWords}
+          autoEscape={true}
+          textToHighlight={text}
+          highlightTag={Highlight}
+        />
+      }
     </motion.p>
   ) : (
     <div>
@@ -33,10 +76,21 @@ export default function Paragraph(props) {
         {subtitle}
       </motion.h4>
       <motion.p
+        initial="hidden"
+        animate="show"
+        variants={paragraphContainer}
         style={isBrowser ? { y: yDesktop } : { y }}
-        className={`text-${theme}-primary my-2 duration-700 lg:text-lg`}
+        className={`text-${theme}-primary my-2 duration-700 lg:text-lg relative overflow-hidden`}
       >
-        {text}
+        {
+          <Highlighter
+            highlightClassName="highlight"
+            searchWords={strongWords}
+            autoEscape={true}
+            textToHighlight={text}
+            highlightTag={Highlight}
+          />
+        }
       </motion.p>
     </div>
   );

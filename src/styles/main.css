@@ -75,6 +75,11 @@ a {
  * Add the correct font weight in Chrome, Edge, and Safari.
  */
 
+
+strong {
+  font-weight: bolder;
+}
+
 /**
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
@@ -493,6 +498,10 @@ img {
   display: block;
 }
 
+.inline-block{
+  display: inline-block;
+}
+
 .flex{
   display: flex;
 }
@@ -760,6 +769,11 @@ img {
   padding: 1.25rem;
 }
 
+.px-1{
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
 .py-4{
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -805,6 +819,12 @@ img {
 
 .text-center{
   text-align: center;
+}
+
+.text-black{
+  --text-opacity: 1;
+  color: #000;
+  color: rgba(0, 0, 0, var(--text-opacity));
 }
 
 .text-white{
