@@ -1,13 +1,17 @@
-import React, { useContext } from 'react';
-import { motion } from 'framer-motion';
-import useScroll from './useScroll';
+import React, { useContext } from "react";
+import { motion } from "framer-motion";
+import useScroll from "../useScroll";
 
 //Import contexts
-import { Text } from '../containers/Language';
-import { ThemeContext } from '../containers/ThemeContext';
+import { Text } from "../../containers/Language";
+import { ThemeContext } from "../../containers/ThemeContext";
 
 //Import animation variants
-import { containerVariants, buttonHover, buttonTextHover } from '../animation';
+import {
+  containerVariants,
+  buttonHover,
+  buttonTextHover,
+} from "../../animation";
 
 export default function Contact(props) {
   const [element, controls] = useScroll(0.85);
@@ -16,8 +20,8 @@ export default function Contact(props) {
   const themedBtnTextAnimation = JSON.parse(JSON.stringify(buttonTextHover));
 
   //Changes the text color when hidden for dark mode
-  themedBtnAnimation.hover.background = 'white';
-  themedBtnTextAnimation.hover.color = 'black';
+  themedBtnAnimation.hover.background = "white";
+  themedBtnTextAnimation.hover.color = "black";
 
   const { theme } = useContext(ThemeContext);
   const { handleClick } = props;
@@ -33,26 +37,26 @@ export default function Contact(props) {
       <p className={`text-${theme}-secondary text-3xl text-center`}>
         <Text section="contactSection" tid="content" />
       </p>
-      {theme !== 'dark' ? (
+      {theme !== "dark" ? (
         <motion.button
           variants={buttonHover}
           initial="rest"
           whileHover="hover"
           whileTap="hover"
           animate="rest"
-          onClick={() => handleClick('email')}
+          onClick={() => handleClick("email")}
           className={
-            theme === 'light'
+            theme === "light"
               ? `bg-light-bg border border-light-secondary border-solid my-8 mx-6 p-3 mt-3 duration-300`
-              : 'bg-dark-bg border border-dark-secondary border-solid my-8 mx-6 p-3 mt-3 duration-300'
+              : "bg-dark-bg border border-dark-secondary border-solid my-8 mx-6 p-3 mt-3 duration-300"
           }
         >
           <motion.span
             variants={buttonTextHover}
             className={
-              theme === 'light'
+              theme === "light"
                 ? `text-light-secondary text-2xl font-light`
-                : 'text-dark-secondary text-2xl font-light'
+                : "text-dark-secondary text-2xl font-light"
             }
           >
             <Text section="contactSection" tid="btn" />
@@ -65,19 +69,19 @@ export default function Contact(props) {
           whileHover="hover"
           whileTap="hover"
           animate="rest"
-          onClick={() => handleClick('email')}
+          onClick={() => handleClick("email")}
           className={
-            theme === 'light'
+            theme === "light"
               ? `bg-light-bg border border-light-secondary border-solid my-8 mx-6 p-3 mt-3 duration-300`
-              : 'bg-dark-bg border border-dark-secondary border-solid my-8 mx-6 p-3 mt-3 duration-300'
+              : "bg-dark-bg border border-dark-secondary border-solid my-8 mx-6 p-3 mt-3 duration-300"
           }
         >
           <motion.span
             variants={themedBtnTextAnimation}
             className={
-              theme === 'light'
+              theme === "light"
                 ? `text-light-secondary text-2xl font-light`
-                : 'text-dark-secondary text-2xl font-light'
+                : "text-dark-secondary text-2xl font-light"
             }
           >
             <Text section="contactSection" tid="btn" />

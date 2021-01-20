@@ -1,17 +1,17 @@
 import React, { useContext } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import useScroll from "./useScroll";
+import useScroll from "../useScroll";
 
 //Import context containers
-import { Text } from "../containers/Language";
-import { ThemeContext } from "../containers/ThemeContext";
+import { Text } from "../../containers/Language";
+import { ThemeContext } from "../../containers/ThemeContext";
 
 //Import components
-import AboutSubheading from "./AboutSubheading";
+import Subheading from "./Subheading";
 import Paragraph from "./Paragraph";
 
 //Import animation variants
-import { containerVariants } from "../animation";
+import { containerVariants } from "../../animation";
 
 export default function About() {
   const { theme } = useContext(ThemeContext);
@@ -30,7 +30,7 @@ export default function About() {
         variants={containerVariants}
         className={`flex flex-col mx-8 my-4 mt-7 bg-${theme}-bg duration-700 md:w-9/12 md:m-auto`}
       >
-        <AboutSubheading />
+        <Subheading />
         <div className="flex flex-col my-4 md:m-auto md:mt-12 lg:mb-0 lg:w-7/12">
           {sectionContent.content.map((item, key) => {
             const { paragraph } = item;

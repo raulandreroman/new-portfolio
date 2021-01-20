@@ -1,30 +1,30 @@
-import React from 'react';
+import React from "react";
 //Import icons
-import { SiGmail, SiGithub, SiLinkedin, SiCodepen } from 'react-icons/si';
+import { SiGmail, SiGithub, SiLinkedin, SiCodepen } from "react-icons/si";
 //Import text context
-import { Text } from '../containers/Language';
+import { Text } from "../../containers/Language";
 
 export default function Footer(props) {
   const icons = [
     {
-      name: 'Gmail',
+      name: "Gmail",
       icon: SiGmail,
-      url: 'email',
+      url: "email",
     },
     {
-      name: 'Github',
+      name: "Github",
       icon: SiGithub,
-      url: 'https://github.com/randrerd',
+      url: "https://github.com/randrerd",
     },
     {
-      name: 'LinkedIn',
+      name: "LinkedIn",
       icon: SiLinkedin,
-      url: 'https://linkedin.com/in/randrerd',
+      url: "https://linkedin.com/in/randrerd",
     },
     {
-      name: 'CodePen',
+      name: "CodePen",
       icon: SiCodepen,
-      url: 'http://codepen.io/randrerd/',
+      url: "http://codepen.io/randrerd/",
     },
   ];
 
@@ -35,7 +35,7 @@ export default function Footer(props) {
           return (
             <a
               href={
-                icon.url === 'email' ? 'mailto:hola@raulandre.com' : icon.url
+                icon.url === "email" ? "mailto:hola@raulandre.com" : icon.url
               }
               target="_blank"
               rel="noreferrer"

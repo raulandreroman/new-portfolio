@@ -2,7 +2,7 @@ import React from "react";
 import { motion, useViewportScroll, useTransform } from "framer-motion";
 import Highlighter from "react-highlight-words";
 import { isBrowser } from "react-device-detect";
-import { paragraphContainer, strongWordsVariants } from "../animation";
+import { paragraphContainer, strongWordsVariants } from "../../animation";
 
 export default function Paragraph(props) {
   const { content, theme } = props;

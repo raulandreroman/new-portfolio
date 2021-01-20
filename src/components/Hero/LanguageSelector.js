@@ -1,7 +1,7 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useContext, useEffect } from "react";
 //Import contexts
-import { LanguageContext } from '../containers/Language';
-import { ThemeContext } from '../containers/ThemeContext';
+import { LanguageContext } from "../../containers/Language";
+import { ThemeContext } from "../../containers/ThemeContext";
 
 export default function LanguageSelector() {
   const { userLanguageChange, userLanguage } = useContext(LanguageContext);
@@ -14,7 +14,7 @@ export default function LanguageSelector() {
 
   //Sets language according to user preference
   useEffect(() => {
-    let defaultLanguage = window.localStorage.getItem('pref-lang');
+    let defaultLanguage = window.localStorage.getItem("pref-lang");
     if (!defaultLanguage) {
       defaultLanguage = window.navigator.language.substring(0, 2);
     }
@@ -25,12 +25,12 @@ export default function LanguageSelector() {
     <>
       <button>
         <span className="flex relative" onClick={() => handleLanguageChange()}>
-          {' '}
-          {userLanguage !== 'es' ? (
+          {" "}
+          {userLanguage !== "es" ? (
             <p
               aria-label="Cambiar idioma a español"
               className={
-                theme === 'light'
+                theme === "light"
                   ? `text-2xl mb-3 md:text-4xl lg:text-4xl lg:mb-0 lg:min-w-4 font-semibold lg:p-1  text-dark-bg  `
                   : `text-2xl  mb-3 md:text-4xl lg:text-4xl lg:mb-0  lg:min-w-4 font-semibold  lg:p-1 text-light-bg `
               }
@@ -41,7 +41,7 @@ export default function LanguageSelector() {
             <p
               aria-label="Change language to english"
               className={
-                theme === 'light'
+                theme === "light"
                   ? `text-2xl mb-3 lg:text-4xl lg:mb-0  lg:min-w-4 font-semibold lg:p-1  text-dark-bg  `
                   : `text-2xl mb-3 lg:text-4xl lg:mb-0  lg:min-w-4 font-semibold  lg:p-1 text-light-bg `
               }

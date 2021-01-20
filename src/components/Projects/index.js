@@ -1,18 +1,18 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React from "react";
+import { motion } from "framer-motion";
 
-import projectData from '../data/projects.json';
-import ProjectsSecionSubheading from './ProjectsSectionSubheading';
-import Project from './Project';
-import useScroll from './useScroll';
+import projectData from "../../data/projects.json";
+import Subheading from "./Subheading";
+import Project from "./Project";
+import useScroll from "../useScroll";
 
-import { Text } from '../containers/Language';
+import { Text } from "../../containers/Language";
 
 //Import animations
-import { containerVariants } from '../animation';
+import { containerVariants } from "../../animation";
 
 export default function ProjectsSection(props) {
-  const projectsContent = Text({ section: 'projectsSection' });
+  const projectsContent = Text({ section: "projectsSection" });
   const threshold = [0.07, 0];
   const [element, controls] = useScroll(threshold);
 
@@ -34,7 +34,7 @@ export default function ProjectsSection(props) {
       className={`bg-black px-8 py-4 pb-24 mt-7 flex flex-col`}
     >
       <div className="md:w-auto md:m-0 lg:w-3/4 lg:m-auto">
-        <ProjectsSecionSubheading />
+        <Subheading />
         {projects.map((project, key) => {
           return (
             <Project

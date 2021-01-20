@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 //Import icons
 import {
   SiJavascript,
@@ -8,62 +8,62 @@ import {
   SiCss3,
   SiHtml5,
   SiSass,
-} from 'react-icons/si';
-import { CgSmartphone } from 'react-icons/cg';
+} from "react-icons/si";
+import { CgSmartphone } from "react-icons/cg";
 //Import text context
-import { Text } from '../containers/Language';
+import { Text } from "../../containers/Language";
 
 export default function TechStack(props) {
   //Creates state for onhover feature
   const [isShown, setIsShown] = useState(false);
-  const [techToDisplay, setTechToDisplay] = useState('');
+  const [techToDisplay, setTechToDisplay] = useState("");
 
   const { content } = props;
 
   const icons = {
     markupAndComponents: [
       {
-        name: 'Html5',
-        display: 'HTML5',
+        name: "Html5",
+        display: "HTML5",
         icon: SiHtml5,
       },
       {
-        name: 'Javascript',
-        display: 'JavaScript ES6',
+        name: "Javascript",
+        display: "JavaScript ES6",
         icon: SiJavascript,
       },
       {
-        name: 'React',
-        display: 'React.JS',
+        name: "React",
+        display: "React.JS",
         icon: SiReact,
       },
     ],
     styling: [
       {
-        name: 'Css3',
-        display: 'CSS3',
+        name: "Css3",
+        display: "CSS3",
         icon: SiCss3,
       },
       {
-        name: 'Sass',
-        display: 'Sass',
+        name: "Sass",
+        display: "Sass",
         icon: SiSass,
       },
       {
-        name: 'Tailwindcss',
-        display: 'Tailwind CSS',
+        name: "Tailwindcss",
+        display: "Tailwind CSS",
         icon: SiTailwindcss,
       },
     ],
     utils: [
       {
-        name: 'Git',
-        display: 'Git',
+        name: "Git",
+        display: "Git",
         icon: SiGit,
       },
       {
-        name: 'MobileFirst',
-        display: 'Responsive Design',
+        name: "MobileFirst",
+        display: "Responsive Design",
         icon: CgSmartphone,
       },
     ],
@@ -84,11 +84,11 @@ export default function TechStack(props) {
   }
   return (
     <div className="flex flex-col w-32 min-w-8 min-h-12">
-      <h4 className={'text-white my-3 text-xl font-medium'}>
+      <h4 className={"text-white my-3 text-xl font-medium"}>
         <Text section="projectsSection" tid="techStackHeader" />
       </h4>
-      <div className={'text-3xl'}>
-        <div className={'flex'}>
+      <div className={"text-3xl"}>
+        <div className={"flex"}>
           {renderIcons(
             content.markupAndComponents,
             icons.markupAndComponents
@@ -104,7 +104,7 @@ export default function TechStack(props) {
             );
           })}
         </div>
-        <div className={'flex'}>
+        <div className={"flex"}>
           {renderIcons(content.styling, icons.styling).map((icon, key) => {
             return (
               <icon.icon
@@ -117,7 +117,7 @@ export default function TechStack(props) {
             );
           })}
         </div>
-        <div className={'flex'}>
+        <div className={"flex"}>
           {renderIcons(content.utils, icons.utils).map((icon, key) => {
             return (
               <icon.icon
