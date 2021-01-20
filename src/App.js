@@ -19,6 +19,7 @@ function App() {
           <BrowserRouter>
             <Switch>
               <Route path="/" exact component={Home} />
+              <Route path="/:locale(en|es)" exact component={Home} />
               <Route path="/404" component={NotFound} />
               <Redirect to="/404" />
             </Switch>

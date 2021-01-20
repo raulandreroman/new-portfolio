@@ -33,13 +33,12 @@ export function LanguageProvider({ children }) {
 
 export function Text({ tid, section }) {
   const languageContext = useContext(LanguageContext);
-  const sectionContent = languageContext.dictionary[section]
+  const sectionContent = languageContext.dictionary[section];
 
   //Checks if needs to return an array to map it over or just a string
-  if(!Array.isArray(sectionContent)){
-    return !tid ? sectionContent : sectionContent[tid] || tid
-
+  if (!Array.isArray(sectionContent)) {
+    return !tid ? sectionContent : sectionContent[tid] || tid;
   } else {
-    return sectionContent
+    return sectionContent;
   }
 }
