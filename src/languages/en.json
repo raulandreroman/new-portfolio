@@ -51,16 +51,20 @@
     "btn2": "Live",
     "projects": [
       {
+        "name": "Hacemos Tu Sociedad",
+        "summary": "Landing page for an attorney providing legal procedures management services, I was in charge of developing the complete user interface."
+      },
+      {
         "name": "Personal website",
-        "summary": "The website you're currently seeing! Hope you like it. In this project I used React, functional components, Hooks, Context API, Framer Motion and Tailwind CSS."
+        "summary": "The website you're currently seeing! In this project I used React, functional components, Hooks, Context API, Framer Motion and Tailwind CSS."
       },
       {
         "name": "GifOS",
         "summary": "It's a web app that allows the user to make their own GIFs, search for their favourite ones and get recommendations. I used the GIPHY API and the RecordRTC library."
       },
       {
-        "name": "E-Learning Platform",
-        "summary": "A markup project for an E-learning platform offering several courses, I used HTML, CSS (with SASS as preprocessor) and Vanilla JavaScript."
+        "name": "ClasesIN",
+        "summary": "Development of an e-learning platform's UI, I used HTML, CSS (with SASS as preprocessor) and Vanilla JavaScript."
       },
       {
         "name": "Podcast Channel",

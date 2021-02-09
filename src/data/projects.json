@@ -1,92 +1,72 @@
 [
-    {
-        "title": "Personal website",
-        "firstLink": "https://github.com/randrerd/new-portfolio",
-        "secondLink": "https://raulandre.com",
-        "techStack": {
-            "markupAndComponents": [
-                "Javascript",
-                "React"
-            ],
-            "styling": [
-                "Css3",
-                "Tailwindcss"
-            ],
-            "utils": [
-                "Git",
-                "MobileFirst"
-            ]
-        },
-        "previewUrl": {
-            "mobile": "../assets/new-portfolio.png",
-            "desktop": "../assets/new-portfolio-lg.png"
-        }
+  {
+    "title": "Hacemos Tu Sociedad",
+    "firstLink": "https://github.com/randrerd/hacemos-tu-sociedad",
+    "secondLink": "https://hacemostusociedad.com.ar",
+    "techStack": {
+      "markupAndComponents": ["Html5", "Javascript"],
+      "styling": ["Css3", "Sass", "Postcss"],
+      "utils": ["Webpack", "Git", "MobileFirst"]
     },
-    {
-        "title": "GifOS",
-        "firstLink": "https://github.com/randrerd/gifos",
-        "secondLink": "https://gifos.vercel.app",
-        "techStack": {
-            "markupAndComponents": [
-                "Html5",
-                "Javascript"
-            ],
-            "styling": [
-                "Css3",
-                "Sass"
-            ],
-            "utils": [
-                "Git",
-                "MobileFirst"
-            ]
-        },
-        "previewUrl": {
-            "mobile": "../assets/gifos.png",
-            "desktop": "../assets/gifos-lg.png"
-        }
-    },
-    {
-        "title": "eLearning Platform",
-        "firstLink": "https://github.com/randrerd/elearningProject",
-        "secondLink": "https://randrerd.github.io/elearningProject/",
-        "techStack": {
-            "markupAndComponents": [
-                "Html5",
-                "Javascript"
-            ],
-            "styling": [
-                "Css3",
-                "Sass"
-            ],
-            "utils": [
-                "Git",
-                "MobileFirst"
-            ]
-        },
-        "previewUrl": {
-            "mobile": "../assets/elearning.png",
-            "desktop": "../assets/elearning-lg.png"
-        }
-    },
-    {
-        "title": "Podcast Channel",
-        "firstLink": "https://github.com/randrerd/podcast-channel",
-        "secondLink": "https://randrerd.github.io/podcast-channel/",
-        "techStack": {
-            "markupAndComponents": [
-                "Html5"
-            ],
-            "styling": [
-                "Css3"
-            ],
-            "utils": [
-                "Git",
-                "MobileFirst"
-            ]
-        },
-        "previewUrl": {
-            "mobile": "../assets/podcast.png",
-            "desktop": "../assets/podcast-lg.png"
-        }
+    "previewUrl": {
+      "mobile": "../assets/hts.png",
+      "desktop": "../assets/hts-lg.png"
     }
+  },
+  {
+    "title": "Personal website",
+    "firstLink": "https://github.com/randrerd/new-portfolio",
+    "secondLink": "https://raulandre.com",
+    "techStack": {
+      "markupAndComponents": ["Javascript", "React"],
+      "styling": ["Css3", "Tailwindcss"],
+      "utils": ["Git", "MobileFirst"]
+    },
+    "previewUrl": {
+      "mobile": "../assets/new-portfolio.png",
+      "desktop": "../assets/new-portfolio-lg.png"
+    }
+  },
+  {
+    "title": "GifOS",
+    "firstLink": "https://github.com/randrerd/gifos",
+    "secondLink": "https://gifos.vercel.app",
+    "techStack": {
+      "markupAndComponents": ["Html5", "Javascript"],
+      "styling": ["Css3", "Sass"],
+      "utils": ["Git", "MobileFirst"]
+    },
+    "previewUrl": {
+      "mobile": "../assets/gifos.png",
+      "desktop": "../assets/gifos-lg.png"
+    }
+  },
+  {
+    "title": "eLearning Platform",
+    "firstLink": "https://github.com/randrerd/elearningProject",
+    "secondLink": "https://randrerd.github.io/elearningProject/",
+    "techStack": {
+      "markupAndComponents": ["Html5", "Javascript"],
+      "styling": ["Css3", "Sass"],
+      "utils": ["Git", "MobileFirst"]
+    },
+    "previewUrl": {
+      "mobile": "../assets/elearning.png",
+      "desktop": "../assets/elearning-lg.png"
+    }
+  },
+  {
+    "title": "Podcast Channel",
+    "firstLink": "https://github.com/randrerd/podcast-channel",
+    "secondLink": "https://randrerd.github.io/podcast-channel/",
+    "techStack": {
+      "markupAndComponents": ["Html5"],
+      "styling": ["Css3"],
+      "utils": ["Git", "MobileFirst"]
+    },
+    "previewUrl": {
+      "mobile": "../assets/podcast.png",
+      "desktop": "../assets/podcast-lg.png"
+    }
+  }
 ]

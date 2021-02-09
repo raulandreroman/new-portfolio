@@ -51,16 +51,20 @@
     "btn2": "Visítalo",
     "projects": [
       {
+        "name": "Hacemos Tu Sociedad",
+        "summary": "Landing page para abogada prestadora de servicios de gestión de sociedades, encargado del desarrollo completo de la interfaz de usuario."
+      },
+      {
         "name": "Sitio web personal",
-        "summary": "¡El sitio web que estás viendo ahora mismo! Espero sea de tu agrado. En este proyecto utilicé React, componentes funcionales con Hooks, Context API, Framer Motion y Tailwind CSS."
+        "summary": "¡El sitio web que estás viendo ahora mismo! En este proyecto utilicé React, componentes funcionales con Hooks, Context API, Framer Motion y Tailwind CSS."
       },
       {
         "name": "GifOS",
         "summary": "Es una aplicación web que permite al usuario crear sus propios GIFs, buscar sus favoritos y recibir recomendaciones. Utilicé la API de GIPHY y la librería RecordRTC de JS."
       },
       {
-        "name": "E-Learning Platform",
-        "summary": "Proyecto de maquetado de una página web para cursos institucionale. Para el maquetado utilicé HTML, CSS (SASS como preprocesador) y Vanilla JavaScript."
+        "name": "ClasesIN",
+        "summary": "Desarrollo de la interfaz de usuario para una plataforma de E-learning ofreciendo cursos institucionales. Para el maquetado utilicé HTML, CSS (SASS como preprocesador) y Vanilla JavaScript."
       },
       {
         "name": "Podcast Channel",
