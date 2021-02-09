@@ -96,7 +96,7 @@ export default function TechStack(props) {
   }
   return (
     <div className="flex flex-col w-32 min-w-8 min-h-12">
-      <h4 className={'text-white my-3 text-xl font-medium'}>
+      <h4 className={'text-gray-50 my-3 text-xl font-normal'}>
         <Text section="projectsSection" tid="techStackHeader" />
       </h4>
       <div className={'text-3xl'}>

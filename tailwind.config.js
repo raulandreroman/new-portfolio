@@ -1,3 +1,5 @@
+const colors = require('tailwindcss/colors');
+
 module.exports = {
   purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
   darkMode: false, // or 'media' or 'class'
@@ -30,14 +32,14 @@ module.exports = {
       },
       colors: {
         light: {
-          bg: '#fff',
-          primary: '#000',
-          secondary: '#000',
+          bg: colors.white,
+          primary: colors.trueGray[900],
+          secondary: colors.black,
         },
         dark: {
           bg: '#000',
-          primary: '#b2aeae',
-          secondary: '#fff',
+          primary: colors.trueGray[50],
+          secondary: colors.trueGray[50],
         },
       },
       minHeight: {

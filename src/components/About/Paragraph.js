@@ -1,8 +1,8 @@
-import React from "react";
-import { motion, useViewportScroll, useTransform } from "framer-motion";
-import Highlighter from "react-highlight-words";
-import { isBrowser } from "react-device-detect";
-import { paragraphContainer, strongWordsVariants } from "../../animation";
+import React from 'react';
+import { motion, useViewportScroll, useTransform } from 'framer-motion';
+import Highlighter from 'react-highlight-words';
+import { isBrowser } from 'react-device-detect';
+import { paragraphContainer, strongWordsVariants } from '../../animation';
 
 export default function Paragraph(props) {
   const { content, theme } = props;
@@ -20,12 +20,12 @@ export default function Paragraph(props) {
 
   //Words to highlight
   const strongWords = [
-    "The Odin Project.",
-    "Buenos Aires, Argentina.",
-    "on my own.",
-    "de manera autodidacta.",
-    "formar parte de un equipo",
-    "join a proactive, innovative team",
+    'The Odin Project.',
+    'Buenos Aires, Argentina.',
+    'on my own.',
+    'de manera autodidacta.',
+    'formar parte de un equipo',
+    'join a proactive, innovative team',
   ];
 
   const Highlight = ({ children, highlightIndex }) => (
@@ -33,9 +33,9 @@ export default function Paragraph(props) {
     <motion.strong
       variants={strongWordsVariants}
       className={
-        theme !== "dark"
-          ? "bg-black text-white font-normal px-1 relative inline-block"
-          : "bg-white text-black font-normal px-1 relative inline-block"
+        theme !== 'dark'
+          ? 'bg-black text-white font-normal px-1 relative inline-block'
+          : 'bg-white text-black font-normal px-1 relative inline-block'
       }
     >
       {children}
@@ -66,7 +66,7 @@ export default function Paragraph(props) {
     <div>
       <motion.h4
         style={isBrowser ? { y: yDesktop } : { y }}
-        className={`text-${theme}-secondary mt-8 duration-700 lg:text-2xl `}
+        className={`text-${theme}-primary mt-8 duration-700 lg:text-2xl `}
       >
         {subtitle}
       </motion.h4>

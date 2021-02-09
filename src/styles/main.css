@@ -17,6 +17,7 @@
     display: flex;
   }
 
+
   body {
     @apply font-body box-border;
   }

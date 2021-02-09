@@ -42,7 +42,8 @@ export default function Project(props) {
       <div
         className={`flex flex-col mb-4 md:w-3/5 md:m-auto md:mt-20 lg:w-10/12 lg:flex-shrink-0 lg:mt-0 lg:mr-12 lg:mb-0`}
       >
-        {isMobile && <h4 className={'text-white font-normal'}>{title}</h4>}
+        {isMobile && <h4 className={'text-gray-50 font-medium'}>{title}</h4>}
+
         <button
           aria-label="Visit project's website"
           className="mb-2 md:my-2"
@@ -87,13 +88,14 @@ export default function Project(props) {
         {!isMobile && (
           <h4
             className={
-              'text-white mb-3 font-normal lg:self-start lg:mt-3 lg:mb-0'
+              'text-gray-50 mb-3 font-medium lg:self-start lg:mt-3 lg:mb-0'
             }
           >
             {title}
           </h4>
         )}
-        <p className={'text-white text-lg font-light'}>{summary}</p>
+        <p className={'text-gray-50 text-lg font-light'}>{summary}</p>
+
         <TechStack content={techStack} />
       </div>
     </motion.div>
