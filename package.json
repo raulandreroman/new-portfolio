@@ -53,6 +53,8 @@
     "autoprefixer": "^9.8.6",
     "eslint": "^7.19.0",
     "eslint-plugin-react": "^7.22.0",
-    "postcss-cli": "^8.1.0"
+    "postcss-cli": "^8.1.0",
+    "stylelint": "^13.9.0",
+    "stylelint-config-standard": "^20.0.0"
   }
 }

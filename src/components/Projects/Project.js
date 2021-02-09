@@ -1,12 +1,12 @@
-import React from "react";
-import { motion, useViewportScroll, useTransform } from "framer-motion";
-import { isBrowser, isMobile } from "react-device-detect";
+import React from 'react';
+import { motion, useViewportScroll, useTransform } from 'framer-motion';
+import { isBrowser, isMobile } from 'react-device-detect';
 //Import components
-import TechStack from "./TechStack";
-import Preview from "./Preview";
+import TechStack from './TechStack';
+import Preview from './Preview';
 //Import text context
-import { Text } from "../../containers/Language";
-import projectData from "../../data/projects.json";
+import { Text } from '../../containers/Language';
+import projectData from '../../data/projects.json';
 
 export default function Project(props) {
   const {
@@ -35,14 +35,16 @@ export default function Project(props) {
       className={
         //Removes margin bottom on last rendered project
         i === projectData.length - 1
-          ? "flex flex-col mt-12 duration-700 md:flex-col md:m-0 lg:mt-16 lg:w-7/12 lg:m-auto lg:flex-row"
-          : "flex flex-col my-12 duration-700 md:flex-col md:m-0 lg:mt-16 lg:w-7/12 lg:m-auto lg:flex-row lg:mb-32 "
+          ? 'flex flex-col mt-12 duration-700 md:flex-col md:m-0 lg:mt-16 lg:w-7/12 lg:m-auto lg:flex-row'
+          : 'flex flex-col my-12 duration-700 md:flex-col md:m-0 lg:mt-16 lg:w-7/12 lg:m-auto lg:flex-row lg:mb-32 '
       }
     >
       <div
         className={`flex flex-col mb-4 md:w-3/5 md:m-auto md:mt-20 lg:w-10/12 lg:flex-shrink-0 lg:mt-0 lg:mr-12 lg:mb-0`}
       >
-        {isMobile && <h4 className={"text-white ml-2 font-normal"}>{title}</h4>}
+        {isMobile && (
+          <h4 className={'text-gray-100 ml-2 font-medium'}>{title}</h4>
+        )}
         <button
           aria-label="Visit project's website"
           className="my-2"
@@ -53,7 +55,7 @@ export default function Project(props) {
 
         <div
           className={
-            "flex justify-center w-full max-w-sm self-center lg:max-w-none"
+            'flex justify-center w-full max-w-sm self-center lg:max-w-none'
           }
         >
           <a
@@ -62,7 +64,7 @@ export default function Project(props) {
             target="_blank"
             rel="noreferrer"
             className={
-              "w-auto flex-grow h-8 bg-white mx-2 max flex flex-col justify-center items-center lg:w-24 lg:h-8 lg:flex-grow-0"
+              'w-auto flex-grow h-8 bg-white mx-2 max flex flex-col justify-center items-center lg:w-24 lg:h-8 lg:flex-grow-0'
             }
           >
             <Text section="projectsSection" tid="btn1" />
@@ -73,7 +75,7 @@ export default function Project(props) {
             target="_blank"
             rel="noreferrer"
             className={
-              "w-auto flex-grow h-8 bg-white mx-2 max flex flex-col justify-center items-center lg:w-24 lg:h-8 lg:flex-grow-0 "
+              'w-auto flex-grow h-8 bg-white mx-2 max flex flex-col justify-center items-center lg:w-24 lg:h-8 lg:flex-grow-0 '
             }
           >
             <Text section="projectsSection" tid="btn2" />
@@ -87,13 +89,13 @@ export default function Project(props) {
         {!isMobile && (
           <h4
             className={
-              "text-white mb-3 font-normal lg:self-start lg:mt-3 lg:mb-0"
+              'text-gray-100 mb-3 font-medium lg:self-start lg:mt-3 lg:mb-0'
             }
           >
             {title}
           </h4>
         )}
-        <p className={"text-white text-lg font-light"}>{summary}</p>
+        <p className={'text-gray-100 text-lg font-light'}>{summary}</p>
         <TechStack content={techStack} />
       </div>
     </motion.div>
