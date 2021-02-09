@@ -13,6 +13,10 @@
     scroll-behavior: smooth;
   }
 
+  #root {
+    display: flex;
+  }
+
   body {
     @apply font-body box-border;
   }
