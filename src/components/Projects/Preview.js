@@ -15,7 +15,7 @@ export default function Preview(props) {
       >
         {isMobile ? (
           <img
-            className="self-center m-auto h-56 project-fallback"
+            className="self-center m-auto project-fallback"
             alt="Screenshot of current project"
             src={previewUrl.mobile}
           />

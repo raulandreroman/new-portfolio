@@ -34,6 +34,7 @@ export default function Footer(props) {
         {icons.map((icon, key) => {
           return (
             <a
+              aria-label={`Visit ${icon.name} profile`}
               href={
                 icon.url === 'email' ? 'mailto:hola@raulandre.com' : icon.url
               }
