@@ -7,16 +7,21 @@ export default function Preview(props) {
 
   return (
     <div className="flex flex-col mt-4 mb-2">
-      <LazyLoad height={250} offset={320}>
+      <LazyLoad
+        height={250}
+        offset={150}
+        once
+        placeholder={<img alt="" className="project-fallback" />}
+      >
         {isMobile ? (
           <img
-            className="self-center m-auto h-56"
+            className="self-center m-auto h-56 project-fallback"
             alt="Screenshot of current project"
             src={previewUrl.mobile}
           />
         ) : (
           <img
-            className="self-start m-auto"
+            className="self-start m-auto project-fallback"
             alt="Screenshot of current project"
             src={previewUrl.desktop}
           />

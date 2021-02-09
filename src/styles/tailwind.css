@@ -8,16 +8,14 @@
 
 @tailwind utilities;
 
-@layer utilities {
+@layer base {
   html {
     scroll-behavior: smooth;
-    @apply font-body box-border;
-  }
-  #root {
-    display: flex;
-    flex-direction: column;
   }
 
+  body {
+    @apply font-body box-border;
+  }
   *,
   *:before,
   *:after {
@@ -60,5 +58,23 @@
     color: white;
     mix-blend-mode: difference;
     background-color: white;
+  }
+
+  .project-fallback {
+    background-color: #000;
+    animation-name: fallback;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    width: 100%;
+    min-height: 15em;
+  }
+  @keyframes fallback {
+    from {
+      background-color: #000;
+    }
+    to {
+      background-color: #373636;
+    }
   }
 }
