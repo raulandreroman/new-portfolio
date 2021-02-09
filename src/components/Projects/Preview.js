@@ -6,7 +6,7 @@ export default function Preview(props) {
   const { previewUrl } = props;
 
   return (
-    <div className="flex flex-col mt-4 mb-2">
+    <div className="flex flex-col my-2 md:mt-4">
       <LazyLoad
         height={250}
         offset={150}

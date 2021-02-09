@@ -1,21 +1,21 @@
-import React from "react";
-import { motion } from "framer-motion";
+import React from 'react';
+import { motion } from 'framer-motion';
 
 //Import context containers
-import { Text } from "../../containers/Language";
+import { Text } from '../../containers/Language';
 
 //Import animation variants
 import {
   textVariants,
   containerVariants,
   subheadingVariants,
-} from "../../animation";
+} from '../../animation';
 
 export default function Subheading() {
   return (
     <motion.div
       variants={containerVariants}
-      className="flex my-5 mb-3 lg:mt-0 overflow-hidden"
+      className="flex my-5 lg:mt-0 overflow-hidden"
     >
       <motion.h3
         variants={textVariants}
