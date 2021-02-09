@@ -9,8 +9,8 @@
       "utils": ["Webpack", "Git", "MobileFirst"]
     },
     "previewUrl": {
-      "mobile": "../assets/hts.png",
-      "desktop": "../assets/hts-lg.png"
+      "mobile": "../assets/hts.jpg",
+      "desktop": "../assets/hts-lg.jpg"
     }
   },
   {

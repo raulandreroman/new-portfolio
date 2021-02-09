@@ -17,7 +17,6 @@
     display: flex;
   }
 
-
   body {
     @apply font-body box-border;
   }
@@ -68,7 +67,7 @@
   .project-fallback {
     background-color: #000;
     animation-name: fallback;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     width: 100%;
@@ -79,7 +78,7 @@
       background-color: #000;
     }
     to {
-      background-color: #373636;
+      background-color: #fff;
     }
   }
 }
