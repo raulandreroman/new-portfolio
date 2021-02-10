@@ -1,19 +1,25 @@
 import React, { useState, createContext, useContext } from 'react';
 import { dictionaryList } from '../languages';
 
+interface IProvider {
+  userLanguage: string;
+  dictionary: {};
+  userLanguageChange: (selected: string) => void;
+}
+
 //Create the LanguageContext with default language
-export const LanguageContext = createContext({
+export const LanguageContext = createContext<Partial<IProvider>>({
   userLanguage: 'en',
   dictionary: dictionaryList.en,
 });
 
-export function LanguageProvider({ children }) {
-  const [userLanguage, setUserLanguage] = useState('en');
+const LanguageProvider: React.FC = ({ children }) => {
+  const [userLanguage, setUserLanguage] = useState<string>('en');
 
-  const provider = {
+  const provider: Partial<IProvider> = {
     userLanguage,
     dictionary: dictionaryList[userLanguage],
-    userLanguageChange: (selected) => {
+    userLanguageChange: (selected: 'es' | 'en') => {
       const newLanguage = selected
         ? selected
         : userLanguage === 'en'
@@ -29,9 +35,13 @@ export function LanguageProvider({ children }) {
       {children}
     </LanguageContext.Provider>
   );
-}
+};
 
-export function Text({ tid, section }) {
+type TextProps = {
+  tid: string;
+  section: string;
+};
+const Text: React.FC<TextProps> = ({ tid, section }) => {
   const languageContext = useContext(LanguageContext);
   const sectionContent = languageContext.dictionary[section];
 
@@ -41,4 +51,6 @@ export function Text({ tid, section }) {
   } else {
     return sectionContent;
   }
-}
+};
+
+export { Text, LanguageProvider };

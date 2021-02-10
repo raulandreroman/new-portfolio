@@ -1,16 +1,16 @@
-import React, { useContext } from "react";
-import { motion } from "framer-motion";
+import React, { useContext } from 'react';
+import { motion } from 'framer-motion';
 
 //Import contexts
-import { ThemeContext } from "../../containers/ThemeContext";
-import { Text } from "../../containers/Language";
+import { ThemeContext } from '../../containers/ThemeContext';
+import { Text } from '../../containers/Language';
 
 //Import components
-import Utils from "./Utils";
+import Utils from './Utils';
 //Import animations
-import { textVariants, containerVariants } from "../../animation";
+import { textVariants, containerVariants } from '../../animation';
 
-export default function CallToAction() {
+const CallToAction: React.FC = () => {
   const { theme } = useContext(ThemeContext);
 
   return (
@@ -29,7 +29,7 @@ export default function CallToAction() {
           <motion.h1
             variants={textVariants}
             className={
-              theme === "light"
+              theme === 'light'
                 ? ` text-light-secondary lg:text-7xl md:text-6xl block`
                 : `  text-dark-secondary lg:text-7xl md:text-6xl block  `
             }
@@ -43,7 +43,7 @@ export default function CallToAction() {
             <motion.h2
               variants={textVariants}
               className={
-                theme === "light"
+                theme === 'light'
                   ? `text-light-primary my-2 md:text-4xl lg:text-5xl block `
                   : ` text-dark-primary my-2 md:text-4xl lg:text-5xl block`
               }
@@ -53,7 +53,7 @@ export default function CallToAction() {
           </div>
           <div
             className={
-              theme === "light"
+              theme === 'light'
                 ? `bg-light-secondary my-1 h-1 w-32 md:w-1/2 md:h-3 lg:w-1/2lg:h-3 mt-5`
                 : `w-32 my-1 h-1 bg-dark-secondary mt-5 lg:h-2 lg:w-1/2 `
             }
@@ -62,4 +62,6 @@ export default function CallToAction() {
       </motion.div>
     </header>
   );
-}
+};
+
+export default CallToAction;
