@@ -1,10 +1,12 @@
 import React, { useState, createContext, useContext } from 'react';
 import { dictionaryList } from '../languages';
 
+type Locale = string;
+
 interface IProvider {
-  userLanguage: string;
+  userLanguage: Locale;
   dictionary: {};
-  userLanguageChange: (selected: string) => void;
+  userLanguageChange: (selected?: Locale) => void;
 }
 
 //Create the LanguageContext with default language
@@ -13,13 +15,13 @@ export const LanguageContext = createContext<Partial<IProvider>>({
   dictionary: dictionaryList.en,
 });
 
-const LanguageProvider: React.FC = ({ children }) => {
-  const [userLanguage, setUserLanguage] = useState<string>('en');
+const LanguageProvider = ({ children }) => {
+  const [userLanguage, setUserLanguage] = useState<Locale>('en');
 
-  const provider: Partial<IProvider> = {
+  const provider: IProvider = {
     userLanguage,
     dictionary: dictionaryList[userLanguage],
-    userLanguageChange: (selected: 'es' | 'en') => {
+    userLanguageChange: (selected) => {
       const newLanguage = selected
         ? selected
         : userLanguage === 'en'
@@ -38,10 +40,11 @@ const LanguageProvider: React.FC = ({ children }) => {
 };
 
 type TextProps = {
-  tid: string;
+  tid?: string;
   section: string;
 };
-const Text: React.FC<TextProps> = ({ tid, section }) => {
+
+const Text = ({ tid, section }: TextProps) => {
   const languageContext = useContext(LanguageContext);
   const sectionContent = languageContext.dictionary[section];
 

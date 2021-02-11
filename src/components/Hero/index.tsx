@@ -10,7 +10,7 @@ import Utils from './Utils';
 //Import animations
 import { textVariants, containerVariants } from '../../animation';
 
-const CallToAction: React.FC = () => {
+const Hero = () => {
   const { theme } = useContext(ThemeContext);
 
   return (
@@ -64,4 +64,4 @@ const CallToAction: React.FC = () => {
   );
 };
 
-export default CallToAction;
+export default Hero;

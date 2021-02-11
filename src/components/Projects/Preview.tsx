@@ -2,7 +2,14 @@ import React from 'react';
 import { isMobile } from 'react-device-detect';
 import LazyLoad from 'react-lazyload';
 
-export default function Preview(props) {
+type Props = {
+  previewUrl: {
+    mobile: string;
+    desktop: string;
+  };
+};
+
+const Preview = (props: Props) => {
   const { previewUrl } = props;
 
   return (
@@ -29,4 +36,5 @@ export default function Preview(props) {
       </LazyLoad>
     </div>
   );
-}
+};
+export default Preview;

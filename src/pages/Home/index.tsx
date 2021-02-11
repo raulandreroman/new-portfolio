@@ -11,7 +11,7 @@ import Footer from '../../components/Footer';
 import LazyLoad from 'react-lazyload';
 import Placeholder from '../../components/Placeholder';
 
-const Home: React.FC = () => {
+const Home = () => {
   const { theme } = useContext(ThemeContext);
 
   function handleClick(url: string) {
