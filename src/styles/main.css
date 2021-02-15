@@ -37,7 +37,7 @@
     @apply font-light leading-tight text-xl;
   }
   h3 {
-    @apply text-3xl;
+    @apply text-3xl md:text-4xl lg:text-5xl;
   }
   h4 {
     @apply text-2xl;

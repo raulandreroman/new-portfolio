@@ -4,7 +4,14 @@ import Highlighter from 'react-highlight-words';
 import { isBrowser } from 'react-device-detect';
 import { paragraphContainer, strongWordsVariants } from '../../animation';
 
-export default function Paragraph(props) {
+type Props = {
+  content: {
+    text: string;
+    subtitle?: string;
+  };
+  theme: string;
+};
+const Paragraph = (props: Props) => {
   const { content, theme } = props;
 
   //Scroll animations settings
@@ -28,7 +35,7 @@ export default function Paragraph(props) {
     'join a proactive, innovative team',
   ];
 
-  const Highlight = ({ children, highlightIndex }) => (
+  const Highlight = ({ children }: { children: JSX.Element }) => (
     //Element to be rendered for highlighted words
     <motion.strong
       variants={strongWordsVariants}
@@ -89,4 +96,6 @@ export default function Paragraph(props) {
       </motion.p>
     </div>
   );
-}
+};
+
+export default Paragraph;

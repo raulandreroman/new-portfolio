@@ -2,17 +2,19 @@ import React from 'react';
 import { isMobile } from 'react-device-detect';
 import LazyLoad from 'react-lazyload';
 
-export default function Preview(props) {
+type Props = {
+  previewUrl: {
+    mobile: string;
+    desktop: string;
+  };
+};
+
+const Preview = (props: Props) => {
   const { previewUrl } = props;
 
   return (
     <div className="flex flex-col my-2 md:mt-4">
-      <LazyLoad
-        height={250}
-        offset={150}
-        once
-        placeholder={<img alt="" className="project-fallback" />}
-      >
+      <LazyLoad height={250} offset={150} once>
         {isMobile ? (
           <img
             className="self-center m-auto project-fallback"
@@ -29,4 +31,5 @@ export default function Preview(props) {
       </LazyLoad>
     </div>
   );
-}
+};
+export default Preview;

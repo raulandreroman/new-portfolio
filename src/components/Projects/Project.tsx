@@ -8,7 +8,27 @@ import Preview from './Preview';
 import { Text } from '../../containers/Language';
 import projectData from '../../data/projects.json';
 
-export default function Project(props) {
+type Props = {
+  details: {
+    title: string;
+    summary?: string;
+    firstLink: string;
+    secondLink: string;
+    techStack: {
+      markupAndComponents: string[];
+      styling: string[];
+      utils: string[];
+    };
+    previewUrl: {
+      mobile: string;
+      desktop: string;
+    };
+  };
+  i: number;
+  handleClick: (url?: string) => void;
+};
+
+const Project = (props: Props) => {
   const {
     title,
     summary,
@@ -100,4 +120,6 @@ export default function Project(props) {
       </div>
     </motion.div>
   );
-}
+};
+
+export default Project;
