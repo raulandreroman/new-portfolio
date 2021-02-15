@@ -17,13 +17,7 @@ export function ThemeProvider({ children }: { children: JSX.Element }) {
   const provider = {
     theme,
     userThemeChange: (e?: Theme) => {
-      let newTheme;
-      if (!e) {
-        newTheme = 'light';
-      } else {
-        newTheme = e;
-      }
-      // const newTheme = e ? e : theme === 'light' ? 'dark' : 'light';
+      const newTheme = e ? e : theme === 'light' ? 'dark' : 'light';
       setTheme(newTheme);
       window.localStorage.setItem('pref-theme', newTheme);
     },
