@@ -13,7 +13,7 @@ import LazyLoad from 'react-lazyload';
 const Home = () => {
   const { theme } = useContext(ThemeContext);
 
-  function handleClick(url: string) {
+  function handleClick(url?: string) {
     if (url === 'email') {
       const newWindow = window.open(
         'mailto:randrerd@pm.me',
