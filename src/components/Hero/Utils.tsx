@@ -10,7 +10,9 @@ export default function Utils() {
   const { theme, userThemeChange } = useContext(ThemeContext);
 
   function handleClick() {
-    userThemeChange();
+    if (userThemeChange) {
+      userThemeChange();
+    }
   }
   //Sets theme according to user preference
   useEffect(() => {
@@ -18,7 +20,9 @@ export default function Utils() {
     if (!defaultTheme) {
       defaultTheme = 'light';
     }
-    userThemeChange(defaultTheme);
+    if (userThemeChange) {
+      userThemeChange(defaultTheme);
+    }
   }, [userThemeChange]);
 
   return (

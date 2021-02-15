@@ -100,7 +100,9 @@ const TechStack = (props: Props) => {
     let array: IconsInfo[] = [];
     origin.forEach((tech) => {
       let foundIcon = icons.find((icon) => tech === icon.name);
-      array.push(foundIcon);
+      if (foundIcon) {
+        array.push(foundIcon);
+      }
     });
     return array;
   };

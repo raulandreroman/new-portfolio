@@ -44,7 +44,7 @@ export default function About() {
           {sectionContent.content.map((item, key) => {
             const { paragraph } = item;
 
-            return <Paragraph theme={theme} content={paragraph} key={key} />;
+            return <Paragraph theme={theme!} content={paragraph} key={key} />;
           })}
         </div>
       </motion.section>

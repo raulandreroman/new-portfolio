@@ -17,7 +17,9 @@ const LanguageSelector = () => {
 
   //Set selected language by calling context method
   const handleLanguageChange = () => {
-    userLanguageChange();
+    if (userLanguageChange) {
+      userLanguageChange();
+    }
   };
 
   //Sets language according to user preference
@@ -26,7 +28,9 @@ const LanguageSelector = () => {
     if (!defaultLanguage) {
       defaultLanguage = locale;
     }
-    userLanguageChange(defaultLanguage);
+    if (userLanguageChange) {
+      userLanguageChange(defaultLanguage);
+    }
   }, [userLanguageChange, locale]);
 
   return (
