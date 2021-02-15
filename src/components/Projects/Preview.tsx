@@ -14,12 +14,7 @@ const Preview = (props: Props) => {
 
   return (
     <div className="flex flex-col my-2 md:mt-4">
-      <LazyLoad
-        height={250}
-        offset={150}
-        once
-        placeholder={<img alt="" className="project-fallback" />}
-      >
+      <LazyLoad height={250} offset={150} once>
         {isMobile ? (
           <img
             className="self-center m-auto project-fallback"

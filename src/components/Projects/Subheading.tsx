@@ -23,12 +23,12 @@ export default function Subheading() {
       >
         <Text section="projectsSection" tid="header" />
       </motion.h3>
-      <motion.h4
+      {/* <motion.h4
         variants={textVariants}
         className={`relative text-white z-20 blend-difference`}
       >
         Challenges
-      </motion.h4>
+      </motion.h4> */}
       <motion.div
         variants={subheadingVariants.rightToLeft}
         className={`absolute self-center mr-auto w-16 h-8 lg:h-12 bg-white`}

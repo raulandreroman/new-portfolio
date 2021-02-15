@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import Helmet from 'react-helmet';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { ThemeContext } from '../../containers/ThemeContext';
 
 import Hero from '../../components/Hero';
@@ -9,7 +9,6 @@ import Contact from '../../components/Contact';
 import Triangle from '../../components/Triangle';
 import Footer from '../../components/Footer';
 import LazyLoad from 'react-lazyload';
-import Placeholder from '../../components/Placeholder';
 
 const Home = () => {
   const { theme } = useContext(ThemeContext);
@@ -29,30 +28,32 @@ const Home = () => {
   }
 
   return (
-    <div
-      className={
-        theme === 'light'
-          ? 'bg-light-bg duration-700'
-          : `bg-dark-bg duration-700`
-      }
-    >
-      <Helmet
-        bodyAttributes={{
-          class:
-            theme === 'light'
-              ? 'bg-light-bg duration-700 z-30'
-              : `bg-dark-bg duration-700 z-30`,
-        }}
-      />
-      <Hero />
-      <About />
-      <LazyLoad height={800} offset={150} placeholder={Placeholder}>
-        <ProjectsSection handleClick={handleClick} />
-        <Triangle />
-      </LazyLoad>
-      <Contact handleClick={handleClick} />
-      <Footer />
-    </div>
+    <HelmetProvider>
+      <div
+        className={
+          theme === 'light'
+            ? 'bg-light-bg duration-700'
+            : `bg-dark-bg duration-700`
+        }
+      >
+        <Helmet
+          bodyAttributes={{
+            class:
+              theme === 'light'
+                ? 'bg-light-bg duration-700 z-30'
+                : `bg-dark-bg duration-700 z-30`,
+          }}
+        />
+        <Hero />
+        <About />
+        <LazyLoad height={800} offset={150}>
+          <ProjectsSection handleClick={handleClick} />
+          <Triangle />
+        </LazyLoad>
+        <Contact handleClick={handleClick} />
+        <Footer />
+      </div>
+    </HelmetProvider>
   );
 };
 
