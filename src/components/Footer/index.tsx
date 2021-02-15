@@ -4,7 +4,7 @@ import { SiGmail, SiGithub, SiLinkedin, SiCodepen } from 'react-icons/si';
 //Import text context
 import { Text } from '../../containers/Language';
 
-export default function Footer(props) {
+const Footer = () => {
   const icons = [
     {
       name: 'Gmail',
@@ -55,4 +55,6 @@ export default function Footer(props) {
       </div>
     </section>
   );
-}
+};
+
+export default Footer;

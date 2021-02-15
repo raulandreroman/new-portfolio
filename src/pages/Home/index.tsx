@@ -51,7 +51,7 @@ const Home = () => {
         <Triangle />
       </LazyLoad>
       <Contact handleClick={handleClick} />
-      <Footer handleClick={handleClick} />
+      <Footer />
     </div>
   );
 };

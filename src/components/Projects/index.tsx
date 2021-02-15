@@ -11,8 +11,24 @@ import { Text } from '../../containers/Language';
 //Import animations
 import { containerVariants } from '../../animation';
 
-interface Props {
+type Props = {
   handleClick: (url?: string) => void;
+};
+
+interface IProject {
+  title: string;
+  firstLink: string;
+  secondLink: string;
+  summary?: string;
+  techStack: {
+    markupAndComponents: string[];
+    styling: string[];
+    utils: string[];
+  };
+  previewUrl: {
+    mobile: string;
+    desktop: string;
+  };
 }
 
 const ProjectsSection = (props: Props) => {
@@ -22,22 +38,6 @@ const ProjectsSection = (props: Props) => {
   const [element, controls] = useScroll(threshold);
 
   const textContent = projectsContent.projects;
-
-  interface IProject {
-    title: string;
-    firstLink: string;
-    secondLink: string;
-    summary?: string;
-    techStack: {
-      markupAndComponents: string[];
-      styling: string[];
-      utils: string[];
-    };
-    previewUrl: {
-      mobile: string;
-      desktop: string;
-    };
-  }
 
   const projects: IProject[] = projectData.map((project: IProject, i) => {
     //Adds text content to projects data

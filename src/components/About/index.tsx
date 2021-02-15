@@ -17,8 +17,17 @@ export default function About() {
   const { theme } = useContext(ThemeContext);
   const [element, controls] = useScroll();
 
+  interface ISectionContent {
+    content: {
+      paragraph: {
+        text: string;
+        subtitle?: string;
+      };
+    }[];
+  }
+
   //Gets text content
-  const sectionContent = Text({ section: 'aboutSection' });
+  const sectionContent: ISectionContent = Text({ section: 'aboutSection' });
 
   return (
     <AnimatePresence>
@@ -34,6 +43,7 @@ export default function About() {
         <div className="flex flex-col my-4 md:m-auto md:mt-12 lg:mb-0 lg:w-7/12">
           {sectionContent.content.map((item, key) => {
             const { paragraph } = item;
+
             return <Paragraph theme={theme} content={paragraph} key={key} />;
           })}
         </div>

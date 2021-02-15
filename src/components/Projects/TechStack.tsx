@@ -14,8 +14,23 @@ import {
 import { CgSmartphone } from 'react-icons/cg';
 //Import text context
 import { Text } from '../../containers/Language';
+import { IconType } from 'react-icons';
 
-export default function TechStack(props) {
+type Props = {
+  content: {
+    markupAndComponents: string[];
+    styling: string[];
+    utils: string[];
+  };
+};
+
+type IconsInfo = {
+  name: string;
+  display: string;
+  icon: IconType;
+};
+
+const TechStack = (props: Props) => {
   //Creates state for onhover feature
   const [isShown, setIsShown] = useState(false);
   const [techToDisplay, setTechToDisplay] = useState('');
@@ -81,16 +96,16 @@ export default function TechStack(props) {
     ],
   };
 
-  function renderIcons(origin, icons) {
-    let array = [];
+  const renderIcons = (origin: string[], icons: IconsInfo[]) => {
+    let array: IconsInfo[] = [];
     origin.forEach((tech) => {
       let foundIcon = icons.find((icon) => tech === icon.name);
       array.push(foundIcon);
     });
     return array;
-  }
+  };
 
-  function handleMouseEnter(tech) {
+  function handleMouseEnter(tech: string) {
     setIsShown(true);
     setTechToDisplay(tech);
   }
@@ -148,4 +163,6 @@ export default function TechStack(props) {
       )}
     </div>
   );
-}
+};
+
+export default TechStack;

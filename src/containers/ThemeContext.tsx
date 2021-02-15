@@ -1,6 +1,6 @@
 import React, { useState, createContext } from 'react';
 
-type Theme = 'light' | 'dark';
+type Theme = string;
 
 interface IThemeContext {
   theme: Theme;
@@ -11,7 +11,7 @@ export const ThemeContext = createContext<Partial<IThemeContext>>({
   theme: 'light',
 });
 
-export function ThemeProvider({ children }) {
+export function ThemeProvider({ children }: { children: JSX.Element }) {
   const [theme, setTheme] = useState<Theme>('light');
 
   const provider = {
