@@ -103,7 +103,8 @@ const LanguageProvider = ({ children }: LanguageProviderProps) => {
 
 const Text = ({ tid, section }: TextProps) => {
   const languageContext = useContext(LanguageContext);
-  const sectionContent: SectionContent = languageContext.dictionary[section];
+
+  const sectionContent: SectionContent = languageContext.dictionary![section];
 
   //Checks if needs to return an array to map it over or just a string
   if (!Array.isArray(sectionContent)) {
