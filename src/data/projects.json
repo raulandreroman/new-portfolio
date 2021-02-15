@@ -18,7 +18,7 @@
     "firstLink": "https://github.com/randrerd/new-portfolio",
     "secondLink": "https://raulandre.com",
     "techStack": {
-      "markupAndComponents": ["Javascript", "React"],
+      "markupAndComponents": ["Javascript", "Typescript", "React"],
       "styling": ["Css3", "Tailwindcss"],
       "utils": ["Git", "MobileFirst"]
     },

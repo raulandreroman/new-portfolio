@@ -10,6 +10,7 @@ import {
   SiSass,
   SiPostcss,
   SiWebpack,
+  SiTypescript,
 } from 'react-icons/si';
 import { CgSmartphone } from 'react-icons/cg';
 //Import text context
@@ -53,6 +54,11 @@ const TechStack = (props: Props) => {
         name: 'React',
         display: 'React.JS',
         icon: SiReact,
+      },
+      {
+        name: 'Typescript',
+        display: 'TypeScript',
+        icon: SiTypescript,
       },
     ],
     styling: [
