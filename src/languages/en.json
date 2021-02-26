@@ -1,7 +1,7 @@
 {
   "CTASection": {
     "header": "Front End Developer",
-    "content": "Hi, I'm Raúl! I focus on creating clean, responsive and functional web apps."
+    "content": "Hi, I'm Raúl! I like creating clean, responsive and functional web apps."
   },
   "aboutSection": {
     "header": "Journey",
@@ -13,7 +13,7 @@
       },
       {
         "paragraph": {
-          "text": "Learning how to set up a development environment using Ubuntu, how to work with Git with GitHub, then HTML and CSS."
+          "text": "Studied web fundamentals, learned how to set up a development environment using Ubuntu, how to work with Git with GitHub, then HTML and CSS."
         }
       },
       {
@@ -24,18 +24,18 @@
       },
       {
         "paragraph": {
-          "text": "Where I improved my HTML and CSS skills and learned JavaScript, Node.js, Express.js, and working with relational and non-relational databases such as MySQL and MongoDB."
+          "text": "Improved my HTML and CSS skills, learned to use JavaScript, Node.js, Express.js, to work with relational and non-relational databases such as MySQL and MongoDB and studied agile methodology."
         }
       },
       {
         "paragraph": {
-          "text": "In 2020 I completed the Acámica program, I added features and made improvements to projects I’d started and also started learning React.js on my own."
+          "text": "In 2020 I completed the Acámica program, I added features and made improvements to projects I’d started, started working as a freelance developer and also learned React.js on my own."
         }
       },
       {
         "paragraph": {
           "subtitle": "Thereafter",
-          "text": "I continue to build personal projects, which has allowed me to learn  new technologies and to polish my programming skill set. I've also been doing freelance work building projects for clients."
+          "text": "Since they've allowed me to learn new technologies and to polish my programming skill set I've continued to study and to build personal projects."
         }
       },
       {
