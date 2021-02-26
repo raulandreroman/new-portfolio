@@ -52,23 +52,19 @@
     "projects": [
       {
         "name": "Hacemos Tu Sociedad",
-        "summary": "Landing page built along the Estudio Mixto team, I was in charge of developing the complete user interface."
+        "summary": "Landing page built along the Estudio Mixto team. Responsible of implementing the previously designed visual elements and creating interaction states on the UI."
       },
       {
         "name": "Personal website",
-        "summary": "The website you're currently seeing! In this project I used React, functional components, Hooks, Context API, Framer Motion and Tailwind CSS."
+        "summary": "The website you're currently on! I designed and implemented the complete user interface and user experience."
       },
       {
         "name": "GifOS",
-        "summary": "It's a web app that allows the user to make their own GIFs, search for their favourite ones and get recommendations. I used the GIPHY API and the RecordRTC library."
+        "summary": "Web app that allows the user to make their own GIFs, search for their favourite ones and get recommendations. I used the GIPHY API and the RecordRTC library."
       },
       {
         "name": "ClasesIN",
-        "summary": "Development of an e-learning platform's UI, I used HTML, CSS (with SASS as preprocessor) and Vanilla JavaScript."
-      },
-      {
-        "name": "Podcast Channel",
-        "summary": "Markup for a podcasts website, coded using HTML and CSS."
+        "summary": "Multi-page website for an e-learning platform. Responsible for developing the previously designed user interface and communicating directly with the UI designer to ease-up the development process."
       }
     ],
     "techStackHeader": "Tech Stack"

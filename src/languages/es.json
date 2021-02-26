@@ -52,23 +52,19 @@
     "projects": [
       {
         "name": "Hacemos Tu Sociedad",
-        "summary": "Landing page elaborada en conjunto a Estudio Mixto, estuve encargado del desarrollo completo de la interfaz de usuario."
+        "summary": "Landing page desarrollada en conjunto al equipo de Estudio Mixto, estuve encargado de implementar los elementos visuales previamente diseñados y de crear las interacciones de estados en la UI."
       },
       {
         "name": "Sitio web personal",
-        "summary": "¡El sitio web que estás viendo ahora mismo! En este proyecto utilicé React, componentes funcionales con Hooks, Context API, Framer Motion y Tailwind CSS."
+        "summary": "¡El sitio web en el que estás ahora mismo! Diseñé e implementé completamente la interfaz de usuario y la experiencia de usuario."
       },
       {
         "name": "GifOS",
-        "summary": "Es una aplicación web que permite al usuario crear sus propios GIFs, buscar sus favoritos y recibir recomendaciones. Utilicé la API de GIPHY y la librería RecordRTC de JS."
+        "summary": "Aplicación web que permite al user crear sus propios GIFs, buscar sus favoritos y recibir recomendaciones. Implementé la API de GIPHY y la librería RecordRTC de JS."
       },
       {
         "name": "ClasesIN",
-        "summary": "Desarrollo de la interfaz de usuario para una plataforma de E-learning ofreciendo cursos institucionales. Para el maquetado utilicé HTML, CSS (SASS como preprocesador) y Vanilla JavaScript."
-      },
-      {
-        "name": "Podcast Channel",
-        "summary": "Proyecto de maquetado para una página web de podcasts ficticia. Utilicé HTML y CSS."
+        "summary": "Responsable de desarrollar la interfaz de usuario previamente diseñada y de la comunicación directa con el diseñador UI para evitar retrasos en el proceso de desarrollo."
       }
     ],
     "techStackHeader": "Tech Stack"
