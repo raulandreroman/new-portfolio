@@ -13,34 +13,34 @@
       },
       {
         "paragraph": {
-          "text": "Estudié los fundamentos de la web, aprendí a hacer el setup de un entorno de desarrollo usando Ubuntu, a usar Git con GitHub, y luego HTML y CSS."
+          "text": "Tuve la oportunidad de obtener nuevas herramientas de aprendizaje, de estudiar los fundamentos de la web y de aprender las bases del desarrollo Front End gracias a los recursos proveídos en la plataforma."
         }
       },
       {
         "paragraph": {
           "subtitle": "Educación académica",
-          "text": "Me inscribí en el programa de Desarrollo Web Full Stack en Acámica en Buenos Aires, Argentina."
+          "text": "Luego me inscribí en el programa de Desarrollo Web Full Stack en Acámica en Buenos Aires, Argentina."
         }
       },
       {
         "paragraph": {
-          "text": "Mejoré mis habilidades con HTML y CSS, aprendí a utilizar JavaScript, Node.js, Express.js, a trabajar con base de datos relacionales y no-relacionales (MySQL y MongoDB) e igualmente estudié la metodología agile."
+          "text": "Aprendí a desarrollar sitios webs interactivos usando JavaScript ES6, a trabajar en equipo siguiendo la metodología agile y hasta a desarrollar una API entera usando Node.js!"
         }
       },
       {
         "paragraph": {
-          "text": "En el 2020 completé el programa de Acámica, agregué más funcionalidades a los proyectos ya empezados, empecé a trabajar freelance y aprendí React.js de manera autodidacta."
+          "text": "En el 2020 completé el programa de Acámica, agregué más funcionalidades a los proyectos ya empezados y aprendí React.js de manera autodidacta."
         }
       },
       {
         "paragraph": {
           "subtitle": "Actualidad",
-          "text": "Continúo creando proyectos personales, lo cual me ha permitido aprender nuevas tecnologías y mejorar mis habilidades como programador."
+          "text": "Empecé a trabajar como freelancer colaborando con clientes con distintos requerimientos, por lo cual aprendí a adaptarme para satisfacer las necesidades a mano y producir resultados."
         }
       },
       {
         "paragraph": {
-          "text": "Busco formar parte de un equipo proactivo, innovador y lleno de personas empáticas en el cual pueda seguir creciendo personal y profesionalmente."
+          "text": "Continúo estudiando y busco formar parte de un equipo proactivo, innovador y lleno de personas empáticas en el cual pueda seguir creciendo personal y profesionalmente."
         }
       }
     ]
@@ -52,7 +52,7 @@
     "projects": [
       {
         "name": "Hacemos Tu Sociedad",
-        "summary": "Landing page desarrollada en conjunto al equipo de Estudio Mixto, estuve encargado de implementar los elementos visuales previamente diseñados y de crear las interacciones de estados en la UI."
+        "summary": "Landing page desarrollada en conjunto al equipo de Estudio Mixto. Estuve encargado de implementar los elementos visuales previamente diseñados y de crear las interacciones de estados en la UI."
       },
       {
         "name": "Sitio web personal",
