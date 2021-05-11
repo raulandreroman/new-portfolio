@@ -78,5 +78,8 @@
   },
   "notFound": {
     "content": "Lo siento, no pudimos ubicar la página que buscabas."
+  },
+  "underConstruction": {
+    "content": "Estamos bajo construcción, gracias."
   }
 }

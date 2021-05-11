@@ -78,5 +78,8 @@
   },
   "notFound": {
     "content": "I'm sorry, we were not able to find that page for you."
+  },
+  "underConstruction": {
+    "content": "Hang tight, we're working for you."
   }
 }

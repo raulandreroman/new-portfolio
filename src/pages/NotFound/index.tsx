@@ -4,7 +4,7 @@ import { Text } from '../../containers/Language';
 export default function NotFound() {
   return (
     <div className="bg-black flex flex-col items-center justify-center h-screen">
-      <div className="lg:w-3/12 md:w-2/4 bg-black z-10 absolute m-8 flex flex-col items-center justify-center border-white border-solid border-8 rounded-sm py-8 px-8">
+      <div className="bg-black z-10 absolute m-8 flex flex-col items-center justify-center border-white border-solid border-8 rounded-sm py-8 px-8 max-w-sm">
         <h1 className="text-4xl text-white z-20">404</h1>
         <h2 className="text-4xl text-white font-medium text-center z-20">
           <Text section="notFound" tid="content" />
