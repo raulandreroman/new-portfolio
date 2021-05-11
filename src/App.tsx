@@ -2,7 +2,6 @@
 import React from 'react';
 import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
 import './styles/main.css';
-import Home from './pages/Home';
 import NotFound from './pages/NotFound';
 import { ThemeProvider } from './containers/ThemeContext';
 import { LanguageProvider } from './containers/Language';
