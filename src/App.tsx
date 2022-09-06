@@ -9,7 +9,7 @@ import { LanguageProvider } from './containers/Language';
 import Cursor from './components/Cursor';
 import { isMobile } from 'react-device-detect';
 
-import Home from './pages/Home';
+import UnderConstruction from './pages/UnderConstruction';
 
 function App() {
     return (
@@ -19,14 +19,18 @@ function App() {
                 <ThemeProvider>
                     <BrowserRouter>
                         <Switch>
-                            <Route path="/" exact component={Home} />
                             <Route
-                                path="/:locale(en|es)"
+                                path='/'
                                 exact
-                                component={Home}
+                                component={UnderConstruction}
                             />
-                            <Route path="/404" component={NotFound} />
-                            <Redirect to="/404" />
+                            <Route
+                                path='/:locale(en|es)'
+                                exact
+                                component={UnderConstruction}
+                            />
+                            <Route path='/404' component={NotFound} />
+                            <Redirect to='/404' />
                         </Switch>
                     </BrowserRouter>
                 </ThemeProvider>
