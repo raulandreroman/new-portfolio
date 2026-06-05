@@ -1,3 +1,6 @@
 {
-  "cleanUrls": true
+  "cleanUrls": true,
+  "redirects": [
+    { "source": "/privacy", "destination": "/gasto/privacy", "permanent": false }
+  ]
 }

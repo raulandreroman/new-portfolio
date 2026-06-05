@@ -39,17 +39,9 @@
       .brand {
         display: inline-flex;
         align-items: center;
-        gap: 10px;
         font-weight: 600;
         letter-spacing: -0.01em;
         font-size: 18px;
-      }
-      .dot {
-        width: 10px;
-        height: 10px;
-        border-radius: 9999px;
-        background: var(--accent);
-        display: inline-block;
       }
       h1 {
         font-size: 28px;
@@ -74,7 +66,6 @@
       .note {
         background: var(--surface);
         border: 1px solid var(--line);
-        border-left: 3px solid var(--accent);
         border-radius: 12px;
         padding: 16px 18px;
         margin: 24px 0;
@@ -137,7 +128,7 @@
   <body class="nojs">
     <div class="wrap">
       <header>
-        <span class="brand"><span class="dot"></span>Gasto</span>
+        <span class="brand">Gasto</span>
         <div class="lang-switch" role="group" aria-label="Language">
           <button type="button" data-set-lang="es" aria-pressed="true">Español</button>
           <button type="button" data-set-lang="en" aria-pressed="false">English</button>
