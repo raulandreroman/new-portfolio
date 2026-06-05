@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <title>Gasto — Política de Privacidad / Privacy Policy</title>
+    <style>
+      :root {
+        --bg: #121212;
+        --surface: #1e1e1e;
+        --line: #333333;
+        --text: #ffffff;
+        --text2: #b3b3b3;
+        --text3: #666666;
+        --accent: #00c853;
+      }
+      * { box-sizing: border-box; }
+      html { -webkit-text-size-adjust: 100%; }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Helvetica, Arial, sans-serif;
+        line-height: 1.65;
+        font-size: 16px;
+      }
+      .wrap {
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 48px 24px 96px;
+      }
+      header {
+        border-bottom: 1px solid var(--line);
+        padding-bottom: 24px;
+        margin-bottom: 32px;
+      }
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        font-weight: 600;
+        letter-spacing: -0.01em;
+        font-size: 18px;
+      }
+      .dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 9999px;
+        background: var(--accent);
+        display: inline-block;
+      }
+      h1 {
+        font-size: 28px;
+        line-height: 1.25;
+        letter-spacing: -0.02em;
+        margin: 20px 0 8px;
+      }
+      h2 {
+        font-size: 20px;
+        letter-spacing: -0.01em;
+        margin: 40px 0 12px;
+        padding-top: 8px;
+      }
+      h3 { font-size: 16px; margin: 24px 0 8px; }
+      p, li { color: var(--text2); }
+      strong { color: var(--text); font-weight: 600; }
+      a { color: var(--accent); text-decoration: none; }
+      a:hover { text-decoration: underline; }
+      .meta { color: var(--text3); font-size: 14px; margin-top: 4px; }
+      ul { padding-left: 20px; }
+      li { margin-bottom: 8px; }
+      .note {
+        background: var(--surface);
+        border: 1px solid var(--line);
+        border-left: 3px solid var(--accent);
+        border-radius: 12px;
+        padding: 16px 18px;
+        margin: 24px 0;
+      }
+      .note p { margin: 0; color: var(--text2); font-size: 15px; }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 12px 0 8px;
+        font-size: 15px;
+      }
+      th, td {
+        text-align: left;
+        padding: 10px 12px;
+        border-bottom: 1px solid var(--line);
+        vertical-align: top;
+        color: var(--text2);
+      }
+      th { color: var(--text); font-weight: 600; }
+      .lang-switch {
+        display: inline-flex;
+        gap: 4px;
+        background: var(--surface);
+        border: 1px solid var(--line);
+        border-radius: 9999px;
+        padding: 4px;
+        margin-bottom: 4px;
+      }
+      .lang-switch button {
+        appearance: none;
+        border: 0;
+        background: transparent;
+        color: var(--text2);
+        font: inherit;
+        font-size: 14px;
+        font-weight: 600;
+        padding: 6px 16px;
+        border-radius: 9999px;
+        cursor: pointer;
+      }
+      .lang-switch button[aria-pressed="true"] {
+        background: var(--text);
+        color: #121212;
+      }
+      footer {
+        margin-top: 56px;
+        padding-top: 24px;
+        border-top: 1px solid var(--line);
+        color: var(--text3);
+        font-size: 14px;
+      }
+      [data-lang] { display: none; }
+      html[lang="es"] [data-lang="es"] { display: block; }
+      html[lang="en"] [data-lang="en"] { display: block; }
+      /* No-JS fallback: show both languages. */
+      .nojs [data-lang] { display: block; }
+      .nojs [data-lang="en"] { border-top: 1px solid var(--line); margin-top: 48px; padding-top: 16px; }
+    </style>
+  </head>
+  <body class="nojs">
+    <div class="wrap">
+      <header>
+        <span class="brand"><span class="dot"></span>Gasto</span>
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button type="button" data-set-lang="es" aria-pressed="true">Español</button>
+          <button type="button" data-set-lang="en" aria-pressed="false">English</button>
+        </div>
+      </header>
+
+      <!-- ============================ ESPAÑOL ============================ -->
+      <main data-lang="es">
+        <h1>Política de Privacidad</h1>
+        <p class="meta">Última actualización: 5 de junio de 2026 · Versión beta</p>
+
+        <div class="note">
+          <p>Gasto es una aplicación de finanzas personales que se encuentra en
+          fase de prueba (beta). Esta política describe qué información
+          recopilamos, cómo la usamos y qué derechos tenés sobre tus datos.</p>
+        </div>
+
+        <p>Esta Política de Privacidad explica cómo <strong>Gasto</strong> (la
+        "app", "nosotros") trata tu información cuando usás la aplicación. Al
+        usar Gasto aceptás las prácticas descritas a continuación.</p>
+
+        <h2>1. Información que recopilamos</h2>
+
+        <h3>Datos de cuenta</h3>
+        <p>Tu dirección de correo electrónico y las credenciales de acceso,
+        gestionadas por nuestro proveedor de autenticación (Supabase). No
+        almacenamos tu contraseña en texto plano.</p>
+
+        <h3>Datos financieros que ingresás</h3>
+        <p>La información que cargás para usar la app: transacciones (montos,
+        descripciones, fechas, comercios), categorías, presupuestos, ingresos y
+        preferencias de moneda. Estos datos se guardan en nuestros servidores
+        para poder ofrecerte el servicio (calcular presupuestos, mostrar tu
+        actividad, etc.).</p>
+
+        <h3>Datos de uso (analítica)</h3>
+        <p>Información sobre cómo interactuás con la app: pantallas que visitás,
+        funciones que usás y eventos de sesión. Usamos PostHog para esto.
+        <strong>Los datos de uso nunca incluyen montos, saldos ni
+        transacciones</strong> — se filtran antes de registrarse. Durante la
+        beta podés desactivar la analítica en cualquier momento desde
+        Perfil → Datos y privacidad.</p>
+
+        <h3>Datos técnicos y de diagnóstico</h3>
+        <p>Tipo de dispositivo, versión del sistema operativo, versión de la
+        app, dirección IP (de forma transitoria, para seguridad y prevención de
+        abuso) e informes de errores o fallos (Sentry) para mejorar la
+        estabilidad.</p>
+
+        <h3>Notificaciones push</h3>
+        <p>Si activás las notificaciones, almacenamos un identificador de
+        dispositivo (token) para poder enviártelas. Podés desactivarlas desde la
+        configuración de tu dispositivo.</p>
+
+        <h2>2. Cómo usamos tu información</h2>
+        <ul>
+          <li>Operar y brindar las funciones de la app (autenticación,
+          presupuestos, actividad, conversión de moneda).</li>
+          <li>Enviarte las notificaciones que hayas activado.</li>
+          <li>Entender el uso del producto para mejorarlo (analítica).</li>
+          <li>Garantizar la seguridad y prevenir fraude o abuso.</li>
+        </ul>
+
+        <h2>3. Terceros con los que compartimos datos</h2>
+        <p>No vendemos tus datos. Trabajamos con proveedores de servicios que los
+        procesan en nuestro nombre:</p>
+        <table>
+          <tr><th>Proveedor</th><th>Finalidad</th></tr>
+          <tr><td>Supabase</td><td>Autenticación y base de datos</td></tr>
+          <tr><td>Railway</td><td>Alojamiento del servidor</td></tr>
+          <tr><td>PostHog (EE.&nbsp;UU.)</td><td>Analítica de uso (sin datos financieros)</td></tr>
+          <tr><td>Sentry</td><td>Reportes de errores y diagnóstico</td></tr>
+          <tr><td>Apple / Expo</td><td>Entrega de notificaciones push</td></tr>
+          <tr><td>Exconvert</td><td>Tipos de cambio (solo códigos de moneda, sin datos personales)</td></tr>
+        </table>
+        <p>Algunos de estos proveedores procesan información en los Estados
+        Unidos. También podemos divulgar datos si la ley lo exige.</p>
+
+        <h2>4. Conservación y eliminación</h2>
+        <p>Conservamos tus datos mientras tu cuenta esté activa. Podés eliminar
+        tu cuenta y todos tus datos en cualquier momento desde la app, en
+        <strong>Perfil → Datos y privacidad → Eliminar cuenta</strong>. La
+        eliminación es permanente, inmediata y no se puede deshacer. También
+        podés escribirnos a la dirección de contacto si necesitás ayuda.</p>
+
+        <h2>5. Seguridad</h2>
+        <p>La información se transmite cifrada (HTTPS/TLS) y las contraseñas se
+        almacenan de forma protegida (hash) por nuestro proveedor de
+        autenticación. Ningún sistema es 100&nbsp;% seguro, pero aplicamos
+        medidas razonables para proteger tus datos.</p>
+
+        <h2>6. Tus derechos (Ley 25.326)</h2>
+        <p>De acuerdo con la Ley&nbsp;25.326 de Protección de los Datos
+        Personales de la República Argentina, tenés derecho a acceder,
+        rectificar, actualizar y suprimir tus datos personales. Para ejercer
+        estos derechos, escribinos a la dirección de contacto. La
+        <strong>Agencia de Acceso a la Información Pública</strong> (AAIP), órgano
+        de control de la Ley&nbsp;25.326, tiene la atribución de atender denuncias
+        respecto del incumplimiento de las normas sobre protección de datos
+        personales.</p>
+
+        <h2>7. Menores</h2>
+        <p>Gasto no está dirigida a menores de 18 años y no recopilamos a
+        sabiendas datos de menores de edad.</p>
+
+        <h2>8. Alcance territorial</h2>
+        <p>Gasto está destinada a usuarios de Argentina y no se ofrece a
+        residentes del Espacio Económico Europeo (EEE) ni del Reino Unido.</p>
+
+        <h2>9. Cambios en esta política</h2>
+        <p>Podemos actualizar esta política. Publicaremos la versión vigente en
+        esta página con su fecha de actualización.</p>
+
+        <h2>10. Contacto</h2>
+        <p>Por consultas sobre privacidad o para ejercer tus derechos,
+        escribinos a <a href="mailto:raulandrerd@gmail.com">raulandrerd@gmail.com</a>.</p>
+      </main>
+
+      <!-- ============================ ENGLISH ============================ -->
+      <main data-lang="en">
+        <h1>Privacy Policy</h1>
+        <p class="meta">Last updated: June 5, 2026 · Beta release</p>
+
+        <div class="note">
+          <p>Gasto is a personal finance app currently in testing (beta). This
+          policy describes what information we collect, how we use it, and the
+          rights you have over your data.</p>
+        </div>
+
+        <p>This Privacy Policy explains how <strong>Gasto</strong> (the "app",
+        "we") handles your information when you use the application. By using
+        Gasto you agree to the practices described below.</p>
+
+        <h2>1. Information we collect</h2>
+
+        <h3>Account data</h3>
+        <p>Your email address and sign-in credentials, managed by our
+        authentication provider (Supabase). We do not store your password in
+        plain text.</p>
+
+        <h3>Financial data you enter</h3>
+        <p>The information you add to use the app: transactions (amounts,
+        descriptions, dates, merchants), categories, budgets, income, and
+        currency preferences. This data is stored on our servers so we can
+        provide the service (calculate budgets, show your activity, etc.).</p>
+
+        <h3>Usage data (analytics)</h3>
+        <p>Information about how you interact with the app: screens you view,
+        features you use, and session events. We use PostHog for this.
+        <strong>Usage data never includes amounts, balances, or
+        transactions</strong> — these are stripped before anything is recorded.
+        During the beta you can turn analytics off at any time under
+        Profile → Data &amp; privacy.</p>
+
+        <h3>Technical &amp; diagnostic data</h3>
+        <p>Device type, operating system version, app version, IP address
+        (transiently, for security and abuse prevention), and crash/error
+        reports (Sentry) to improve stability.</p>
+
+        <h3>Push notifications</h3>
+        <p>If you enable notifications, we store a device token so we can deliver
+        them. You can disable them from your device settings.</p>
+
+        <h2>2. How we use your information</h2>
+        <ul>
+          <li>Operate and provide the app's features (authentication, budgets,
+          activity, currency conversion).</li>
+          <li>Send the notifications you have enabled.</li>
+          <li>Understand product usage so we can improve it (analytics).</li>
+          <li>Maintain security and prevent fraud or abuse.</li>
+        </ul>
+
+        <h2>3. Third parties we share data with</h2>
+        <p>We do not sell your data. We work with service providers that process
+        it on our behalf:</p>
+        <table>
+          <tr><th>Provider</th><th>Purpose</th></tr>
+          <tr><td>Supabase</td><td>Authentication and database</td></tr>
+          <tr><td>Railway</td><td>Server hosting</td></tr>
+          <tr><td>PostHog (US)</td><td>Usage analytics (no financial data)</td></tr>
+          <tr><td>Sentry</td><td>Error reporting and diagnostics</td></tr>
+          <tr><td>Apple / Expo</td><td>Push notification delivery</td></tr>
+          <tr><td>Exconvert</td><td>Exchange rates (currency codes only, no personal data)</td></tr>
+        </table>
+        <p>Some of these providers process information in the United States. We
+        may also disclose data where required by law.</p>
+
+        <h2>4. Retention &amp; deletion</h2>
+        <p>We keep your data while your account is active. You can delete your
+        account and all your data at any time from within the app, under
+        <strong>Profile → Data &amp; privacy → Delete account</strong>. Deletion
+        is permanent, immediate, and cannot be undone. You can also contact us if
+        you need help.</p>
+
+        <h2>5. Security</h2>
+        <p>Information is transmitted encrypted (HTTPS/TLS) and passwords are
+        stored securely (hashed) by our authentication provider. No system is
+        100% secure, but we apply reasonable measures to protect your data.</p>
+
+        <h2>6. Your rights (Ley 25.326)</h2>
+        <p>Under Argentina's Personal Data Protection Law No. 25.326, you have
+        the right to access, rectify, update, and delete your personal data. To
+        exercise these rights, contact us. Argentina's data protection authority
+        (Agencia de Acceso a la Información Pública, AAIP) oversees compliance
+        with Law No. 25.326.</p>
+
+        <h2>7. Children</h2>
+        <p>Gasto is not directed to anyone under 18, and we do not knowingly
+        collect data from minors.</p>
+
+        <h2>8. Territorial scope</h2>
+        <p>Gasto is intended for users in Argentina and is not offered to
+        residents of the European Economic Area (EEA) or the United Kingdom.</p>
+
+        <h2>9. Changes to this policy</h2>
+        <p>We may update this policy. The current version will be posted on this
+        page with its update date.</p>
+
+        <h2>10. Contact</h2>
+        <p>For privacy questions or to exercise your rights, contact us at
+        <a href="mailto:raulandrerd@gmail.com">raulandrerd@gmail.com</a>.</p>
+      </main>
+
+      <footer>
+        <p>Gasto · Política de Privacidad / Privacy Policy</p>
+      </footer>
+    </div>
+
+    <script>
+      (function () {
+        document.body.classList.remove("nojs");
+        var html = document.documentElement;
+        var buttons = document.querySelectorAll("[data-set-lang]");
+        function setLang(lang) {
+          html.setAttribute("lang", lang);
+          buttons.forEach(function (b) {
+            b.setAttribute(
+              "aria-pressed",
+              b.getAttribute("data-set-lang") === lang ? "true" : "false"
+            );
+          });
+        }
+        buttons.forEach(function (b) {
+          b.addEventListener("click", function () {
+            setLang(b.getAttribute("data-set-lang"));
+          });
+        });
+        // Default to Spanish (primary market); honor browser English.
+        setLang((navigator.language || "es").toLowerCase().indexOf("en") === 0 ? "en" : "es");
+      })();
+    </script>
+  </body>
+</html>

@@ -1,8 +1,8 @@
 const colors = require('tailwindcss/colors');
 
 module.exports = {
-  purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
-  darkMode: false, // or 'media' or 'class'
+  content: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
+  darkMode: 'media',
   theme: {
     extend: {
       inset: {
@@ -33,13 +33,13 @@ module.exports = {
       colors: {
         light: {
           bg: colors.white,
-          primary: colors.trueGray[900],
+          primary: colors.neutral[900],
           secondary: colors.black,
         },
         dark: {
           bg: '#000',
-          primary: colors.trueGray[50],
-          secondary: colors.trueGray[50],
+          primary: colors.neutral[50],
+          secondary: colors.neutral[50],
         },
       },
       minHeight: {
@@ -127,9 +127,6 @@ module.exports = {
       min: 'min-content',
       screen: '100vw',
     }),
-  },
-  variants: {
-    extend: {},
   },
   plugins: [],
 };
